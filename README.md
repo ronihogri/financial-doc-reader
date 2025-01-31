@@ -1,7 +1,7 @@
 # Financial Document Reader
 Roni Hogri, January 2025.  
 
-**Keywords:** AI-Augmented Systems, Data Extraction, ChatGPT, Python, OpenAI API, Prompt Engineering, BeautifulSoup, SQL, JSON, LLM Evaluation.
+**Keywords:** AI-assisted automation, Data Extraction, ChatGPT, Python, OpenAI API, Prompt Engineering, BeautifulSoup, SQL, JSON, LLM Evaluation.
 
 ## Why This Project?
 

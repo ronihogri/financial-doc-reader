@@ -38,4 +38,4 @@ $ cd financial-doc-reader
 $ python3 -m pip install -r requirements.txt
 ```
 
-The repo will be updated as the project develops.
+**This repo will be updated as the project develops.**

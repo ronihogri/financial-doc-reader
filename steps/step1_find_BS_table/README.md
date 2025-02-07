@@ -52,7 +52,8 @@ The Python program provided here has been optimized. When run three times, it ac
 <br>
 **Figure 1.3: Prompt versions.** To test the effects of prompt content on task performance, the program was run using different versions of 'User Role' instructions. Version A contained only the orange text; version B contained both the orange and blue text; version C (optimized version) contained all text. Expressions in curly brackets are refrences to variables in the Python script: 'text_list' refers to the list of keyword-retrieved text blocks, with possible index values ranging between 0 and len(text_list)-1. 
 
-<br><a id="figure-1-4"></a>![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/optimization_bar_graph_significance.png)<br>  
+<br><a id="figure-1-4"></a>![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/optimization_bar_graph_significance.png)
+  
 **Figure 1.4: Effects of prompt engineering and voting on accuracy.** Error rates for each prompt version (A, B, C; see <a href="#figure-1-3" style="white-space: nowrap; font-weight: bold;">Fig. 1.3</a>), under two voting conditions: i. "All Votes", with each vote counted as a standalone decision (smooth bars); ii. "Majority Decisions", with decisions based on 3-5 votes (striped bars, not seen for versions B and C due to error rates being 0%). The program was run three times for each prompt version, resulting in 1215-1272 votes and 405 majority decisions per version. "*" refers to a significant effect of voting for version A; "#" refers to a significant effect of prompt version as compared to version A (Fisher's Exact test with Bonferroni correction, all *p* values < 0.005). <br><br>   
 
 

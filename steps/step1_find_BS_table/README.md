@@ -1,6 +1,6 @@
 # Step 1: Extract Balance Sheet Table Content
 
-**A general overview of the project can be found [here]((https://github.com/ronihogri/SEC_filings_reader/blob/main/README.md)).**
+**A general overview of the project can be found [here]((https://github.com/ronihogri/financial-doc-reader/blob/main/README.md)).**
 
 ## The Problem: Extracting the Right Data
 
@@ -20,9 +20,9 @@ Large language models (LLMs) like ChatGPT have been trained on **very** large da
 
 ## Workflow
 
-1. Obtain your own [OpenAI API key](https://platform.openai.com/docs/quickstart?desktop-os=windows). Set this key as an environment variable in your OS. Alternatively, use an editor to open the Python script at `SEC_filings_reader/steps/step1_find_BS_table/SEC_filing_reader_step1.py`, and insert your key as the string value of MY_API_KEY (under "User-definable variables").
+1. Obtain your own [OpenAI API key](https://platform.openai.com/docs/quickstart?desktop-os=windows). Set this key as an environment variable in your OS. Alternatively, use an editor to open the Python script at `financial-doc-reader/steps/step1_find_BS_table/SEC_filing_reader_step1.py`, and insert your key as the string value of MY_API_KEY (under "User-definable variables").
 2. *Optional*: Adjust user-definable variables as needed.
-3. Navigate to `SEC_filings_reader/steps/step1_find_BS_table/`, and run the Python script:
+3. Navigate to `financial-doc-reader/steps/step1_find_BS_table/`, and run the Python script:
 
 ```console
 $ python3 SEC_filing_reader_step1.py
@@ -30,8 +30,8 @@ $ python3 SEC_filing_reader_step1.py
 <br>
 The program processes 252 financial documents, filed by 12 selected companies (see SQL database in <code>./filings_demo_step1.sqlite</code>). The workflow for each document is illustrated in <a href="#figure-1-1" style="white-space: nowrap; font-weight: bold;">Fig. 1.1.</a>
 
-<br><a id="figure-1-1"></a>![](https://github.com/ronihogri/SEC_filings_reader/blob/main/steps/step1_find_BS_table/images/flow_chart_JSON_reference.png)<br>  
-**Figure 1.1: Workflow overview.** For each document, text blocks containing keywords commonly found in Balance Sheet tables are extracted. If multiple keyword-containing text blocks are found, the "mini" <span style="white-space: nowrap;">model (gpt-4o-mini-2024-07-18)</span> is asked to identify the text block containing the Balance Sheet table and to return the index of this text block (a single integer) &ndash; this is repeated up to five times for the purpose of collecting "votes" (see the [Results](https://github.com/ronihogri/SEC_filings_reader/blob/main/steps/step1_find_BS_table/README.md#results) section below). If three of the mini models responses are identical, this is considered the model's "majority decision". If this decision "makes sense" &ndash; i.e., a single integer within the expected range, the response is considered valid and stored in the SQL database. Otherwise, the "large" <span style="white-space: nowrap;">model (gpt-4o-2024-08-06)</span> is asked the same question once, and its response is evaluated and stored. In practice, the program provided here performed the task with 100% accuracy relying exclusively on the mini model (see [Results](https://github.com/ronihogri/SEC_filings_reader/blob/main/steps/step1_find_BS_table/README.md#results)). Brown rectangles indicate nodes where data is written to designated JSON files (see `./results/extracted/` folder). These JSON files enable tracing of the program's steps, and are particularly useful for offline evaluation of LLM performance. 
+<br><a id="figure-1-1"></a>![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/flow_chart_JSON_reference.png)<br>  
+**Figure 1.1: Workflow overview.** For each document, text blocks containing keywords commonly found in Balance Sheet tables are extracted. If multiple keyword-containing text blocks are found, the "mini" <span style="white-space: nowrap;">model (gpt-4o-mini-2024-07-18)</span> is asked to identify the text block containing the Balance Sheet table and to return the index of this text block (a single integer) &ndash; this is repeated up to five times for the purpose of collecting "votes" (see the [Results](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/README.md#results) section below). If three of the mini models responses are identical, this is considered the model's "majority decision". If this decision "makes sense" &ndash; i.e., a single integer within the expected range, the response is considered valid and stored in the SQL database. Otherwise, the "large" <span style="white-space: nowrap;">model (gpt-4o-2024-08-06)</span> is asked the same question once, and its response is evaluated and stored. In practice, the program provided here performed the task with 100% accuracy relying exclusively on the mini model (see [Results](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/README.md#results)). Brown rectangles indicate nodes where data is written to designated JSON files (see `./results/extracted/` folder). These JSON files enable tracing of the program's steps, and are particularly useful for offline evaluation of LLM performance. 
 
 
 ## Results
@@ -39,39 +39,20 @@ The program processes 252 financial documents, filed by 12 selected companies (s
 <a href="#figure-1-2" style="font-weight: bold;">Fig. 1.2</a> shows the distribution of text block counts per document. Keyword-based extraction resulted in a single text block for 46.7% of documents, eliminating the need to use the LLM, as no decision was necessary. For the remaining documents, 2-16 text blocks were extracted, and the LLM was used to identify the text block containing the Balance Sheet table. 
 
 
-<br><a id="figure-1-2"></a>![](https://github.com/ronihogri/SEC_filings_reader/blob/main/steps/step1_find_BS_table/images/text_block_distribution.png)<br>
+<br><a id="figure-1-2"></a>![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/text_block_distribution.png)<br>
 **Figure 1.2: Distribution of text block counts.** *Left*: The proportion of documents where keyword-based extraction yielded a single vs. multiple text blocks. Only documents with multiple text blocks were further processed. *Right*: The distribution of text block counts for documents with multiple text blocks.
 <br>  
 
-The Python program provided here has been optimized. When run three times, it achieved <span style="white-space: nowrap; font-weight: bold;">100% accuracy</span> in picking the correct text block for the 135 multi-text documents (i.e., a total of 405 decisions) **using only the mini model**. The cost per run was ~$0.17, or **~$0.001 per document**. Optimization focused on two main aspects:
+The Python program provided here has been optimized. When run three times, it achieved <span style="white-space: nowrap; font-weight: bold;">100% accuracy</span> in picking the correct text block for the 135 multi-text documents (i.e., a total of 405 decisions) **using only the mini model**. The cost per run was \~$0.17, or **\~$0.001 per document**. Optimization focused on two main aspects:
 
 1. **Prompt engineering**: The full prompt sent to ChatGPT can be seen in <a href="#figure-1-3" style="white-space: nowrap; font-weight: bold;">Fig. 1.3</a>. The "User Role" part of the prompt is color-coded to represent three versions (A, B, C) that were tested for their effect on response accuracy. All versions contained all necessary instructions. Nevertheless, the instructions in versions B and C were more exhaustive, and resulted in significantly smaller error rates compared to version A (7.8x reduction B vs A, 62.3x reduction C vs A; <a href="#figure-1-4" style="white-space: nowrap; font-weight: bold;">Fig. 1.4</a>).   
 2. **Voting**: By definition, there is some randomness to the output of the LLM, which can be averaged out. To reduce error rates, the model performed the task up to five times ("votes") per document, stopping early if a majority decision (three identical votes) was reached. Voting reduced the error rate for prompt version A by more than 4x, and entirely eliminated errors for versions B and C (<a href="#figure-1-4" style="white-space: nowrap; font-weight: bold;">Fig. 1.4</a>).
 
-<br><a id="figure-1-3"></a><a id="figure-1-3"></a>
-<div style="border: 2px solid black; padding: 10px; margin: 10px 0; background-color:rgba(249, 249, 249, 0.92);">
-  <a id="figure-1-3"></a>
-
-<span style="color: #008080; font-weight: bold;">System Role:</span> 
-
-<span style="color:#333333;">You are to help the user extract financial information from 10-Q or 10-K filings submitted by public companies to the SEC.
-You will be provided with a list of text excerpts from such filings.
-Your task is to identify the index of the entry (starting from 0) in the list that contains the full content of the Balance Sheet / Financial Position TABLE. <br><br>
-Notes:
-<ol style='color:#333333'>
-<li>The structure of the table was distorted during extraction (e.g., missing columns, misalignment), but you should still be able to identify the table by the existence of content that is usually contained in such tables, as well as the order of this content.</li>
-<li>The correct item may include some text outside the table, but it must contain all rows and columns of the table.</li>
-<li>If you find multiple items with a complete table, return the index of the first one.</li>
-<li>If no item contains the complete table, return `None`.</li></ol></span><br>
-
-<span style="color: #008080; font-weight: bold;">User Role:</span>
-
-<span style="color: #FF4500;">Return a single integer identifying the index of the entry in the following list that contains the Balance Sheet / Financial Position TABLE from a 10-Q/10-K filing: {text_list}.</span><span style="color: #006400;">
-The returned index must be between 0 and {len(text_list) - 1}.</span> <span style="color: #0000FF;">Return only the index int - do not add any additional text, symbols, or explanations.</span></div>
+<br><a id="figure-1-3"></a>![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/prompt_versions.png)
 <br>
 **Figure 1.3: Prompt versions.** To test the effects of prompt content on task performance, the program was run using different versions of 'User Role' instructions. Version A contained only the orange text; version B contained both the orange and blue text; version C (optimized version) contained all text. Expressions in curly brackets are refrences to variables in the Python script: 'text_list' refers to the list of keyword-retrieved text blocks, with possible index values ranging between 0 and len(text_list)-1. 
 
-<br><a id="figure-1-4"></a>![](https://github.com/ronihogri/SEC_filings_reader/blob/main/steps/step1_find_BS_table/images/optimization_bar_graph.png)<br>  
+<br><a id="figure-1-4"></a>![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/optimization_bar_graph.png)<br>  
 **Figure 1.4: Effects of prompt engineering and voting on accuracy.** Error rates for each prompt version (A, B, C; see <a href="#figure-1-3" style="white-space: nowrap; font-weight: bold;">Fig. 1.3</a>), under two voting conditions: i. "All Votes", with each vote counted as a standalone decision (smooth bars); ii. "Majority Decisions", with decisions based on 3-5 votes (striped bars, not seen for versions B and C due to error rates being 0%). The program was run three times for each prompt version, resulting in 1215-1272 votes and 405 majority decisions per version. "*" refers to a significant effect of voting for version A; "#" refers to a significant effect of prompt version as compared to version A (Fisher's Exact test with Bonferroni correction, all *p* values < 0.005). <br><br>   
 
 

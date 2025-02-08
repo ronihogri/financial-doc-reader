@@ -52,8 +52,8 @@ The program processes 252 financial documents, filed by 12 selected companies (s
 <a href="#figure-1-4" style="font-weight: bold;">Fig. 1.4</a> shows the distribution of text block counts per document. Keyword-based extraction resulted in a single text block for 46.7% of documents, eliminating the need to use the LLM, as no decision was necessary. For the remaining documents, 2-16 text blocks were extracted, and the LLM was used to identify the text block containing the Balance Sheet table. 
 
 
-<br>![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/text_block_distribution.png)<br>
-<a id="figure-1-4"></a>
+<br><a id="figure-1-4"></a>![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/text_block_distribution.png)<br>
+
 **Figure 1.4: Distribution of text block counts.** *Left*: The proportion of documents where keyword-based extraction yielded a single vs. multiple text blocks. Only documents with multiple text blocks were further processed. *Right*: The distribution of text block counts for documents with multiple text blocks.
 <br>  
 
@@ -64,7 +64,8 @@ The Python program provided here has been optimized. When run three times, it ac
 
 <br><a id="figure-1-5"></a>
 ![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/prompt_versions.png)
-<br>
+  
+  
 **Figure 1.5: Prompt versions.** To test the effects of prompt content on task performance, the program was run using different versions of 'User Role' instructions. Version A contained only the orange text; version B contained both the orange and blue text; version C (optimized version) contained all text. Expressions in curly brackets are refrences to variables in the Python script: 'text_list' refers to the list of keyword-retrieved text blocks, with possible index values ranging between 0 and len(text_list)-1. 
 
 <br><a id="figure-1-6"></a>

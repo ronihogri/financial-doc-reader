@@ -60,7 +60,8 @@ The program processes 252 financial documents, filed by 12 selected companies (s
 
 <br>
 
-### <a id="figure-1-4"></a>![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/text_block_distribution.png)<br>
+### <a id="figure-1-4"></a>
+![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/text_block_distribution.png)<br>
 
 **Figure 1.4: Distribution of text block counts.** *Left*: The proportion of documents where keyword-based extraction yielded a single vs. multiple text blocks. Only documents with multiple text blocks were further processed. *Right*: The distribution of text block counts for documents with multiple text blocks.
 <br>  

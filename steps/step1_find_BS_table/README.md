@@ -1,6 +1,6 @@
 # Step 1: Extract Balance Sheet Table Content
 
-**A general overview of the project can be found [here]((https://github.com/ronihogri/financial-doc-reader/blob/main/README.md)).**
+**A general overview of the project can be found [here](https://github.com/ronihogri/financial-doc-reader/blob/main/README.md).**
 
 ## The Problem: Extracting the Right Data
 

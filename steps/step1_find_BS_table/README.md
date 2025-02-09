@@ -35,7 +35,7 @@ The program processes 252 financial documents, filed by 12 selected companies (s
 
 ### <a id="figure-1-1"></a>
 ![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/flow_chart_JSON_reference.png)<br>  
-**Figure 1.1: Workflow overview.** For each document, text blocks containing keywords commonly found in Balance Sheet tables are extracted. If multiple keyword-containing text blocks are found, the "mini" <span style="white-space: nowrap;">model (gpt-4o-mini-2024-07-18)</span> is asked to identify the text block containing the Balance Sheet table and to return the index of this text block (a single integer) &ndash; this is repeated up to five times for the purpose of collecting "votes" (see the [Results](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/README.md#results) section below). If three of the mini models responses are identical, this is considered the model's "majority decision". If this decision "makes sense" &ndash; i.e., a single integer within the expected range, the response is considered valid and stored in the SQL database. Otherwise, the "large" <span style="white-space: nowrap;">model (gpt-4o-2024-08-06)</span> is asked the same question once, and its response is evaluated and stored. In practice, the program provided here performed the task with 100% accuracy relying exclusively on the mini model (see [Results](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/README.md#results)). Brown rectangles indicate nodes where data is written to designated JSON files.
+**Figure 1.1: Workflow overview.** For each document, text blocks containing keywords commonly found in Balance Sheet tables are extracted. If multiple keyword-containing text blocks are found, the "mini" <span style="white-space: nowrap;">model (gpt-4o-mini-2024-07-18)</span> is asked to identify the text block containing the Balance Sheet table and to return the index of this text block (a single integer) &ndash; this is repeated up to five times for the purpose of collecting "votes" (see the [Results](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/README.md#results) section below). If three of the mini model's responses are identical, this is considered the model's "majority decision". If this decision "makes sense" &ndash; i.e., a single integer within the expected range, the response is considered valid and stored in the SQL database. Otherwise, the "large" <span style="white-space: nowrap;">model (gpt-4o-2024-08-06)</span> is asked the same question once, and its response is evaluated and stored. In practice, the program provided here performed the task with 100% accuracy relying exclusively on the mini model (see [Results](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/README.md#results)). Brown rectangles indicate nodes where data is written to designated JSON files.
 
 <br>
 
@@ -55,7 +55,7 @@ The program processes 252 financial documents, filed by 12 selected companies (s
 
 ## Results
 
-<a href="#figure-1-4" style="font-weight: bold;">Fig. 1.4</a> shows the distribution of text block counts per document. Keyword-based extraction resulted in a single text block for 46.7% of documents, eliminating the need to use the LLM, as no decision was necessary. For the remaining documents, 2-16 text blocks were extracted, and the LLM was used to identify the text block containing the Balance Sheet table. 
+<a href="#figure-1-4" style="font-weight: bold;">Fig. 1.4</a> shows the distribution of text block counts per document. Keyword-based extraction returned multiple <span style="white-space: nowrap;">(2&ndash;16)</span> text blocks for 53.6% of documents; in these cases, the LLM was used to identify the text block containing the Balance Sheet table. 
 
 
 <br>
@@ -71,24 +71,26 @@ The Python program provided here has been optimized. When run three times, it ac
 1. **Prompt engineering**: The full prompt sent to ChatGPT can be seen in <a href="#figure-1-5" style="white-space: nowrap; font-weight: bold;">Fig. 1.5</a>. The "User Role" part of the prompt is color-coded to represent three versions (A, B, C) that were tested for their effect on response accuracy. All versions contained all necessary instructions. Nevertheless, the instructions in versions B and C were more exhaustive, and resulted in significantly smaller error rates compared to version A (7.8x reduction B vs A, 62.3x reduction C vs A; <a href="#figure-1-6" style="white-space: nowrap; font-weight: bold;">Fig. 1.6</a>).   
 2. **Voting**: By definition, there is some randomness to the output of the LLM, which can be averaged out. To reduce error rates, the model performed the task up to five times ("votes") per document, stopping early if a majority decision (three identical votes) was reached. Voting reduced the error rate for prompt version A by more than 4x, and entirely eliminated errors for versions B and C (<a href="#figure-1-6" style="white-space: nowrap; font-weight: bold;">Fig. 1.6</a>).
 
+The program provided here utilizes version C in combination with voting.
+
 <br>
 
 ### <a id="figure-1-5"></a>
 ![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/prompt_versions.png)
   
 
-**Figure 1.5: Prompt versions.** To test the effects of prompt content on task performance, the program was run using different versions of 'User Role' instructions. Version A contained only the orange text; version B contained both the orange and blue text; version C (optimized version) contained all text. Expressions in curly brackets are refrences to variables in the Python script: 'text_list' refers to the list of keyword-retrieved text blocks, with possible index values ranging between 0 and len(text_list)-1. 
+**Figure 1.5: Prompt versions.** To test the effects of prompt content on task performance, the program was run using different versions of 'User Role' instructions. Version A contained only the orange text; version B contained both the orange and blue text; version C contained all text. Expressions in curly brackets are refrences to variables in the Python script: 'text_list' refers to the list of keyword-retrieved text blocks, with possible index values ranging between 0 and len(text_list)-1. 
 
 <br>
 
 ### <a id="figure-1-6"></a>![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/optimization_bar_graph_significance.png)
   
-**Figure 1.6: Effects of prompt engineering and voting on accuracy.** Error rates for each prompt version (A, B, C; see <a href="#figure-1-5" style="white-space: nowrap; font-weight: bold;">Fig. 1.5</a>), under two voting conditions: i. "All Votes", with each vote counted as a standalone decision (smooth bars); ii. "Majority Decisions", with decisions based on 3-5 votes (striped bars, not seen for versions B and C due to error rates being 0%). The program was run three times for each prompt version, resulting in 1215-1272 votes and 405 majority decisions per version. "*" refers to a significant effect of voting for version A; "#" refers to a significant effect of prompt version as compared to version A (Fisher's Exact test with Bonferroni correction, all *p* values < 0.005). <br><br>   
+**Figure 1.6: Effects of prompt engineering and voting on accuracy.** Error rates for each prompt version (A, B, C; see <a href="#figure-1-5" style="white-space: nowrap; font-weight: bold;">Fig. 1.5</a>), under two voting conditions: i. "All Votes", with each vote counted as a standalone decision (smooth bars); ii. "Majority Decisions", with decisions based on 3&ndash;5 votes (striped bars, not seen for versions B and C due to error rates being 0%). The program was run three times for each prompt version, resulting in 1215&ndash;1272 votes and 405 majority decisions per version. "*" refers to a significant effect of voting for version A; "#" refers to a significant effect of prompt version as compared to version A (Fisher's Exact test with Bonferroni correction, all *p* values < 0.005). <br><br>   
 
 
 ## Conclusions
 
-- The Python program provided here identified the relevant text out of 2-16 options, with 100% accuracy, at a cost of ~$0.001 per document.
+- The Python program provided here identified the relevant text out of 2&ndash;16 options, with 100% accuracy, at a cost of ~$0.001 per document.
 - The combination of prompt optimization and voting significantly contributed to decision accuracy.
 - The low cost is due to the effectiveness of the "mini" model gpt-4o-mini-2024-07-18 (<span style="white-space: nowrap;">~17x</span> cheaper than the larger gpt-4o-2024-08-06 model) in this particular task. The cost could be further reduced by lowering the number of votes required for a majority decision.
  

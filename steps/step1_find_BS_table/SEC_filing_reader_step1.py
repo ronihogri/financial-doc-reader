@@ -298,7 +298,7 @@ def read_from_json(file_path, key_path=()):
     return json_dict  
 
 
-def update_json(file_path, dict_path_list, value_list, model=None):
+def update_json(file_path, dict_path_list, value_list):
     """Update a JSON file at the specified path.
 
 	This function modifies the JSON structure located at file_path by following the paths specified in dict_path_list. 
@@ -307,9 +307,8 @@ def update_json(file_path, dict_path_list, value_list, model=None):
 
 	Args:
 		file_path (str): The path to the JSON file to be updated.
-		dict_path_list (list): A list of paths in the JSON structure where each value from value_list should be inserted.
+		dict_path_list (list): A list of paths (each path a tuple) in the JSON structure where each value from value_list should be inserted.
 		value_list (list): A list of values to be stored in the corresponding paths specified by dict_path_list.
-		model (str, optional): An optional model identifier to be included in the update. Defaults to None.
 
 	Raises:
 		TypeError: If either dict_path_list or value_list is not a list.

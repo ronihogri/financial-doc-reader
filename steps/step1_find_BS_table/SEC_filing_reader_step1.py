@@ -166,12 +166,13 @@ def check_overwrite():
     """
 
     if RETRY_LIST: #RETRY_LIST overrides SKIP_EXISTING
-        overwrite = input(f"\n** Warning: Data will be overwritten for the following forms (ids):\n{RETRY_LIST}\nAre you sure you wish to proceed? [y/N]    ")
+        overwrite = input(f"\n** Warning: Data may be overwritten for the following forms (ids):\n{RETRY_LIST}\nAre you sure you wish to proceed? [y/N]    ")
     else:
         overwrite = input("\n** Warning: Existing data may be overwritten (SKIP_EXISTING set to False), are you sure you wish to proceed? [y/N]    ")
 
     if overwrite.strip().lower() != 'y':
         print("\n**** Program terminated by user ****\n\n")
+        sys.exit()
     else:
         return
 
@@ -624,7 +625,7 @@ def convert_model_decision(decision):
     try:        
         table_index = ast.literal_eval(decision)
         if isinstance(table_index, (int, float)): #if not a number, will return None
-            return int(table_index)
+            return int(table_index) #in case it was float
     except: 
         return None
 

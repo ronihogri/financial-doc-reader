@@ -349,7 +349,8 @@ def update_json(file_path, dict_path_list, value_list, model=None):
                 sub_dict['data'].extend(value)
             else:
                 sub_dict['data'].append(value)
-        else:
+            sub_dict['data'] = list(set(sub_dict['data'])) #don't store the same problem twice
+        else: #key != 'problems'
             sub_dict['data'] = value
 
         sub_dict['timestamp'] = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')        

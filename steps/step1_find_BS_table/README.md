@@ -34,7 +34,8 @@ The program processes 252 financial documents, filed by 12 selected companies (s
 <br><br>
 
 ### <a id="figure-1-1"></a>
-![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/flow_chart_JSON_reference.png)<br>  
+![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/flow_chart_JSON_reference.png)
+
 **Figure 1.1: Workflow overview.** For each document, text blocks containing keywords commonly found in Balance Sheet tables are extracted. If multiple keyword-containing text blocks are found, the "mini" <span style="white-space: nowrap;">model (gpt-4o-mini-2024-07-18)</span> is asked to identify the text block containing the Balance Sheet table and to return the index of this text block (a single integer) &ndash; this is repeated up to five times for the purpose of collecting "votes" (see the [Results](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/README.md#results) section below). If three of the mini model's responses are identical, this is considered the model's "majority decision". If this decision "makes sense" &ndash; i.e., a single integer within the expected range, the response is considered valid and stored in the SQL database. Otherwise, the "large" <span style="white-space: nowrap;">model (gpt-4o-2024-08-06)</span> is asked the same question once, and its response is evaluated and stored. In practice, the program provided here performed the task with 100% accuracy relying exclusively on the mini model (see [Results](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/README.md#results)). Dark blue nodes indicate data being stored in designated JSON files.
 
 <br>
@@ -61,7 +62,7 @@ The program processes 252 financial documents, filed by 12 selected companies (s
 <br>
 
 ### <a id="figure-1-4"></a>
-![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/text_block_distribution.png)<br>
+![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/text_block_distribution.png)
 
 **Figure 1.4: Distribution of text block counts.** *Left*: The proportion of documents where keyword-based extraction yielded a single vs. multiple text blocks. Only documents with multiple text blocks were further processed. *Right*: The distribution of text block counts for documents with multiple text blocks.
 <br>  
@@ -76,8 +77,7 @@ The program provided here utilizes version C in combination with voting.
 <br>
 
 ### <a id="figure-1-5"></a>
-![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/prompt_versions.png)
-  
+![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/prompt_versions.png)  
 
 **Figure 1.5: Prompt versions.** To test the effects of prompt content on task performance, the program was run using different versions of 'User Role' instructions. Version A contained only the orange text; version B contained both the orange and blue text; version C contained all text. Expressions in curly brackets are refrences to variables in the Python script: 'text_list' refers to the list of keyword-retrieved text blocks, with possible index values ranging between 0 and len(text_list)-1. 
 

@@ -16,7 +16,7 @@ This key should be set as an environment variable in your OS, or inserted as the
 BATCH_SIZE = None #how many filings to process in each run, set to None if you want to process all of them at once
 SKIP_EXISTING = True #set to False if you want existing data to be overwritten 
 FIRST_ROW_TO_OVERWRITE = 1 #only relevant if SKIP_EXISTING set to False, lets you choose where in the DB to start overwriting
-RETRY_LIST = [3] #populate list with IDs of forms you want (list of ints) to retry (will process only them, and ignore BATCH_SIZE and SKIP_EXISTING)
+RETRY_LIST = [] #populate list with IDs of forms you want (list of ints) to retry (will process only them, and ignore BATCH_SIZE and SKIP_EXISTING)
 REPORT_DB_FN = "filings_demo_step1.sqlite" #SQL file name 
 
 MY_API_KEY = "insert_your_OpenAI_API_key_here_if_you_don't_want_to_set_it_as_an_environment_var"
@@ -469,6 +469,7 @@ def get_text_from_soup(form_content):
     #parse the HTML form content and retrieve the text it contains
     soup = BeautifulSoup(form_content, 'html.parser') 
     all_text = soup.get_text(separator="\t", strip=True).replace('\xa0', ' ').replace('\u2019', ' ').replace('\u2014', ' ')
+    all_text = all_text.replace("....", "..").replace(".....", ".") #for files with multiple dots which may lead to oversized table texts
 
     #find instances of 'balance sheet(s)' in the all-text version of soup:
     balance_sheets_indices = []

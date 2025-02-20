@@ -247,10 +247,12 @@ def gpt_completion(model, system_content, user_content, trials=1):
         except openai.RateLimitError as e: 
             raise openai.RateLimitError(message='**** OpenAI API quota exceeded ****\n\n', response=e.response, body=e.body) from None
 
-        except:  
+        except openai.OpenAIError as e:
             fail_counter += 1
             if fail_counter == GPT_ATTEMPTS:
-                raise Exception("Could not reach OpenAI server, try again later") from None
+                raise Exception(
+                    f"Could not reach OpenAI server, error encountered: {e}\nResponse: {getattr(e, 'response', 'N/A')}\nBody: {getattr(e, 'body', 'N/A')}"
+                    ) from None
             
     return votes
 
@@ -925,7 +927,8 @@ Note: If you wish to overwrite existing data, set SKIP_EXISTING to False, or spe
         sys.exit("\n\n**** Program terminated by user (KeyboardInterrupt) ****\n\n")
 
     except Exception as e:
-        raise Exception(f"\n\n**** Program terminated, {type(e).__name__} encountered: ****\n{e}\n\n")
+        print(f"\n\n**** Program terminated, {type(e).__name__} encountered: ****\n{e}\n\n")
+        sys.exit(1)
     
     finally:
         #check why program was terminated and how many forms were processed during this run

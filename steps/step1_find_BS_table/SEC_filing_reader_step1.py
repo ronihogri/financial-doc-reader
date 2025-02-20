@@ -16,7 +16,7 @@ This key should be set as an environment variable in your OS, or inserted as the
 BATCH_SIZE = None #how many filings to process in each run, set to None if you want to process all of them at once
 SKIP_EXISTING = True #set to False if you want existing data to be overwritten 
 FIRST_ROW_TO_OVERWRITE = 1 #only relevant if SKIP_EXISTING set to False, lets you choose where in the DB to start overwriting
-RETRY_LIST = [] #populate list with IDs of forms you want (list of ints) to retry (will process only them, and ignore BATCH_SIZE and SKIP_EXISTING)
+RETRY_LIST = [3] #populate list with IDs of forms you want (list of ints) to retry (will process only them, and ignore BATCH_SIZE and SKIP_EXISTING)
 REPORT_DB_FN = "filings_demo_step1.sqlite" #SQL file name 
 
 MY_API_KEY = "insert_your_OpenAI_API_key_here_if_you_don't_want_to_set_it_as_an_environment_var"
@@ -549,7 +549,7 @@ def set_balance_log_path(form_id, form_name):
 		path (str): Path of the balance log JSON file.
 	"""
 
-    path = os.path.join(curdir, 'extracted', 'sections', 'balance', f'{form_id}_{form_name}.json')
+    path = os.path.join(curdir, 'extracted', 'logs', 'balance', f'{form_id}_{form_name}.json')
     os.makedirs(os.path.dirname(path), exist_ok=True) #create necessary folders if they don't already exist
 
     return path
@@ -570,7 +570,7 @@ def init_balance_log_file(balance_log_path):
 		None
 	"""
 
-    data = {'extracted_balance_sheet': {'data': None, 'model': None, 'timestamp': None}, 
+    data = { 
             'text_blocks': {'data': None, 'model': None, 'timestamp': None}, 
             'table_comments': {'data': None, 'timestamp': None}, 
             'units': {'data': None, 'model': None, 'timestamp': None}, 

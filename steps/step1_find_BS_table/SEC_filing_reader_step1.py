@@ -941,7 +941,11 @@ Note: If you wish to overwrite existing data, set SKIP_EXISTING to False, or spe
         sys.exit("\n\n**** Program terminated by user (KeyboardInterrupt) ****\n\n")
 
     except Exception as e:
-        print(f"\n\n**** Program terminated, {type(e).__name__} encountered: ****\n{e}\n\n")
+        if "[Errno 22] Invalid argument" in str(e):
+            sync_issue = "\nIsuse may be related to automatic cloud syncing (e.g., Dropbox), pause syncing and try again."
+        else:
+            sync_issue = ""
+        print(f"\n\n**** Program terminated, {type(e).__name__} encountered: ****\n{e}{sync_issue}\n\n")
         sys.exit(1)
     
     finally:

@@ -20,7 +20,7 @@ RETRY_LIST = [] #populate list with IDs of forms you want (list of ints) to retr
 REPORT_DB_FN = "filings_demo_step1.sqlite" #SQL file name 
 
 MY_API_KEY = "insert_your_OpenAI_API_key_here_if_you_don't_want_to_set_it_as_an_environment_var"
-checkpoint_task = 'TextListLen' #task in SQL DB that determines which filings were already processed
+CHECKPOINT_TASK = 'TextListLen' #task in SQL DB that determines which filings were already processed
 
 """End of user-defined variables"""
 
@@ -92,6 +92,9 @@ def check_user_vars():
     if not isinstance(SKIP_EXISTING, bool):
         raise TypeError("**** SKIP_EXISTING incorrectly defined, must be True/False ****\n\n")
     
+    if (not SKIP_EXISTING) and ((not isinstance(FIRST_ROW_TO_OVERWRITE, int)) or (FIRST_ROW_TO_OVERWRITE < 1)):
+        raise ValueError("**** FIRST_ROW_TO_OVERWRITE incorrectly defined, must be a positive int when SKIP_EXISTING set to False ****\n\n")
+    
     if not os.path.exists(filings_db_path):
         raise Exception(f"**** Path to SQL DB incorrectly defined, no such path exists: ****\n{filings_db_path}\n\n")
     
@@ -124,30 +127,41 @@ def get_forms_info():
             cur.execute(f"SELECT id, FormName, FormURL FROM Forms WHERE id IN ({placeholders})", RETRY_LIST)
             return cur.fetchall()        
    
-        #return only info on files with NULL Tasks
         #get all form ids
         cur.execute("SELECT id FROM Forms ORDER BY id")
         form_ids = [item[0] for item in cur.fetchall()]
+
+        if not SKIP_EXISTING and FIRST_ROW_TO_OVERWRITE > len(form_ids):
+            raise ValueError(f"**** FIRST_ROW_TO_OVERWRITE out of range: must be between 1 and {len(form_ids)} ****\n\n")
                 
+        #if not overwriting, return only info on files with NULL Tasks
         #get completed
-        cur.execute(f"SELECT Form_id FROM Tasks WHERE {checkpoint_task} NOT NULL")
+        cur.execute(f"SELECT Form_id FROM Tasks WHERE {CHECKPOINT_TASK} NOT NULL")
         existing = [item[0] for item in cur.fetchall()]
 
-        if BATCH_SIZE is None: #if user chooses to go through all data at once, get table length
-            cur.execute("SELECT COUNT(id) FROM Forms")
-            if SKIP_EXISTING:
-                BATCH_SIZE = cur.fetchone()[0] - len(existing)
-            else:
-                BATCH_SIZE = cur.fetchone()[0]
+        remaining_count = len(form_ids) - len(existing) #number of remaining forms to process if not overwriting
 
-        if not SKIP_EXISTING: #if completed filings should be overwritten, overwrite batch starting at first row to overwrite
+        if BATCH_SIZE is None: #if user chooses to go through all data at once
+            if SKIP_EXISTING: #don't overwrite
+                BATCH_SIZE = remaining_count
+            else: #overwrite: do not skip existing
+                BATCH_SIZE = len(form_ids) - FIRST_ROW_TO_OVERWRITE + 1
+        else: #BATCH_SIZE is int
+            if SKIP_EXISTING: #don't overwrite
+                if BATCH_SIZE > remaining_count: #set batch size is larger than remaining forms
+                    BATCH_SIZE = remaining_count
+            else: #overwrite
+                if (FIRST_ROW_TO_OVERWRITE + BATCH_SIZE) > len(form_ids): #set batch size is larger than remaining forms
+                    BATCH_SIZE = len(form_ids) - FIRST_ROW_TO_OVERWRITE + 1
+
+        if not SKIP_EXISTING: #if completed filings should be overwritten, batch will start at first row to overwrite
             cur.execute("SELECT id, FormName, FormURL FROM Forms WHERE id >= ? AND id < ?", (FIRST_ROW_TO_OVERWRITE, FIRST_ROW_TO_OVERWRITE + BATCH_SIZE))
             return cur.fetchall()
 
-        #make list of incomplete with len batch_size
+        #make list of incomplete with len = len(batch_size)
         ids_to_get = [form for form in form_ids if form not in existing][:BATCH_SIZE]
 
-        #get form info based on ids_to_get
+        #get form info based on ids_to_get, sort by ids
         cur.execute("CREATE TEMPORARY TABLE temp_ids (id INTEGER PRIMARY KEY)")
         cur.executemany("INSERT INTO temp_ids VALUES (?)", [(id, ) for id in ids_to_get])
         cur.execute("SELECT f.id, f.FormName, f.FormURL FROM Forms f JOIN temp_ids t ON f.id = t.id ORDER BY f.id")
@@ -853,7 +867,7 @@ def report_done(total_problem_cnt, forms_with_problems, start_time, form_cnt):
         problem_text = "No problems detected."
 
     print(f"""\n\n\n*********************************************************************************************************
-Completed data extraction for batch of {form_cnt} 10-Q/10-K filings. Last task executed: '{checkpoint_task}'.
+Completed data extraction for batch of {form_cnt} 10-Q/10-K filings. Last task executed: '{CHECKPOINT_TASK}'.
 Runtime {np.round((time.time() - start_time) / 60, 2)} minutes ({np.round((time.time() - start_time) / form_cnt, 2)} seconds per form, on average).
 {problem_text}
 Data stored to SQL DB: 
@@ -892,7 +906,7 @@ def main():
             check_overwrite()            
 
         if not forms_info:
-            print(f"""\n\n**** All filings in the Forms table have already been processed for the task '{checkpoint_task}', program terminated ****
+            print(f"""\n\n**** All filings in the Forms table have already been processed for the task '{CHECKPOINT_TASK}', program terminated ****
 Note: If you wish to overwrite existing data, set SKIP_EXISTING to False, or specify relevant form IDs in RETRY_LIST\n\n""")
             sys.exit()
 

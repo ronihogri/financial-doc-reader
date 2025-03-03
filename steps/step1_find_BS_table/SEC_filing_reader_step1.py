@@ -83,7 +83,9 @@ def check_user_vars():
     Globals:
         BATCH_SIZE (int or None): Size of the batch for processing, must be a positive integer or None (= all filings will be processed in one run).
         SKIP_EXISTING (bool): If set to False, completed filings will be re-processed and data re-written.
+        FIRST_ROW_TO_OVERWRITE (int): ID of first form to overwrite if SKIP_EXISTING set to False.
         filings_db_path (str): Path to SQL DB holding the Forms table.
+        RETRY_LIST (list): List of form IDs that user chose to process.
     """
 
     if ((BATCH_SIZE is not None) and (not isinstance(BATCH_SIZE, int))) or ((isinstance(BATCH_SIZE, int)) and (BATCH_SIZE < 1)):
@@ -95,6 +97,9 @@ def check_user_vars():
     if (not SKIP_EXISTING) and ((not isinstance(FIRST_ROW_TO_OVERWRITE, int)) or (FIRST_ROW_TO_OVERWRITE < 1)):
         raise ValueError("**** FIRST_ROW_TO_OVERWRITE incorrectly defined, must be a positive int when SKIP_EXISTING set to False ****\n\n")
     
+    if RETRY_LIST and not isinstance(RETRY_LIST, list):
+        raise TypeError("**** RETRY_LIST incorrectly defined, must be a list of form IDs ****\n\n")
+    
     if not os.path.exists(filings_db_path):
         raise Exception(f"**** Path to SQL DB incorrectly defined, no such path exists: ****\n{filings_db_path}\n\n")
     
@@ -102,17 +107,18 @@ def check_user_vars():
 def get_forms_info():
     """Gets the next filing to work on from the SQL DB's "Forms" table.
 
-    Globals:
-        SKIP_EXISTING (bool): If set to False, completed filings will be re-processed and data re-written. 
-        BATCH_SIZE (int or None): If int, the number of filings to process in each run; 
-            if set to None, the program will run through all incomplete filings remaining in the Forms tables.
-        filings_db_path (str): Path to SQL DB holding the Forms table.        
-
     Returns:
         list: A list of tuples; each tuple contains the following elements extracted from the Forms table:
             i. int: id
             ii. str: FormName
             iii. str: FormURL
+
+    Globals:
+        SKIP_EXISTING (bool): If set to False, completed filings will be re-processed and data re-written. 
+        BATCH_SIZE (int or None): If int, the number of filings to process in each run; 
+            if set to None, the program will run through all incomplete filings remaining in the Forms tables.
+        filings_db_path (str): Path to SQL DB holding the Forms table. 
+        RETRY_LIST (list): List of form IDs that user chose to process.
     """
 
     global BATCH_SIZE
@@ -172,11 +178,11 @@ def check_overwrite():
     """Check if the user wants to proceed with overwriting existing data. Called when RETRY_LIST or SKIP_EXISTING lead to overwriting.
     If the user chooses to terminate overwriting, the function exits the program.
 
-    Globals:
-        RETRY_LIST (list): List of form IDs that may be overwritten if user confirms.
-
     Returns:
         None 
+
+    Globals:
+        RETRY_LIST (list): List of form IDs that may be overwritten if user confirms.
     """
 
     if RETRY_LIST: #RETRY_LIST overrides SKIP_EXISTING
@@ -217,12 +223,12 @@ def gpt_completion(model, system_content, user_content, trials=1):
         user_content (str): The input content from the user for which a completion is requested.
         trials (int): The number of trials for querying the model, must be a positive integer; default is 1.
 
+    Returns:
+        votes (dict): A dictionary containing GPT outputs indexed by trial number.
+
     Globals:
         PLAY_NICE (float): Sleep time between API calls (seconds).
         GPT_ATTEMPTS (int): Number of attempts to connect to OpenAI API before failing.
-
-    Returns:
-        votes (dict): A dictionary containing GPT outputs indexed by trial number.
     """
 
     fail_counter = 0
@@ -423,13 +429,13 @@ def get_form_content(form_url, previous_request_time_edgar):
 		form_url (str): The URL of the form to retrieve from EDGAR.
 		previous_request_time_edgar (float or None): The time of the previous request to EDGAR, used to control request rate.
 
-	Globals:
-		PLAY_NICE (float): Minimum time (seconds) that must pass between requests to EDGAR.
-
 	Returns:
 		tuple: A tuple containing:
 			- bytes: The binary content of the retrieved form.
 			- float: The time at which the request was made.
+
+	Globals:
+		PLAY_NICE (float): Minimum time (seconds) that must pass between requests to EDGAR.
 	"""
 
     headers = {
@@ -473,13 +479,13 @@ def get_text_from_soup(form_content):
 	Args:
 		form_content (bytes): The binary HTML content of the form, as returned by `get_form_content`.
 
+	Returns:
+		balance_sheet_text (list): A list of strs potentially containing the Balance Sheet table.
+
 	Globals:
 		POSSIBLE_BS_TITLES (list): A list of strs representing potential titles for the Balance Sheet that may appear in the text.
 		MANDATORY_FIELDS_BS (list): A list of strs representing mandatory fields that must be present in the Balance Sheet.
 		MAX_DISTANCE_BS (int): The maximum distance (No. of chars) to search for Balance Sheet tables after title detection.
-
-	Returns:
-		balance_sheet_text (list): A list of strs potentially containing the Balance Sheet table.
 	"""
 
     #parse the HTML form content and retrieve the text it contains
@@ -511,11 +517,11 @@ def init_text_list_file(path, sections):
 	Args:
 		sections (list): List of section names (str) to be included in the JSON file.
 
-	Globals:
-		path (str): Path to the JSON file that will be created and initialized.
-
 	Returns:
 		None
+
+	Globals:
+		path (str): Path to the JSON file that will be created and initialized.
 	"""
 
     data = {}
@@ -676,13 +682,13 @@ def get_table_index(balance_sheet_text, form_name, balance_log_path):
 		form_name (str): FormName, as appears in the Forms table.
 		balance_log_path (str): Path to the log JSON file holding the extracted Balance Sheet data.
 
+	Returns:
+		table_index (int) or None: Index of the text block containing the table, or None if not found.
+
 	Globals:
 		MINI (str): Identifier for the mini model to be used in identifying the table.
 		GPT_4O (str): Identifier for the larger model to be used in identification if needed.
 		MAX_DISTANCE_BS (int): Threshold value to determine if the text block is sufficiently long.
-
-	Returns:
-		table_index (int) or None: Index of the text block containing the table, or None if not found.
     """
 
     index_dict = {'block_count': len(balance_sheet_text), 'table_index': None}
@@ -764,11 +770,11 @@ def get_balance_problems(balance_log_path):
 	Args:
 		balance_log_path (str): Path to the JSON file containing balance log data.
 	
-	Globals:
-		filings_db_path (str): Path to the SQL database containing the Problems table.
-	
 	Returns:
 		problem_ids (list): A list of problem IDs (ints) pointing to the types of problems detected (Problems.id).
+	
+	Globals:
+		filings_db_path (str): Path to the SQL database containing the Problems table.
 	"""
 
     balance_log_problems = read_from_json(balance_log_path, ('problems', 'data')) #get problem descriptions
@@ -807,6 +813,11 @@ def update_sql(form_id, json_path, problem_ids):
 	
 	Returns:
 		None
+
+    Globals:
+		filings_db_path (str): Path to the SQL database containing the Problems table.
+        SKIP_EXISTING (bool): If set to False, completed filings will be re-processed and data re-written. 
+        RETRY_LIST (list): List of form IDs that user chose to process.
 	"""
 
     problem_str = ", logging problems in FormProblems table" if problem_ids else ""
@@ -845,7 +856,6 @@ def update_sql(form_id, json_path, problem_ids):
                 raise sqlite3.OperationalError(
                     f"\nError encountered, program terminated:\n{e}\n"
                     )
-
 
 
 def report_done(total_problem_cnt, forms_with_problems, start_time, form_cnt):

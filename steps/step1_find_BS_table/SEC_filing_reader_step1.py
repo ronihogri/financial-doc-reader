@@ -97,8 +97,11 @@ def check_user_vars():
     if (not SKIP_EXISTING) and ((not isinstance(FIRST_ROW_TO_OVERWRITE, int)) or (FIRST_ROW_TO_OVERWRITE < 1)):
         raise ValueError("**** FIRST_ROW_TO_OVERWRITE incorrectly defined, must be a positive int when SKIP_EXISTING set to False ****\n\n")
     
-    if RETRY_LIST and not isinstance(RETRY_LIST, list):
-        raise TypeError("**** RETRY_LIST incorrectly defined, must be a list of form IDs ****\n\n")
+    if RETRY_LIST and (
+        not isinstance(RETRY_LIST, list)
+        or any(not isinstance(item, int) for item in RETRY_LIST)
+    ):
+        raise TypeError("**** RETRY_LIST incorrectly defined, must be a list of form IDs (integers) - see Forms.id in SQL DB ****\n\n")
     
     if not os.path.exists(filings_db_path):
         raise Exception(f"**** Path to SQL DB incorrectly defined, no such path exists: ****\n{filings_db_path}\n\n")

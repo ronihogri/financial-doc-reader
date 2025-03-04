@@ -4,7 +4,7 @@
 For the previous step, see [Step 1](https://github.com/ronihogri/financial-doc-reader/tree/main/steps/step1_find_BS_table). 
 
 
-## The Problem: Transforming a Text Block into a Coherent Data File
+## The Problem: Transforming a Text Block into a Structured Data File
 
  
 ## *This README is under construction*

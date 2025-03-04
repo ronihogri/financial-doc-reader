@@ -2,6 +2,7 @@
 
 # The following libraries need to be installed (check for updated versions as project develops):
 bs4
+jsonpath_ng
 numpy
 openai
 requests

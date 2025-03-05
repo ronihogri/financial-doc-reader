@@ -1,0 +1,23 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 1,
+            "table_index": 0
+        },
+        "model": null,
+        "timestamp": "2025-01-21_09-31-28"
+    },
+    "table_comments": {
+        "data": null,
+        "timestamp": null
+    },
+    "units": {
+        "data": null,
+        "model": null,
+        "timestamp": null
+    },
+    "problems": {
+        "data": null,
+        "timestamp": null
+    }
+}

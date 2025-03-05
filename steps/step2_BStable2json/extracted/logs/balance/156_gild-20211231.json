@@ -1,0 +1,36 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 12,
+            "table_index": 2
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "2",
+                    "1": "2",
+                    "2": "2"
+                },
+                "decision": "2"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-01-21_09-37-29"
+    },
+    "table_comments": {
+        "data": null,
+        "timestamp": null
+    },
+    "units": {
+        "data": null,
+        "model": null,
+        "timestamp": null
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-01-21_09-37-29"
+    }
+}

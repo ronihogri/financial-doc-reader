@@ -94,5 +94,5 @@ The program provided here utilizes version C in combination with voting.
 - The combination of prompt optimization and voting significantly contributed to decision accuracy.
 - The low cost is due to the effectiveness of the "mini" model gpt-4o-mini-2024-07-18 (<span style="white-space: nowrap;">~17x</span> cheaper than the larger gpt-4o-2024-08-06 model) in this particular task. The cost could be further reduced by lowering the number of votes required for a majority decision.
  
-## *Coming Soon*
-The next step will involve converting the Balance Sheet table text into a structured data format (JSON), enabling more efficient and accurate access to values of interest. 
+## Next Step
+[**Step 2**](https://github.com/ronihogri/financial-doc-reader/tree/main/steps/step2_BStable2json) involves converting the Balance Sheet table text into a structured data format (JSON), enabling more efficient and accurate access to values of interest. 

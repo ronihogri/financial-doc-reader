@@ -48,12 +48,12 @@ To assist with the identification of the table end, the LLM was asked to return 
 
 #### Table Text to Structured JSON Conversion
 
-The LLM was provided the table body, and was asked to convert the table text into structured JSON data. An illustration of this process is shown in <a href="#figure-2-2" style="white-space: nowrap; font-weight: bold;">Fig. 2.2</a>*A*, *B*. Each LLM output (string) was checked to confirm that it could be converted into JSON data using Python's <span style="white-space: nowrap;"><code>json.loads()</code></span> function. If the conversion was successful, the process was deemed successful and was terminated; if not, the model was queried again. Overall, the mini model performed this task well. However, a common issue was that the returned JSON structure was unbalanced, and missed the closing "\}" character. To avoid the cost (and risk) of repeated querying, this issue was addressed algorithmically, drastically reducing the error rate from <span style="white-space: nowrap;">15.3%</span> to <span style="white-space: nowrap;">0.13%</span> (<a href="#figure-2-2" style="white-space: nowrap; font-weight: bold;">Fig. 2.2</a>*C*). Thus, the mini model had to be re-queried only once during the three test runs (total of 756 table texts), and the large model was never required. 
+The LLM was provided the table body text, and was asked to convert it into structured JSON data. An illustration of this process is shown in <a href="#figure-2-2" style="white-space: nowrap; font-weight: bold;">Fig. 2.2</a>*A*,*B*. Each LLM output (string) was checked to confirm that it could be converted into JSON data using Python's <span style="white-space: nowrap;"><code>json.loads()</code></span> function. If the conversion was successful, the process was deemed successful and was terminated; if not, the model was queried again. Overall, the mini model performed this task well. However, a common issue was that the returned JSON structure was unbalanced, and missed the closing "\}" character. To avoid the cost (and risk) of repeated querying, this issue was addressed algorithmically, drastically reducing the error rate from <span style="white-space: nowrap;">15.3%</span> to <span style="white-space: nowrap;">0.13%</span> (<a href="#figure-2-2" style="white-space: nowrap; font-weight: bold;">Fig. 2.2</a>*C*). Thus, the mini model had to be re-queried only once during the three test runs (total of 756 table texts), and the large model was never required. 
 
 ### <a id="figure-2-2"></a>
 ![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step2_BStable2json/images/json_table_results.png)
 
-**Figure 2.2: JSON data extraction.** <span style="font-weight: bold; font-style: italic;">A</span>, An example of unstructured table body text. <span style="font-weight: bold; font-style: italic;">B</span>, Layout of the JSON structure produced by the LLM based on the text provided in *A* (dots represent nested key-value pairs, omitted from the figure for brevity). The JSON structure successfully captured the table structure in the original document. <span style="font-weight: bold; font-style: italic;">C</span>, The mini model's output often lacked the closing "\}" character, which would have caused a conversion error in 15.3% of cases. This issue was addressed algorithmically, reducing the error rate by two orders of magnitude to 0.13% <span style="white-space: nowrap;">(\* : *p* =</span> 10<sup>-35</sup>, Fisher's exact test).
+**Figure 2.2: JSON data extraction.** ***A***, An example of unstructured table body text. ***B***, Layout of the JSON structure produced by the LLM based on the text provided in *A* (dots represent nested key-value pairs, omitted from the figure for brevity). The JSON structure successfully captured the table structure in the original document. ***C***, The mini model's output often lacked the closing "\}" character, which would have caused a conversion error in 15.3% of cases. This issue was addressed algorithmically, reducing the error rate by two orders of magnitude to 0.13% <span style="white-space: nowrap;">(\* : *p* =</span> 10<sup>-35</sup>, Fisher's exact test).
 
 <br>
 
@@ -68,21 +68,21 @@ The mini model was provided the pre-table text, and was asked to return a single
 ### <a id="figure-2-3"></a>
 ![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step2_BStable2json/images/reported_units_aapl_hsic.png)
 
-**Figure 2.3: Examples of reported monetary units in Balance Sheet tables.** Apple Inc. (AAPL) reported dollar sums in millions throughout the analyzed period. In contrast, Henry Schein (HSIC) reported dollar sums in thousands until 2022, when it began reporting in millions.  
+**Figure 2.3: Examples of reported monetary units in Balance Sheet tables.** Apple Inc. (AAPL) reported dollar sums in millions throughout the analyzed period. In contrast, Henry Schein (HSIC) reported dollar sums in thousands until 2022, when it began reporting in millions. Value dates are shown as year-month.
 
 <br>
 
 
 ## Conclusions
 
-- Combining LLM-based and algorithmic approaches, the Python programs provided in steps 1 and 2 fetch financial reports from the SEC's EDGAR system, identify the reported dollar amount units, and export the Balance Sheet table to a structured JSON data file. 
+- Combining LLM-based and algorithmic approaches, the Python programs provided in Steps 1 and 2 fetch financial reports from the SEC's EDGAR system, identify the reported dollar amount units, and export the Balance Sheet table to a structured JSON data file. 
 - Using this approach, the combined cost of LLM usage for Steps 1 & 2 is \~$0.002 per document. This cost is dramatically lower than that of processing entire documents with LLMs, even when employing efficient methods such as RAG (Retrieval-Augmented Generation).
 - The structured JSON format now allows us to reproduce the structure of the Balance Sheet table, as it appeared in the original document (<a href="#figure-2-4" style="white-space: nowrap; font-weight: bold;">Fig. 2.4</a>). 
 
 ### <a id="figure-2-4"></a>
 ![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step2_BStable2json/images/example_form10_webpageVScsv_ha.png)
 
-**Figure 2.4: Reproduction of Balance Sheet in a CSV file.** *Left*: An example of a Balance Sheet table from a filing by Apple Inc. (adapted). *Right*: The same table in a CSV file. This version was produced using the structured JSON data (not part of the provided code). For additional examples, see `results_step2.zip/balance_csvs`.
+**Figure 2.4: Reproduction of Balance Sheet in a CSV file.** *Left*: An example of a Balance Sheet table from a filing by Apple Inc. (adapted). *Right*: The same table in a CSV file, generated from the structured JSON data. For additional examples, see `results_step2.zip/balance_csvs`.
 
 <br>
  

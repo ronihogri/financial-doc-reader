@@ -1,4 +1,4 @@
-# Step 2: Export Balance Sheet Table to Structured JSON File
+# Step 2: Export Balance Sheet Table to a Structured JSON File
 
 **A general overview of the project can be found [here](https://github.com/ronihogri/financial-doc-reader/blob/main/README.md).**   
 For the previous step, see [Step 1](https://github.com/ronihogri/financial-doc-reader/tree/main/steps/step1_find_BS_table). 
@@ -82,7 +82,7 @@ The mini model was provided the pre-table text, and was asked to return a single
 ### <a id="figure-2-4"></a>
 ![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step2_BStable2json/images/example_form10_webpageVScsv_ha.png)
 
-**Figure 2.4: Reproduction of Balance Sheet in a CSV file.** *Left*: An example of a Balance Sheet table from a filing by Apple Inc. (adapted). *Right*: The same table in a CSV file, generated from the structured JSON data. For additional examples, see `results_step2.zip/balance_csvs`.
+**Figure 2.4: Table reproduction.** *Left*: An example of a Balance Sheet table from a filing by Apple Inc. (adapted from the SEC website). *Right*: The same table in a CSV file, generated from the structured JSON data. For additional examples, see `results_step2.zip/balance_csvs`.
 
 <br>
  

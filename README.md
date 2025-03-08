@@ -7,9 +7,9 @@ Roni Hogri, January 2025.
 
 Large Language Models (LLMs) like ChatGPT can be highly effective for *certain* tasks, such as identifying relevant data based on context and semantics. However, they suffer from notable limitations, such as unexpected outputs and miscalculations.
 
-In the emerging field of **"AI-Augmented Systems"**, LLMs are integrated with "old-school" code, so that developers and users can enjoy the best of both worlds.
+In the emerging field of **"AI-Assisted Systems"**, LLMs are integrated with "old-school" code, so that developers and users can enjoy the best of both worlds.
 
-This demo project is meant to provide a basic and simple example of implementing AI-augmented software for the purpose of data extraction from financial documents.
+This demo project is meant to provide a basic and simple example of implementing AI-Assisted software for the purpose of data extraction from financial documents.
 Specifically, I will focus on filings to the SEC (10-Q and 10-K forms). These filings are standardized in some ways, but are highly variable in their exact wording and HTML structure. This variability makes it very difficult to automate data extraction based on properties such as table structure and header titles. Nowadays, this task can be assisted by LLMs, which can "understand" the context and semantics of data fields.
 
 I will show how to easily integrate ChatGPT into Python scripts, and focus on some of the main challenges of such integrations:

@@ -55,7 +55,7 @@ This task was performed under two <u>response type settings</u>: "text", and "js
 ### <a id="figure-2-2"></a>
 ![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step2_BStable2json/images/json_table_results.png)
 
-**Figure 2.2: JSON data extraction.** ***A***, An example of unstructured table body text. ***B***, Layout of the JSON structure produced by the mini LLM based on the text provided in *A* (dots represent nested key-value pairs, omitted from the figure for brevity). The JSON data preserved the original table’s structure and hierarchy. ***C***, When the model's response type was set to "text", its output often lacked the closing "\}" character, leading to a conversion error in 15.3% of cases. Applying algorithmic correction to 'text' output ('text + algo'), or using the 'json_object' response type, reduced the error rate by two orders of magnitude to 0.13%. 
+**Figure 2.2: JSON data extraction.** ***A***, An example of unstructured table body text. ***B***, Layout of the JSON structure produced by the mini LLM based on the text provided in *A* (dots represent nested key-value pairs, omitted from the figure for brevity). The JSON data preserved the original table’s structure and hierarchy. ***C***, When the model's response type was set to "text", its output often lacked the closing "\}" character, leading to a conversion error in 15.3% of cases. Applying algorithmic correction to text output ("text + algo"), or using the "json_object" response type, reduced the error rate by two orders of magnitude to 0.13%. 
 
 <br>
 

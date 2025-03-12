@@ -254,7 +254,7 @@ def check_majority(votes, trials):
         return True
     
 
-def gpt_completion(model, system_content, user_content, trials=1, trial_counter=0): 
+def gpt_completion(model, system_content, user_content, response_type="text", trials=1, trial_counter=0): 
     """General function for querying GPT (completions mode).
 
     Args:
@@ -285,7 +285,8 @@ def gpt_completion(model, system_content, user_content, trials=1, trial_counter=
                 messages=[
                     {"role": "system", "content": system_content},
                 {"role": "user", "content": user_content}
-                ]
+                ], 
+                response_format={"type": response_type}
                 )
             
             gpt_output = completion.choices[0].message.content            
@@ -887,7 +888,7 @@ def get_table_body(table_text, pre_table_comments, log_path, form_name):
     return table_body
     
 
-def ask_table_json(table_body, model=MINI, trials=1, trial_counter=0):
+def ask_table_json(table_body, model=MINI, response_type='json_object', trials=1, trial_counter=0):
     """Ask GPT to produce structured JSON data representing the Balance Sheet table. 
 
 	Args:
@@ -940,7 +941,7 @@ def ask_table_json(table_body, model=MINI, trials=1, trial_counter=0):
 
     get_table_json_user = f"""Return the following text as a valid single-line JSON object, as instructed: {table_body}"""    
 
-    return gpt_completion(model, get_table_json_sys, get_table_json_user, trials=trials, trial_counter=trial_counter) 
+    return gpt_completion(model, get_table_json_sys, get_table_json_user, response_type=response_type, trials=trials, trial_counter=trial_counter) 
 
 
 def get_table_json(table_body, log_path, table_path, form_name):
@@ -989,15 +990,9 @@ def get_table_json(table_body, log_path, table_path, form_name):
         ):
             problems_list.append('json output: model failed to produce table JSON')
             continue #retry
-
-        #a common issue is that the JSON-like str is invalid due to a missing closing '}'; I chose to fix this algorithmically 
-        if response.count('{') > response.count('}'):
-            response_for_dict = response + '}'
-        else:
-            response_for_dict = response
-        
+       
         try: #try to convert the JSON-like str into a dict
-            table_json = json.loads(response_for_dict)
+            table_json = json.loads(response)
             if not isinstance(table_json, dict):
                 problems_list.append('json output: table not in dict form')
                 continue #retry

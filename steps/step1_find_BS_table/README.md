@@ -85,7 +85,7 @@ The program provided here utilizes version C in combination with voting.
 
 ### <a id="figure-1-6"></a>![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step1_find_BS_table/images/optimization_bar_graph_significance.png)
   
-**Figure 1.6: Effects of prompt engineering and voting on accuracy.** Error rates for each prompt version (A, B, C; see <a href="#figure-1-5" style="white-space: nowrap; font-weight: bold;">Fig. 1.5</a>), under two voting conditions: i. "All Votes", with each vote counted as a standalone decision (smooth bars); ii. "Majority Decisions", with decisions based on 3&ndash;5 votes (striped bars, not seen for versions B and C due to error rates being 0%). The program was run three times for each prompt version, resulting in 1215&ndash;1272 votes and 405 majority decisions per version. A logistic regression analysis revealed a significant effects of prompt version, voting, and their interaction. <br><br>   
+**Figure 1.6: Effects of prompt engineering and voting on accuracy.** Error rates for each prompt version (A, B, C; see <a href="#figure-1-5" style="white-space: nowrap; font-weight: bold;">Fig. 1.5</a>), under two voting conditions: i. "All Votes", with each vote counted as a standalone decision (smooth bars); ii. "Majority Decisions", with decisions based on 3&ndash;5 votes (striped bars, not seen for versions B and C due to error rates being 0%). The program was run three times for each prompt version, resulting in 1215&ndash;1272 votes and 405 majority decisions per version. A logistic regression analysis revealed significant effects of prompt version, voting, and their interaction, suggesting that the importance of voting decreased as the prompt version improved. <br><br>   
 
 
 ## Conclusions

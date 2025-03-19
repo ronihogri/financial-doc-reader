@@ -1,7 +1,7 @@
 # Step 2: Export Balance Sheet Table to a Structured JSON File
 
 **A general overview of the project can be found [here](https://github.com/ronihogri/financial-doc-reader/blob/main/README.md).**   
-For the previous step, see [Step 1](https://github.com/ronihogri/financial-doc-reader/tree/main/steps/step1_find_BS_table). 
+For the previous step, see [Step 1](https://github.com/ronihogri/financial-doc-reader/tree/main/steps/step1_find_BS_table). For the next step, see [Step 3](https://github.com/ronihogri/financial-doc-reader/tree/main/steps/step3_normalize_extract).
 
 
 ## The Problem: Transforming a Text Block into a Structured Data File

@@ -50,7 +50,7 @@ To assist with the identification of the table end, the LLM was asked to return 
 
 The LLM was provided the table body text, and was asked to convert it into structured JSON data. An illustration of this process is shown in <a href="#figure-2-2" style="white-space: nowrap; font-weight: bold;">Fig. 2.2</a>*A*,*B*. Each LLM output (string) was checked to confirm that it could be converted into JSON data using Python's <span style="white-space: nowrap;"><code>json.loads()</code></span> function. If the conversion was successful, the process was deemed successful and was terminated; if not, the model was queried again. 
 
-This task was performed under two <u>response type settings</u>: "text", and "json_object". Overall, the mini model performed this task well under both conditions, and results were comparable. In the text type condition, a common issue was that the returned JSON structure was unbalanced, as it lacked the closing "\}" character. When this issue was addressed algorithmically, the error rate was drastically reduced from <span style="white-space: nowrap;">15.3%</span> to <span style="white-space: nowrap;">0.13%</span> (a single error across three runs). The error rate for the json_object condition was also <span style="white-space: nowrap;">0.13%</span> (<a href="#figure-2-2" style="white-space: nowrap; font-weight: bold;">Fig. 2.2</a>*C*). Curiously, in this condition as well, the error was due to a missing closing "\}" character (no algorithmic correction was applied in this condition). The large model was never required for this task. 
+This task was performed under two <ins>response type settings</ins>: "text", and "json_object". Overall, the mini model performed this task well under both conditions, and results were comparable. In the text type condition, a common issue was that the returned JSON structure was unbalanced, as it lacked the closing "\}" character. When this issue was addressed algorithmically, the error rate was drastically reduced from <span style="white-space: nowrap;">15.3%</span> to <span style="white-space: nowrap;">0.13%</span> (a single error across three runs). The error rate for the json_object condition was also <span style="white-space: nowrap;">0.13%</span> (<a href="#figure-2-2" style="white-space: nowrap; font-weight: bold;">Fig. 2.2</a>*C*). Curiously, in this condition as well, the error was due to a missing closing "\}" character (no algorithmic correction was applied in this condition). The large model was never required for this task. 
 
 ### <a id="figure-2-2"></a>
 ![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step2_BStable2json/images/json_table_results.png)
@@ -88,7 +88,5 @@ The mini model was provided the pre-table text, and was asked to return a single
 
 <br>
  
-## *Coming Soon*
-In the next step, we will:
-- Normalize dollar amounts where necessary.
-- Identify and extract values of interest from the JSON version of the table. 
+## Next Step
+In [Step 3](https://github.com/ronihogri/financial-doc-reader/tree/main/steps/step3_normalize_extract), we will identify and extract values of interest from the JSON version of the table. 

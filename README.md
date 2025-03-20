@@ -20,10 +20,15 @@ I will show how to easily integrate ChatGPT into Python scripts, and focus on so
 
 This project is meant to demonstrate how affordable and accessible off-the-shelf solutions can add value to anyone wishing to extract data from semi-structured sources. As such, it will *not* cover more advanced topics such as the workings of LLM technology, setting up local LLMs, or implementing Retrieval-Augmentend Generation (RAG) systems.
 
-## General Notes
+## Steps
 
-- The data extraction process will be explained and demonstrated step-by-step, with new steps added periodically. The files, documentation, and results for each step can be found in its dedicated folder [within the 'steps' folder](https://github.com/ronihogri/financial-doc-reader/tree/main/steps).
-- If you would like to run the Python scripts yourself, you must possess [a valid OpenAI API key](https://platform.openai.com/docs/quickstart?desktop-os=windows).
+The data extraction process will be explained and demonstrated step by step. Each step has a dedicated folder with files, documentation, and example results. Each step is self-contained, so you can run any step independently of the others.  
+
+- [**Step 1**](https://github.com/ronihogri/financial-doc-reader/tree/main/steps/step1_find_BS_table) : Extract Balance Sheet Table Content
+- [**Step 2**](https://github.com/ronihogri/financial-doc-reader/tree/main/steps/step2_BStable2json) : Export Balance Sheet Table to a Structured JSON File
+- [**Step 3**](https://github.com/ronihogri/financial-doc-reader/tree/main/steps/step3_normalize_extract) : Identify and Extract Values of Interest  
+
+
 
 ## Installation
 
@@ -38,4 +43,7 @@ $ cd financial-doc-reader
 $ python3 -m pip install -r requirements.txt
 ```
 
-**This repo will be updated as the project develops.**
+**Note:** If you would like to run the Python scripts yourself, you must possess a valid [**OpenAI API key**](https://platform.openai.com/docs/quickstart?desktop-os=windows).
+
+
+

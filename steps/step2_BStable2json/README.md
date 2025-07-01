@@ -26,7 +26,7 @@ Using a combination of LLM-based and algorithmic approaches, the Step 2 program:
 $ python3 SEC_filing_reader_step2.py
 ```
 <br>
-The program processes text blocks from 252 financial documents produced by 12 selected companies (see the "Forms" and "Stocks" tables of the SQL database in <code>./filings_demo_step1.sqlite</code>). <a href="#figure-2-1" style="white-space: nowrap; font-weight: bold;">Fig. 2.1</a> illustrates the workflow for each document. As the program runs, it stores detailed data for each document in designated JSON files within the <code>./extracted/</code> folder. The main results are saved to the "Tasks" table of the SQL database. Example results are provided in the <code>./results_step2.zip</code> archive. 
+The program processes text blocks from 252 financial documents produced by 12 selected companies (see the "Forms" and "Stocks" tables of the SQL database in <code>./filings_demo_step2.sqlite</code>). <a href="#figure-2-1" style="white-space: nowrap; font-weight: bold;">Fig. 2.1</a> illustrates the workflow for each document. As the program runs, it stores detailed data for each document in designated JSON files within the <code>./extracted/</code> folder. The main results are saved to the "Tasks" table of the SQL database. Example results are provided in the <code>./results_step2.zip</code> archive. 
 
 <br><br>
 

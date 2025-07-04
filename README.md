@@ -24,9 +24,9 @@ This project is meant to demonstrate how affordable and accessible off-the-shelf
 
 The data extraction process will be explained and demonstrated step by step. Each step has a dedicated folder with files, documentation, and example results. Each step is self-contained, so you can run any step independently of the others.  
 
-- [**Step 1**](https://github.com/ronihogri/financial-doc-reader/tree/main/steps/step1_find_BS_table) : Extract Balance Sheet Table Content
-- [**Step 2**](https://github.com/ronihogri/financial-doc-reader/tree/main/steps/step2_BStable2json) : Export Balance Sheet Table to a Structured JSON File
-- [**Step 3**](https://github.com/ronihogri/financial-doc-reader/tree/main/steps/step3_normalize_extract) : Identify and Extract Values of Interest  
+- [**Step 1**](https://github.com/ronihogri/financial-doc-reader/tree/main/steps/step1_find_BS_table) : Extract Balance Sheet table content
+- [**Step 2**](https://github.com/ronihogri/financial-doc-reader/tree/main/steps/step2_BStable2json) : Export Balance Sheet table to a structured JSON file
+- [**Step 3**](https://github.com/ronihogri/financial-doc-reader/tree/main/steps/step3_extract_by_concept) : Identify and extract values of interest, based on meaning rather than exact label matches 
 
 
 

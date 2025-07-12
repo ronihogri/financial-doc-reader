@@ -68,7 +68,7 @@ As the program runs, it stores detailed results for each concept in designated J
 The program extracted CCP and LTD values for all 252 documents. The average API usage cost per document was approximately $0.0023. <a href="#table-3-1" style="white-space: nowrap; font-weight: bold;">Table 3.1</a> shows the percentage of documents for which each process event occurred. <a href="#figure-3-3" style="white-space: nowrap; font-weight: bold;">Fig. 3.3</a> shows an example in which irrelevant items extracted by the mini model were removed by the supervisor process. <a href="#figure-3-4" style="white-space: nowrap; font-weight: bold;">Fig. 3.4</a> shows an example in which the supervisor failed to remove an irrelevant item extracted by mini; this issue was detected by the program, and consequently corrected by the large model. No issues were identified in the subset of documents flagged for manual review, suggesting that the layered safeguards were effective in preventing faulty entries. To further validate the results, the program was run a second time, and the results of the two runs were compared. Discrepancies were found in four document pairs (1.6% of documents); the program was then re-run on these four documents, and the results of this run were manually reviewed and validated. The dataset provided here in the `results.zip` archive contains the validated results.   
 <br> 
 
-
+### <a id="table-3-1"></a> 
 | Process Event                       |   CCP |   LTD |
 |:------------------------------------|------:|------:|
 | No majority reached by mini model   |   0.8 |  11.1 |
@@ -80,7 +80,6 @@ The program extracted CCP and LTD values for all 252 documents. The average API 
 | Human inspection suggested          |   8.3 |   0   |
 | Issues revealed by human inspection |   0   |   0   |
 
-### <a id="table-3-1"></a> 
 **Table 3.1: Events triggered in the Swiss Cheese workflow.** Values indicate the percentage of documents (out of 252) in which each event occurred, separately for CCP and LTD. 
 <br>  
 <br>
@@ -88,7 +87,7 @@ The program extracted CCP and LTD values for all 252 documents. The average API 
 ### <a id="figure-3-3"></a>
 ![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step3_extract_by_concept/images/36_supervisor_corrects_MINI.png)
 
-**Figure 3.3: Example of error correction by supervisor process.** In this document, the mini model determined that 4 items in the Balance Sheet are related to LTD. However, two of these items should not have been included (red arrows): 'Long-term deferred tax liabilities' and 'Long-term tax liabilities'. The supervisor successfully identified these errors (items "3" and "4") and removed them. 
+**Figure 3.3: Example of error correction by supervisor process.** In this document, the mini model determined that 4 items in the Balance Sheet are related to LTD. However, two of these items should not have been included (red arrows): 'Long-term deferred tax liabilities' and 'Long-term tax liabilities'. The supervisor successfully identified these errors (items "3" and "4"; green arrow), and triggered their removal. 
 <br>
 <br>  
 
@@ -100,7 +99,7 @@ The program extracted CCP and LTD values for all 252 documents. The average API 
 <br>  
 
 ### Example Data Analysis
-Now that we've extracted data from the documents, we can analyze it. By deducting LTD from CCP, we get a company's **net cash position**, a rough indicator of financial flexibility. Positive values suggest excess liquidity; negative values reflect reliance on long-term borrowing, which may signal either strategic investment or financial strain. <a href="#figure-3-5" style="white-space: nowrap; font-weight: bold;">Fig. 3.5</a> shows *normalized* net cash positions for all companies and value dates included in the current dataset. Note that for most companies and most time points, the net cash position is negative, indicating that long-term debt exceeds liquidity.  
+Now that we've extracted data from the documents, we can analyze it. By deducting LTD from CCP, we get a company's **net cash position**, a rough indicator of financial flexibility. Positive values suggest excess liquidity; negative values reflect reliance on long-term borrowing, which may signal either strategic investment or financial strain. <a href="#figure-3-5" style="white-space: nowrap; font-weight: bold;">Fig. 3.5</a> shows normalized net cash positions for all companies and value dates included in the current dataset. Note that for most companies and most time points, the net cash position is negative, indicating that long-term debt exceeds liquidity.  
 <br><br>
 
 ### <a id="figure-3-5"></a>
@@ -132,7 +131,7 @@ Overall, no significant correlation was found between changes in net cash positi
 ### <a id="figure-3-8"></a>
 ![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step3_extract_by_concept/images/change_correlations.png)
 
-**Figure 3.8: Correlations between net cash and stock price changes.** For each company, the correlation (r) between Δ net cash (absolute difference in net cash between consecutive reports) and % price change (between stock prices on the next trading day following report publications). Green and red bars signify positive and negative correlations, respectively. None of the correlations were found to be statistically significant (*p* < 0.05, Pearson's correlation with Holm's correction for multiple comparisons), suggesting that changes in published net cash do not usually drive changes in stock price. 
+**Figure 3.8: Correlations between net cash and stock price changes.** The correlation (r) between Δ net cash (absolute difference in net cash between consecutive reports) and % price change (from the next trading day after one report to the next trading day after the following report) was calculated for each company. Green and red bars signify positive and negative correlations, respectively. None of the correlations were found to be statistically significant (all *p* values > 0.05, Pearson's correlation with Holm's correction for multiple comparisons), suggesting that changes in published net cash do not usually drive short-term changes in stock price. 
 <br>
 <br>  
 
@@ -141,6 +140,6 @@ Overall, no significant correlation was found between changes in net cash positi
 
 - This project demonstrates the power of combining LLM-based and algorithmic approaches to perform reliable automated data extraction. 
 - Affordable access to LLM (and other) APIs democratizes automated data extraction. The **total cost** of API usage for the full pipeline ([from obtaining the documents to value extraction](https://github.com/ronihogri/financial-doc-reader/blob/main/README.md)) was **less than $0.005 per document**, enabling even small teams to process thousands of documents with minimal investment. 
-- The ability to extract structured data from previously inaccessible sources can significantly enhance any enterprise's ability to integrate hard-to-access data into operational decisions.
+- AI-assisted automated extraction makes it feasible to utilize data sources that were previously too expensive or time-consuming to leverage, enabling better-informed operational decisions.
 
 

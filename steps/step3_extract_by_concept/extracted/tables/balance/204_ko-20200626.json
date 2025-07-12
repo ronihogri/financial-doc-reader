@@ -1,0 +1,152 @@
+{
+    "ASSETS": {
+        "Current Assets": {
+            "Cash and cash equivalents": [
+                10037,
+                6480
+            ],
+            "Short-term investments": [
+                7551,
+                1467
+            ],
+            "Total Cash, Cash Equivalents and Short-Term Investments": [
+                17588,
+                7947
+            ],
+            "Marketable securities": [
+                2228,
+                3228
+            ],
+            "Trade accounts receivable, less allowances of $ 549 and $ 524 , respectively": [
+                3849,
+                3971
+            ],
+            "Inventories": [
+                3501,
+                3379
+            ],
+            "Prepaid expenses and other assets": [
+                2205,
+                1886
+            ],
+            "Total Current Assets": [
+                29371,
+                20411
+            ]
+        },
+        "Equity method investments": [
+            18189,
+            19025
+        ],
+        "Other investments": [
+            746,
+            854
+        ],
+        "Other assets": [
+            5875,
+            6075
+        ],
+        "Deferred income tax assets": [
+            2366,
+            2412
+        ],
+        "Property, plant and equipment, less accumulated depreciation of $ 8,539 and $ 8,083 , respectively": [
+            10695,
+            10838
+        ],
+        "Trademarks with indefinite lives": [
+            10172,
+            9266
+        ],
+        "Bottlers' franchise rights with indefinite lives": [
+            103,
+            109
+        ],
+        "Goodwill": [
+            16617,
+            16764
+        ],
+        "Other intangible assets": [
+            555,
+            627
+        ],
+        "Total Assets": [
+            94689,
+            86381
+        ]
+    },
+    "LIABILITIES AND EQUITY": {
+        "Current Liabilities": {
+            "Accounts payable and accrued expenses": [
+                11668,
+                11312
+            ],
+            "Loans and notes payable": [
+                9423,
+                10994
+            ],
+            "Current maturities of long-term debt": [
+                5181,
+                4253
+            ],
+            "Accrued income taxes": [
+                576,
+                414
+            ],
+            "Total Current Liabilities": [
+                26848,
+                26973
+            ]
+        },
+        "Long-term debt": [
+            37729,
+            27516
+        ],
+        "Other liabilities": [
+            8954,
+            8510
+        ],
+        "Deferred income tax liabilities": [
+            1969,
+            2284
+        ],
+        "The Coca-Cola Company Shareowners' Equity": {
+            "Common stock, $ 0.25 par value; authorized 11,200 shares; issued 7,040 shares": [
+                1760,
+                1760
+            ],
+            "Capital surplus": [
+                17367,
+                17154
+            ],
+            "Reinvested earnings": [
+                66888,
+                65855
+            ],
+            "Accumulated other comprehensive income (loss)": [
+                -16460,
+                -13544
+            ],
+            "Treasury stock, at cost 2,745 and 2,760 shares, respectively": [
+                -52071,
+                -52244
+            ],
+            "Equity Attributable to Shareowners of The Coca-Cola Company": [
+                17484,
+                18981
+            ],
+            "Equity attributable to noncontrolling interests": [
+                1705,
+                2117
+            ],
+            "Total Equity": [
+                19189,
+                21098
+            ]
+        },
+        "Total Liabilities and Equity": [
+            94689,
+            86381
+        ]
+    }
+}

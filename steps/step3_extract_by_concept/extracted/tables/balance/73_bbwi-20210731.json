@@ -1,0 +1,177 @@
+{
+    "ASSETS": {
+        "Current Assets": {
+            "Cash and Cash Equivalents": [
+                1988,
+                3903,
+                2611
+            ],
+            "Cash in Escrow related to Victoria's Secret & Co. Spin-Off": [
+                600,
+                null,
+                null
+            ],
+            "Accounts Receivable, Net": [
+                230,
+                269,
+                268
+            ],
+            "Inventories": [
+                1473,
+                1273,
+                1476
+            ],
+            "Other": [
+                223,
+                134,
+                150
+            ],
+            "Total Current Assets": [
+                4514,
+                5579,
+                4505
+            ]
+        },
+        "Property and Equipment, Net": [
+            2001,
+            2095,
+            2292
+        ],
+        "Operating Lease Assets": [
+            2564,
+            2558,
+            2635
+        ],
+        "Goodwill": [
+            628,
+            628,
+            628
+        ],
+        "Trade Names": [
+            411,
+            411,
+            411
+        ],
+        "Deferred Income Taxes": [
+            70,
+            69,
+            74
+        ],
+        "Other Assets": [
+            204,
+            231,
+            335
+        ],
+        "Total Assets": [
+            10392,
+            11571,
+            10880
+        ]
+    },
+    "LIABILITIES AND EQUITY (DEFICIT)": {
+        "Current Liabilities": {
+            "Accounts Payable": [
+                838,
+                683,
+                957
+            ],
+            "Accrued Expenses and Other": [
+                1305,
+                1457,
+                1340
+            ],
+            "Current Debt": [
+                0,
+                0,
+                460
+            ],
+            "Current Operating Lease Liabilities": [
+                480,
+                594,
+                624
+            ],
+            "Income Taxes": [
+                2,
+                92,
+                52
+            ],
+            "Total Current Liabilities": [
+                2625,
+                2826,
+                3433
+            ]
+        },
+        "Deferred Income Taxes": [
+            250,
+            234,
+            191
+        ],
+        "Long-term Debt": [
+            5938,
+            6366,
+            6269
+        ],
+        "Long-term Operating Lease Liabilities": [
+            2476,
+            2495,
+            2698
+        ],
+        "Other Long-term Liabilities": [
+            291,
+            311,
+            193
+        ],
+        "Shareholders  Equity (Deficit)": {
+            "Preferred Stock - $ 1.00 par value; 10 shares authorized; none issued": [
+                0,
+                0,
+                0
+            ],
+            "Common Stock - $ 0.50 par value; 1,000 shares authorized; 280, 286 and 286 shares issued; 265, 278 and 278 shares outstanding, respectively": [
+                140,
+                143,
+                143
+            ],
+            "Paid-in Capital": [
+                911,
+                891,
+                869
+            ],
+            "Accumulated Other Comprehensive Income": [
+                87,
+                83,
+                49
+            ],
+            "Retained Earnings (Accumulated Deficit)": [
+                -1505,
+                -1421,
+                -2611
+            ],
+            "Less: Treasury Stock, at Average Cost; 15, 8 and 8 shares, respectively": [
+                -822,
+                -358,
+                -358
+            ],
+            "Total Shareholders  Equity (Deficit)": [
+                -1189,
+                -662,
+                -1908
+            ]
+        },
+        "Noncontrolling Interest": [
+            1,
+            1,
+            4
+        ],
+        "Total Equity (Deficit)": [
+            -1188,
+            -661,
+            -1904
+        ],
+        "Total Liabilities and Equity (Deficit)": [
+            10392,
+            11571,
+            10880
+        ]
+    }
+}

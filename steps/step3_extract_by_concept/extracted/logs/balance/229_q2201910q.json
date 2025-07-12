@@ -1,0 +1,74 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 1,
+            "table_index": 0
+        },
+        "model": null,
+        "timestamp": "2025-01-21_09-41-58"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEET\t(Unaudited)\tJune 29,\tDecember 31,\t(In millions except share and per share amounts)\t2019\t2018\t",
+        "timestamp": "2025-03-11_12-47-56"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-47-59"
+    },
+    "post_table_text": {
+        "data": "\tThe accompanying notes are an integral part of these consolidated financial statements.\t3\tTHERMO",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tThe accompanying notes are an integral part of these consolidated financial statements.\t3\tTHERMO'"
+                },
+                "decision": "'\tThe accompanying notes are an integral part of these consolidated financial statements.\t3\tTHERMO'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-48-01"
+    },
+    "table_body": {
+        "data": "Assets\tCurrent Assets:\tCash and cash equivalents\t$\t2,288\t$\t2,103\tAccounts receivable, less allowances of $113 and $117\t4,129\t4,136\tInventories\t3,209\t3,005\tOther current assets\t1,597\t1,381\tTotal current assets\t11,223\t10,625\tProperty, Plant and Equipment, Net\t4,394\t4,165\tAcquisition-related Intangible Assets, Net\t14,863\t14,978\tOther Assets\t1,733\t1,117\tGoodwill\t25,757\t25,347\tTotal Assets\t$\t57,970\t$\t56,232\tLiabilities and Shareholders' Equity\tCurrent Liabilities:\tShort-term obligations and current maturities of long-term obligations\t$\t2,377\t$\t1,271\tAccounts payable\t1,391\t1,615\tAccrued payroll and employee benefits\t809\t982\tContract liabilities\t1,062\t809\tOther accrued expenses\t1,870\t1,470\tTotal current liabilities\t7,509\t6,147\tDeferred Income Taxes\t1,936\t2,265\tOther Long-term Liabilities\t3,133\t2,515\tLong-term Obligations\t16,663\t17,719\tShareholders' Equity:\tPreferred stock, $100 par value, 50,000 shares authorized; none issued\tCommon stock, $1 par value, 1,200,000,000 shares authorized; 433,358,204 and 431,566,561 shares issued\t433\t432\tCapital in excess of par value\t14,887\t14,621\tRetained earnings\t20,482\t18,696\tTreasury stock at cost, 32,882,460 and 29,444,882 shares\t(\t4,443\t)\t(\t3,665\t)\tAccumulated other comprehensive items\t(\t2,630\t)\t(\t2,498\t)\tTotal shareholders' equity\t28,729\t27,586\tTotal Liabilities and Shareholders' Equity\t$\t57,970\t$\t56,232",
+        "timestamp": "2025-03-11_12-48-01"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"Assets\": {\"Current Assets\": {\"Cash and cash equivalents\": [2288, 2103], \"Accounts receivable, less allowances of $113 and $117\": [4129, 4136], \"Inventories\": [3209, 3005], \"Other current assets\": [1597, 1381], \"Total current assets\": [11223, 10625]}, \"Property, Plant and Equipment, Net\": [4394, 4165], \"Acquisition-related Intangible Assets, Net\": [14863, 14978], \"Other Assets\": [1733, 1117], \"Goodwill\": [25757, 25347], \"Total Assets\": [57970, 56232]}, \"Liabilities and Shareholders' Equity\": {\"Current Liabilities\": {\"Short-term obligations and current maturities of long-term obligations\": [2377, 1271], \"Accounts payable\": [1391, 1615], \"Accrued payroll and employee benefits\": [809, 982], \"Contract liabilities\": [1062, 809], \"Other accrued expenses\": [1870, 1470], \"Total current liabilities\": [7509, 6147]}, \"Deferred Income Taxes\": [1936, 2265], \"Other Long-term Liabilities\": [3133, 2515], \"Long-term Obligations\": [16663, 17719], \"Shareholders' Equity\": {\"Preferred stock, $100 par value, 50,000 shares authorized; none issued\": [0, 0], \"Common stock, $1 par value, 1,200,000,000 shares authorized; 433,358,204 and 431,566,561 shares issued\": [433, 432], \"Capital in excess of par value\": [14887, 14621], \"Retained earnings\": [20482, 18696], \"Treasury stock at cost, 32,882,460 and 29,444,882 shares\": [-4443, -3665], \"Accumulated other comprehensive items\": [-2630, -2498], \"Total shareholders' equity\": [28729, 27586]}, \"Total Liabilities and Shareholders' Equity\": [57970, 56232]}}"
+                },
+                "decision": "{\"Assets\": {\"Current Assets\": {\"Cash and cash equivalents\": [2288, 2103], \"Accounts receivable, less allowances of $113 and $117\": [4129, 4136], \"Inventories\": [3209, 3005], \"Other current assets\": [1597, 1381], \"Total current assets\": [11223, 10625]}, \"Property, Plant and Equipment, Net\": [4394, 4165], \"Acquisition-related Intangible Assets, Net\": [14863, 14978], \"Other Assets\": [1733, 1117], \"Goodwill\": [25757, 25347], \"Total Assets\": [57970, 56232]}, \"Liabilities and Shareholders' Equity\": {\"Current Liabilities\": {\"Short-term obligations and current maturities of long-term obligations\": [2377, 1271], \"Accounts payable\": [1391, 1615], \"Accrued payroll and employee benefits\": [809, 982], \"Contract liabilities\": [1062, 809], \"Other accrued expenses\": [1870, 1470], \"Total current liabilities\": [7509, 6147]}, \"Deferred Income Taxes\": [1936, 2265], \"Other Long-term Liabilities\": [3133, 2515], \"Long-term Obligations\": [16663, 17719], \"Shareholders' Equity\": {\"Preferred stock, $100 par value, 50,000 shares authorized; none issued\": [0, 0], \"Common stock, $1 par value, 1,200,000,000 shares authorized; 433,358,204 and 431,566,561 shares issued\": [433, 432], \"Capital in excess of par value\": [14887, 14621], \"Retained earnings\": [20482, 18696], \"Treasury stock at cost, 32,882,460 and 29,444,882 shares\": [-4443, -3665], \"Accumulated other comprehensive items\": [-2630, -2498], \"Total shareholders' equity\": [28729, 27586]}, \"Total Liabilities and Shareholders' Equity\": [57970, 56232]}}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-48-44"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-48-44"
+    }
+}

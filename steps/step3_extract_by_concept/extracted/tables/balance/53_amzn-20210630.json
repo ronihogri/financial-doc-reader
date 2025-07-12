@@ -1,0 +1,113 @@
+{
+    "ASSETS": {
+        "Current assets": {
+            "Cash and cash equivalents": [
+                42122,
+                40380
+            ],
+            "Marketable securities": [
+                42274,
+                49514
+            ],
+            "Inventories": [
+                23795,
+                24119
+            ],
+            "Accounts receivable, net and other": [
+                24542,
+                26835
+            ],
+            "Total current assets": [
+                132733,
+                140848
+            ]
+        },
+        "Property and equipment, net": [
+            113114,
+            133502
+        ],
+        "Operating leases": [
+            37553,
+            43346
+        ],
+        "Goodwill": [
+            15017,
+            15350
+        ],
+        "Other assets": [
+            22778,
+            27273
+        ],
+        "Total assets": [
+            321195,
+            360319
+        ]
+    },
+    "LIABILITIES AND STOCKHOLDERS EQUITY": {
+        "Current liabilities": {
+            "Accounts payable": [
+                72539,
+                66090
+            ],
+            "Accrued expenses and other": [
+                44138,
+                41007
+            ],
+            "Unearned revenue": [
+                9708,
+                10695
+            ],
+            "Total current liabilities": [
+                126385,
+                117792
+            ]
+        },
+        "Long-term lease liabilities": [
+            52573,
+            56297
+        ],
+        "Long-term debt": [
+            31816,
+            50279
+        ],
+        "Other long-term liabilities": [
+            17017,
+            21148
+        ],
+        "Commitments and contingencies": null,
+        "Stockholders equity": {
+            "Preferred stock, $ 0.01 par value: Authorized shares 500 Issued and outstanding shares none": [
+                0,
+                0
+            ],
+            "Common stock, $ 0.01 par value: Authorized shares 5,000 Issued shares 527 and 530 Outstanding shares 503 and 506": [
+                5,
+                5
+            ],
+            "Treasury stock, at cost": [
+                -1837,
+                -1837
+            ],
+            "Additional paid-in capital": [
+                42865,
+                48724
+            ],
+            "Accumulated other comprehensive income (loss)": [
+                -180,
+                -525
+            ],
+            "Retained earnings": [
+                52551,
+                68436
+            ],
+            "Total stockholders equity": [
+                93404,
+                114803
+            ]
+        },
+        "Total liabilities and stockholders equity": [
+            321195,
+            360319
+        ]
+    }
+}

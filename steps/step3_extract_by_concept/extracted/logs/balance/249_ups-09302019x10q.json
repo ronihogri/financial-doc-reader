@@ -1,0 +1,87 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 3,
+            "table_index": 0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "0",
+                    "1": "0",
+                    "2": "0"
+                },
+                "decision": "0"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-01-21_09-44-22"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\tSeptember 30, 2019\t(unaudited) and\tDecember 31, 2018\t(In millions)\tSeptember 30,\t2019\tDecember 31,\t2018\t",
+        "timestamp": "2025-03-11_12-53-21"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-53-25"
+    },
+    "post_table_text": {
+        "data": "\tSee notes to unaudited, consolidated financial statements.\t2\tTable of Contents\tUNITED PARCEL",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tSee notes to unaudited, consolidated financial statements.\t2\tTable of Contents\tUNITED PARCEL'"
+                },
+                "decision": "'\tSee notes to unaudited, consolidated financial statements.\t2\tTable of Contents\tUNITED PARCEL'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-53-31"
+    },
+    "table_body": {
+        "data": "ASSETS\tCurrent Assets:\tCash and cash equivalents\t$\t4,040\t$\t4,225\tMarketable securities\t498\t810\tAccounts receivable, net\t7,951\t8,958\tCurrent income taxes receivable\t204\t940\tOther current assets\t1,491\t1,277\tTotal Current Assets\t14,184\t16,210\tProperty, Plant and Equipment, Net\t29,071\t26,576\tOperating Lease Right-Of-Use Assets\t2,504\t \tGoodwill\t3,783\t3,811\tIntangible Assets, Net\t2,131\t2,075\tInvestments and Restricted Cash\t169\t170\tDeferred Income Tax Assets\t194\t141\tOther Non-Current Assets\t1,246\t1,033\tTotal Assets\t$\t53,282\t$\t50,016\tLIABILITIES AND SHAREOWNERS  EQUITY\tCurrent Liabilities:\tCurrent maturities of long-term debt, commercial paper and finance leases\t$\t2,161\t$\t2,805\tCurrent maturities of operating leases\t500\t \tAccounts payable\t4,218\t5,188\tAccrued wages and withholdings\t2,483\t3,047\tSelf-insurance reserves\t756\t810\tAccrued group welfare and retirement plan contributions\t705\t715\tHedge margin liabilities\t713\t325\tOther current liabilities\t1,299\t1,197\tTotal Current Liabilities\t12,835\t14,087\tLong-Term Debt and Finance Leases\t21,740\t19,931\tNon-Current Operating Leases\t2,063\t \tPension and Postretirement Benefit Obligations\t6,443\t8,347\tDeferred Income Tax Liabilities\t1,886\t1,619\tSelf-Insurance Reserves\t1,442\t1,571\tOther Non-Current Liabilities\t1,299\t1,424\tShareowners  Equity:\tClass A common stock (157 and 163 shares issued in 2019 and 2018, respectively)\t2\t2\tClass B common stock (701 and 696 shares issued in 2019 and 2018, respectively)\t7\t7\tAdditional paid-in capital\t129\t \tRetained earnings\t10,037\t8,006\tAccumulated other comprehensive loss\t(\t4,617\t)\t(\t4,994\t)\tDeferred compensation obligations\t25\t32\tLess: Treasury stock (0.4 shares in 2019 and 0.6 shares in 2018)\t(\t25\t)\t(\t32\t)\tTotal Equity for Controlling Interests\t5,558\t3,021\tNoncontrolling interests\t16\t16\tTotal Shareowners  Equity\t5,574\t3,037\tTotal Liabilities and Shareowners  Equity\t$\t53,282\t$\t50,016",
+        "timestamp": "2025-03-11_12-53-31"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current Assets\": {\"Cash and cash equivalents\": [4040, 4225], \"Marketable securities\": [498, 810], \"Accounts receivable, net\": [7951, 8958], \"Current income taxes receivable\": [204, 940], \"Other current assets\": [1491, 1277], \"Total Current Assets\": [14184, 16210]}, \"Property, Plant and Equipment, Net\": [29071, 26576], \"Operating Lease Right-Of-Use Assets\": [2504, 0], \"Goodwill\": [3783, 3811], \"Intangible Assets, Net\": [2131, 2075], \"Investments and Restricted Cash\": [169, 170], \"Deferred Income Tax Assets\": [194, 141], \"Other Non-Current Assets\": [1246, 1033], \"Total Assets\": [53282, 50016]}, \"LIABILITIES AND SHAREOWNERS EQUITY\": {\"Current Liabilities\": {\"Current maturities of long-term debt, commercial paper and finance leases\": [2161, 2805], \"Current maturities of operating leases\": [500, 0], \"Accounts payable\": [4218, 5188], \"Accrued wages and withholdings\": [2483, 3047], \"Self-insurance reserves\": [756, 810], \"Accrued group welfare and retirement plan contributions\": [705, 715], \"Hedge margin liabilities\": [713, 325], \"Other current liabilities\": [1299, 1197], \"Total Current Liabilities\": [12835, 14087]}, \"Long-Term Debt and Finance Leases\": [21740, 19931], \"Non-Current Operating Leases\": [2063, 0], \"Pension and Postretirement Benefit Obligations\": [6443, 8347], \"Deferred Income Tax Liabilities\": [1886, 1619], \"Self-Insurance Reserves\": [1442, 1571], \"Other Non-Current Liabilities\": [1299, 1424], \"Shareowners Equity\": {\"Class A common stock (157 and 163 shares issued in 2019 and 2018, respectively)\": [2, 2], \"Class B common stock (701 and 696 shares issued in 2019 and 2018, respectively)\": [7, 7], \"Additional paid-in capital\": [129, 0], \"Retained earnings\": [10037, 8006], \"Accumulated other comprehensive loss\": [-4617, -4994], \"Deferred compensation obligations\": [25, 32], \"Less: Treasury stock (0.4 shares in 2019 and 0.6 shares in 2018)\": [-25, -32], \"Total Equity for Controlling Interests\": [5558, 3021], \"Noncontrolling interests\": [16, 16], \"Total Shareowners Equity\": [5574, 3037]}, \"Total Liabilities and Shareowners Equity\": [53282, 50016]}}"
+                },
+                "decision": "{\"ASSETS\": {\"Current Assets\": {\"Cash and cash equivalents\": [4040, 4225], \"Marketable securities\": [498, 810], \"Accounts receivable, net\": [7951, 8958], \"Current income taxes receivable\": [204, 940], \"Other current assets\": [1491, 1277], \"Total Current Assets\": [14184, 16210]}, \"Property, Plant and Equipment, Net\": [29071, 26576], \"Operating Lease Right-Of-Use Assets\": [2504, 0], \"Goodwill\": [3783, 3811], \"Intangible Assets, Net\": [2131, 2075], \"Investments and Restricted Cash\": [169, 170], \"Deferred Income Tax Assets\": [194, 141], \"Other Non-Current Assets\": [1246, 1033], \"Total Assets\": [53282, 50016]}, \"LIABILITIES AND SHAREOWNERS EQUITY\": {\"Current Liabilities\": {\"Current maturities of long-term debt, commercial paper and finance leases\": [2161, 2805], \"Current maturities of operating leases\": [500, 0], \"Accounts payable\": [4218, 5188], \"Accrued wages and withholdings\": [2483, 3047], \"Self-insurance reserves\": [756, 810], \"Accrued group welfare and retirement plan contributions\": [705, 715], \"Hedge margin liabilities\": [713, 325], \"Other current liabilities\": [1299, 1197], \"Total Current Liabilities\": [12835, 14087]}, \"Long-Term Debt and Finance Leases\": [21740, 19931], \"Non-Current Operating Leases\": [2063, 0], \"Pension and Postretirement Benefit Obligations\": [6443, 8347], \"Deferred Income Tax Liabilities\": [1886, 1619], \"Self-Insurance Reserves\": [1442, 1571], \"Other Non-Current Liabilities\": [1299, 1424], \"Shareowners Equity\": {\"Class A common stock (157 and 163 shares issued in 2019 and 2018, respectively)\": [2, 2], \"Class B common stock (701 and 696 shares issued in 2019 and 2018, respectively)\": [7, 7], \"Additional paid-in capital\": [129, 0], \"Retained earnings\": [10037, 8006], \"Accumulated other comprehensive loss\": [-4617, -4994], \"Deferred compensation obligations\": [25, 32], \"Less: Treasury stock (0.4 shares in 2019 and 0.6 shares in 2018)\": [-25, -32], \"Total Equity for Controlling Interests\": [5558, 3021], \"Noncontrolling interests\": [16, 16], \"Total Shareowners Equity\": [5574, 3037]}, \"Total Liabilities and Shareowners Equity\": [53282, 50016]}}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-52-22"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-52-22"
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 2,
+            "table_index": 0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "0",
+                    "1": "0",
+                    "2": "0"
+                },
+                "decision": "0"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-01-21_09-25-47"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\t(In millions, except per-share data)\tMarch 31, 2023\tDecember 31, 2022\t(Unaudited)\t",
+        "timestamp": "2025-03-11_11-54-15"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_11-54-18"
+    },
+    "post_table_text": {
+        "data": "\tSee accompanying notes.\t3\tAMGEN INC.\tCONDENSED CONSOLIDATED STATEMENTS OF STOCKHOLDERS  ",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tSee accompanying notes.\t3\tAMGEN INC.\tCONDENSED CONSOLIDATED STATEMENTS OF STOCKHOLDERS  '"
+                },
+                "decision": "'\tSee accompanying notes.\t3\tAMGEN INC.\tCONDENSED CONSOLIDATED STATEMENTS OF STOCKHOLDERS  '"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_11-54-20"
+    },
+    "table_body": {
+        "data": "ASSETS\tCurrent assets:\tCash and cash equivalents\t$\t31,560\t$\t7,629\tMarketable securities\t1\t1,676\tTrade receivables, net\t5,736\t5,563\tInventories\t5,011\t4,930\tOther current assets\t2,395\t2,388\tTotal current assets\t44,703\t22,186\tProperty, plant and equipment, net\t5,460\t5,427\tIntangible assets, net\t15,393\t16,080\tGoodwill\t15,531\t15,529\tOther noncurrent assets\t7,633\t5,899\tTotal assets\t$\t88,720\t$\t65,121\tLIABILITIES AND STOCKHOLDERS  EQUITY\tCurrent liabilities:\tAccounts payable\t$\t1,320\t$\t1,572\tAccrued liabilities\t12,061\t12,524\tCurrent portion of long-term debt\t834\t1,591\tTotal current liabilities\t14,215\t15,687\tLong-term debt\t60,761\t37,354\tLong-term tax liabilities\t5,864\t5,757\tOther noncurrent liabilities\t2,532\t2,662\tContingencies and commitments\tStockholders  equity:\tCommon stock and additional paid-in capital; $\t0.0001\tpar value;\t2,750.0\tshares authorized; outstanding \t534.3\tshares in 2023 and\t534.0\tshares in 2022\t32,535\t32,514\tAccumulated deficit\t(\t26,919\t)\t(\t28,622\t)\tAccumulated other comprehensive loss\t(\t268\t)\t(\t231\t)\tTotal stockholders  equity\t5,348\t3,661\tTotal liabilities and stockholders  equity\t$\t88,720\t$\t65,121",
+        "timestamp": "2025-03-11_11-54-20"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [31560, 7629], \"Marketable securities\": [1, 1676], \"Trade receivables, net\": [5736, 5563], \"Inventories\": [5011, 4930], \"Other current assets\": [2395, 2388], \"Total current assets\": [44703, 22186]}, \"Property, plant and equipment, net\": [5460, 5427], \"Intangible assets, net\": [15393, 16080], \"Goodwill\": [15531, 15529], \"Other noncurrent assets\": [7633, 5899], \"Total assets\": [88720, 65121]}, \"LIABILITIES AND STOCKHOLDERS EQUITY\": {\"Current liabilities\": {\"Accounts payable\": [1320, 1572], \"Accrued liabilities\": [12061, 12524], \"Current portion of long-term debt\": [834, 1591], \"Total current liabilities\": [14215, 15687]}, \"Long-term debt\": [60761, 37354], \"Long-term tax liabilities\": [5864, 5757], \"Other noncurrent liabilities\": [2532, 2662], \"Contingencies and commitments\": null, \"Stockholders equity\": {\"Common stock and additional paid-in capital; $ 0.0001 par value; 2,750.0 shares authorized; outstanding 534.3 shares in 2023 and 534.0 shares in 2022\": [32535, 32514], \"Accumulated deficit\": [-26919, -28622], \"Accumulated other comprehensive loss\": [-268, -231], \"Total stockholders equity\": [5348, 3661]}, \"Total liabilities and stockholders equity\": [88720, 65121]}}"
+                },
+                "decision": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [31560, 7629], \"Marketable securities\": [1, 1676], \"Trade receivables, net\": [5736, 5563], \"Inventories\": [5011, 4930], \"Other current assets\": [2395, 2388], \"Total current assets\": [44703, 22186]}, \"Property, plant and equipment, net\": [5460, 5427], \"Intangible assets, net\": [15393, 16080], \"Goodwill\": [15531, 15529], \"Other noncurrent assets\": [7633, 5899], \"Total assets\": [88720, 65121]}, \"LIABILITIES AND STOCKHOLDERS EQUITY\": {\"Current liabilities\": {\"Accounts payable\": [1320, 1572], \"Accrued liabilities\": [12061, 12524], \"Current portion of long-term debt\": [834, 1591], \"Total current liabilities\": [14215, 15687]}, \"Long-term debt\": [60761, 37354], \"Long-term tax liabilities\": [5864, 5757], \"Other noncurrent liabilities\": [2532, 2662], \"Contingencies and commitments\": null, \"Stockholders equity\": {\"Common stock and additional paid-in capital; $ 0.0001 par value; 2,750.0 shares authorized; outstanding 534.3 shares in 2023 and 534.0 shares in 2022\": [32535, 32514], \"Accumulated deficit\": [-26919, -28622], \"Accumulated other comprehensive loss\": [-268, -231], \"Total stockholders equity\": [5348, 3661]}, \"Total liabilities and stockholders equity\": [88720, 65121]}}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-09-02"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-09-02"
+    }
+}

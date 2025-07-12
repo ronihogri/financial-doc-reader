@@ -1,0 +1,74 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 1,
+            "table_index": 0
+        },
+        "model": null,
+        "timestamp": "2025-02-20_14-45-37"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\t(in thousands, except share and per share data)\tTable of Contents\tDecember 29,\tDecember 30,\t2018\t2017\t",
+        "timestamp": "2025-03-11_12-37-45"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000,
+            "sum_divider": 1000.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000",
+                    "1": "1000"
+                },
+                "decision": "1000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-37-48"
+    },
+    "post_table_text": {
+        "data": "\tSee accompanying notes.\t79\tHENRY SCHEIN, INC.\tCONSOLIDATED STATEMENTS OF INCOME\t(in thousands, ex",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tSee accompanying notes.\t79\tHENRY SCHEIN, INC.\tCONSOLIDATED STATEMENTS OF INCOME\t(in thousands, ex'"
+                },
+                "decision": "'\tSee accompanying notes.\t79\tHENRY SCHEIN, INC.\tCONSOLIDATED STATEMENTS OF INCOME\t(in thousands, ex'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-37-51"
+    },
+    "table_body": {
+        "data": "ASSETS\tCurrent assets:\tCash and cash equivalents\t................\t$\t80,209\t$\t174,658\tAccounts receivable, net of reserves of $60,533 and $53,832\t............\t1,603,711\t1,522,807\tInventories, net\t...................\t1,970,742\t1,933,803\tPrepaid expenses and other\t...................\t520,558\t454,752\tTotal current assets\t................\t4,175,220\t4,086,020\tProperty and equipment, net\t................\t382,398\t375,001\tGoodwill\t......................\t2,820,295\t2,301,331\tOther intangibles, net\t..................\t584,244\t669,641\tInvestments and other\t....................\t538,370\t432,002\tTotal assets\t..................\t$\t8,500,527\t$\t7,863,995\tLIABILITIES AND STOCKHOLDERS' EQUITY\tCurrent liabilities:\tAccounts payable\t..................\t$\t1,227,209\t$\t1,153,012\tBank credit lines\t..................\t951,458\t741,653\tCurrent maturities of long-term debt\t.................\t8,955\t16,659\tAccrued expenses:\tPayroll and related\t...................\t279,764\t272,998\tTaxes\t....................\t172,165\t188,873\tOther\t.....................\t579,276\t455,780\tTotal current liabilities\t..................\t3,218,827\t2,828,975\tLong-term debt, net\t...................\t1,003,873\t907,756\tDeferred income taxes\t....................\t31,570\t50,431\tOther liabilities\t..................\t392,313\t420,285\tTotal liabilities\t....................\t4,646,583\t4,207,447\tRedeemable noncontrolling interests\t...............\t312,156\t832,138\tCommitments and contingencies\tStockholders' equity:\tPreferred stock, $.01 par value, 1,000,000 shares authorized,\tnone outstanding\t.................\t-\t-\tCommon stock, $.01 par value, 480,000,000 shares authorized,\t151,401,668 outstanding on December 29, 2018 and 240,000,000 shares authorized,\t153,690,146 outstanding on December 30, 2017\t...............\t1,514\t1,537\tRetained earnings\t..................\t3,208,589\t2,940,029\tAccumulated other comprehensive loss\t...............\t(248,771)\t(130,067)\tTotal Henry Schein, Inc. stockholders' equity\t..............\t2,961,332\t2,811,499\tNoncontrolling interests\t..................\t580,456\t12,911\tTotal stockholders' equity\t.................\t3,541,788\t2,824,410\tTotal liabilities, redeemable noncontrolling interests and stockholders' equity\t............\t$\t8,500,527\t$\t7,863,995",
+        "timestamp": "2025-03-11_12-37-51"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [80209, 174658], \"Accounts receivable, net of reserves of $60,533 and $53,832\": [1603711, 1522807], \"Inventories, net\": [1970742, 1933803], \"Prepaid expenses and other\": [520558, 454752], \"Total current assets\": [4175220, 4086020]}, \"Property and equipment, net\": [382398, 375001], \"Goodwill\": [2820295, 2301331], \"Other intangibles, net\": [584244, 669641], \"Investments and other\": [538370, 432002], \"Total assets\": [8500527, 7863995]}, \"LIABILITIES AND STOCKHOLDERS' EQUITY\": {\"Current liabilities\": {\"Accounts payable\": [1227209, 1153012], \"Bank credit lines\": [951458, 741653], \"Current maturities of long-term debt\": [8955, 16659], \"Accrued expenses\": {\"Payroll and related\": [279764, 272998], \"Taxes\": [172165, 188873], \"Other\": [579276, 455780]}, \"Total current liabilities\": [3218827, 2828975]}, \"Long-term debt, net\": [1003873, 907756], \"Deferred income taxes\": [31570, 50431], \"Other liabilities\": [392313, 420285], \"Total liabilities\": [4646583, 4207447], \"Redeemable noncontrolling interests\": [312156, 832138], \"Commitments and contingencies\": null, \"Stockholders' equity\": {\"Preferred stock, $.01 par value, 1,000,000 shares authorized, none outstanding\": [0, 0], \"Common stock, $.01 par value, 480,000,000 shares authorized, 151,401,668 outstanding on December 29, 2018 and 240,000,000 shares authorized, 153,690,146 outstanding on December 30, 2017\": [1514, 1537], \"Retained earnings\": [3208589, 2940029], \"Accumulated other comprehensive loss\": [-248771, -130067], \"Total Henry Schein, Inc. stockholders' equity\": [2961332, 2811499], \"Noncontrolling interests\": [580456, 12911], \"Total stockholders' equity\": [3541788, 2824410]}, \"Total liabilities, redeemable noncontrolling interests and stockholders' equity\": [8500527, 7863995]} }"
+                },
+                "decision": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [80209, 174658], \"Accounts receivable, net of reserves of $60,533 and $53,832\": [1603711, 1522807], \"Inventories, net\": [1970742, 1933803], \"Prepaid expenses and other\": [520558, 454752], \"Total current assets\": [4175220, 4086020]}, \"Property and equipment, net\": [382398, 375001], \"Goodwill\": [2820295, 2301331], \"Other intangibles, net\": [584244, 669641], \"Investments and other\": [538370, 432002], \"Total assets\": [8500527, 7863995]}, \"LIABILITIES AND STOCKHOLDERS' EQUITY\": {\"Current liabilities\": {\"Accounts payable\": [1227209, 1153012], \"Bank credit lines\": [951458, 741653], \"Current maturities of long-term debt\": [8955, 16659], \"Accrued expenses\": {\"Payroll and related\": [279764, 272998], \"Taxes\": [172165, 188873], \"Other\": [579276, 455780]}, \"Total current liabilities\": [3218827, 2828975]}, \"Long-term debt, net\": [1003873, 907756], \"Deferred income taxes\": [31570, 50431], \"Other liabilities\": [392313, 420285], \"Total liabilities\": [4646583, 4207447], \"Redeemable noncontrolling interests\": [312156, 832138], \"Commitments and contingencies\": null, \"Stockholders' equity\": {\"Preferred stock, $.01 par value, 1,000,000 shares authorized, none outstanding\": [0, 0], \"Common stock, $.01 par value, 480,000,000 shares authorized, 151,401,668 outstanding on December 29, 2018 and 240,000,000 shares authorized, 153,690,146 outstanding on December 30, 2017\": [1514, 1537], \"Retained earnings\": [3208589, 2940029], \"Accumulated other comprehensive loss\": [-248771, -130067], \"Total Henry Schein, Inc. stockholders' equity\": [2961332, 2811499], \"Noncontrolling interests\": [580456, 12911], \"Total stockholders' equity\": [3541788, 2824410]}, \"Total liabilities, redeemable noncontrolling interests and stockholders' equity\": [8500527, 7863995]} }"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-42-06"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-42-06"
+    }
+}

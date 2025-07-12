@@ -1,0 +1,112 @@
+{
+    "ASSETS": {
+        "Current assets": {
+            "Cash and cash equivalents": [
+                20522,
+                31750
+            ],
+            "Marketable securities": [
+                10464,
+                9500
+            ],
+            "Inventories": [
+                16047,
+                17174
+            ],
+            "Accounts receivable, net and other": [
+                13164,
+                16677
+            ],
+            "Total current assets": [
+                60197,
+                75101
+            ]
+        },
+        "Property and equipment, net": [
+            48866,
+            61797
+        ],
+        "Goodwill": [
+            13350,
+            14548
+        ],
+        "Other assets": [
+            8897,
+            11202
+        ],
+        "Total assets": [
+            131310,
+            162648
+        ]
+    },
+    "LIABILITIES AND STOCKHOLDERS EQUITY": {
+        "Current liabilities": {
+            "Accounts payable": [
+                34616,
+                38192
+            ],
+            "Accrued expenses and other": [
+                18170,
+                23663
+            ],
+            "Unearned revenue": [
+                5097,
+                6536
+            ],
+            "Total current liabilities": [
+                57883,
+                68391
+            ]
+        },
+        "Long-term debt": [
+            24743,
+            23495
+        ],
+        "Other long-term liabilities": [
+            20975,
+            27213
+        ],
+        "Commitments and contingencies": null,
+        "Stockholders equity": {
+            "Preferred stock, $0.01 par value": {
+                "Authorized shares": 500,
+                "Issued and outstanding shares": "none"
+            },
+            "Common stock, $0.01 par value": {
+                "Authorized shares": 5000,
+                "Issued shares": [
+                    507,
+                    514
+                ],
+                "Outstanding shares": [
+                    484,
+                    491
+                ]
+            },
+            "Treasury stock, at cost": [
+                -1837,
+                -1837
+            ],
+            "Additional paid-in capital": [
+                21389,
+                26791
+            ],
+            "Accumulated other comprehensive loss": [
+                -484,
+                -1035
+            ],
+            "Retained earnings": [
+                8636,
+                19625
+            ],
+            "Total stockholders equity": [
+                27709,
+                43549
+            ]
+        },
+        "Total liabilities and stockholders equity": [
+            131310,
+            162648
+        ]
+    }
+}

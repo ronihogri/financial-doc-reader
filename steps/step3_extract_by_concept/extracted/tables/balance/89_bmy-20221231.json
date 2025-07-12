@@ -1,0 +1,135 @@
+{
+    "ASSETS": {
+        "Current Assets": {
+            "Cash and cash equivalents": [
+                9123,
+                13979
+            ],
+            "Marketable debt securities": [
+                130,
+                2987
+            ],
+            "Receivables": [
+                9886,
+                9369
+            ],
+            "Inventories": [
+                2339,
+                2095
+            ],
+            "Other current assets": [
+                5795,
+                4832
+            ],
+            "Total Current Assets": [
+                27273,
+                33262
+            ]
+        },
+        "Property, plant and equipment": [
+            6255,
+            6049
+        ],
+        "Goodwill": [
+            21149,
+            20502
+        ],
+        "Other intangible assets": [
+            35859,
+            42527
+        ],
+        "Deferred income taxes": [
+            1344,
+            1439
+        ],
+        "Other non-current assets": [
+            4940,
+            5535
+        ],
+        "Total Assets": [
+            96820,
+            109314
+        ]
+    },
+    "LIABILITIES": {
+        "Current Liabilities": {
+            "Short-term debt obligations": [
+                4264,
+                4948
+            ],
+            "Accounts payable": [
+                3040,
+                2949
+            ],
+            "Other current liabilities": [
+                14586,
+                13971
+            ],
+            "Total Current Liabilities": [
+                21890,
+                21868
+            ]
+        },
+        "Deferred income taxes": [
+            2166,
+            4501
+        ],
+        "Long-term debt": [
+            35056,
+            39605
+        ],
+        "Other non-current liabilities": [
+            6590,
+            7334
+        ],
+        "Total Liabilities": [
+            65702,
+            73308
+        ],
+        "Commitments and contingencies": null
+    },
+    "EQUITY": {
+        "Bristol-Myers Squibb Company Shareholders Equity": {
+            "Preferred stock, $2 convertible series, par value $ 1 per share: Authorized 10 million shares; issued and outstanding 2,991 in 2022 and 3,484 in 2021, liquidation value of $ 50 per share": [
+                0,
+                0
+            ],
+            "Common stock, par value of $ 0.10 per share: Authorized 4.5 billion shares; 2.9 billion issued in 2022 and 2021": [
+                292,
+                292
+            ],
+            "Capital in excess of par value of stock": [
+                45165,
+                44361
+            ],
+            "Accumulated other comprehensive loss": [
+                -1281,
+                -1268
+            ],
+            "Retained earnings": [
+                25503,
+                23820
+            ],
+            "Less cost of treasury stock 825 million common shares in 2022 and 747 million common shares in 2021": [
+                -38618,
+                -31259
+            ],
+            "Total Bristol-Myers Squibb Company Shareholders Equity": [
+                31061,
+                35946
+            ]
+        },
+        "Noncontrolling interest": [
+            57,
+            60
+        ],
+        "Total Equity": [
+            31118,
+            36006
+        ]
+    },
+    "Total Liabilities and Equity": [
+        96820,
+        109314
+    ]
+}

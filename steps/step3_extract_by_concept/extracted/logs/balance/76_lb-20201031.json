@@ -1,0 +1,87 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 2,
+            "table_index": 0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "0",
+                    "1": "0",
+                    "2": "0"
+                },
+                "decision": "0"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-01-21_09-29-39"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\t(in millions except par value amounts)\tOctober 31,\t2020\tFebruary 1,\t2020\tNovember 2,\t2019\t(Unaudited)\t(Unaudited)\t",
+        "timestamp": "2025-03-11_12-06-40"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-06-44"
+    },
+    "post_table_text": {
+        "data": "\tThe accompanying Notes are an integral part of these Consolidated Financial Statements.\t4\tTable of",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tThe accompanying Notes are an integral part of these Consolidated Financial Statements.\t4\tTable of'"
+                },
+                "decision": "'\tThe accompanying Notes are an integral part of these Consolidated Financial Statements.\t4\tTable of'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-06-46"
+    },
+    "table_body": {
+        "data": "ASSETS\tCurrent Assets:\tCash and Cash Equivalents\t$\t2,622\t$\t1,499\t$\t340\tAccounts Receivable, Net\t297\t306\t295\tInventories\t1,865\t1,287\t2,032\tOther\t143\t153\t259\tTotal Current Assets\t4,927\t3,245\t2,926\tProperty and Equipment, Net\t2,231\t2,486\t2,571\tOperating Lease Assets\t2,558\t3,053\t3,130\tGoodwill\t628\t628\t1,318\tTrade Names\t411\t411\t411\tDeferred Income Taxes\t69\t84\t63\tOther Assets\t337\t218\t211\tTotal Assets\t$\t11,161\t$\t10,125\t$\t10,630\tLIABILITIES AND EQUITY (DEFICIT)\tCurrent Liabilities:\tAccounts Payable\t$\t1,101\t$\t647\t$\t1,024\tAccrued Expenses and Other\t1,479\t1,052\t980\tCurrent Debt\t11\t61\t75\tCurrent Operating Lease Liabilities\t625\t478\t460\tIncome Taxes\t114\t134\t4\tTotal Current Liabilities\t3,330\t2,372\t2,543\tDeferred Income Taxes\t191\t219\t246\tLong-term Debt\t6,451\t5,487\t5,477\tLong-term Operating Lease Liabilities\t2,566\t3,052\t3,108\tOther Long-term Liabilities\t187\t490\t494\tShareholders  Equity (Deficit):\tPreferred Stock - $1.00 par value; 10 shares authorized; none issued\t \t \t \tCommon Stock - $0.50 par value; 1,000 shares authorized; 286, 285 and 284 shares issued; 278, 277 and 276 shares outstanding, respectively\t143\t142\t142\tPaid-in Capital\t879\t847\t828\tAccumulated Other Comprehensive Income\t48\t52\t53\tRetained Earnings (Deficit)\t(\t2,280\t)\t(\t2,182\t)\t(\t1,907\t)\tLess: Treasury Stock, at Average Cost; 8, 8 and 8 shares, respectively\t(\t358\t)\t(\t358\t)\t(\t358\t)\tTotal L Brands, Inc. Shareholders  Equity (Deficit)\t(\t1,568\t)\t(\t1,499\t)\t(\t1,242\t)\tNoncontrolling Interest\t4\t4\t4\tTotal Equity (Accumulated Deficit)\t(\t1,564\t)\t(\t1,495\t)\t(\t1,238\t)\tTotal Liabilities and Equity (Deficit)\t$\t11,161\t$\t10,125\t$\t10,630",
+        "timestamp": "2025-03-11_12-06-46"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current Assets\": {\"Cash and Cash Equivalents\": [2622, 1499, 340], \"Accounts Receivable, Net\": [297, 306, 295], \"Inventories\": [1865, 1287, 2032], \"Other\": [143, 153, 259], \"Total Current Assets\": [4927, 3245, 2926]}, \"Property and Equipment, Net\": [2231, 2486, 2571], \"Operating Lease Assets\": [2558, 3053, 3130], \"Goodwill\": [628, 628, 1318], \"Trade Names\": [411, 411, 411], \"Deferred Income Taxes\": [69, 84, 63], \"Other Assets\": [337, 218, 211], \"Total Assets\": [11161, 10125, 10630]}, \"LIABILITIES AND EQUITY (DEFICIT)\": {\"Current Liabilities\": {\"Accounts Payable\": [1101, 647, 1024], \"Accrued Expenses and Other\": [1479, 1052, 980], \"Current Debt\": [11, 61, 75], \"Current Operating Lease Liabilities\": [625, 478, 460], \"Income Taxes\": [114, 134, 4], \"Total Current Liabilities\": [3330, 2372, 2543]}, \"Deferred Income Taxes\": [191, 219, 246], \"Long-term Debt\": [6451, 5487, 5477], \"Long-term Operating Lease Liabilities\": [2566, 3052, 3108], \"Other Long-term Liabilities\": [187, 490, 494], \"Shareholders  Equity (Deficit)\": {\"Preferred Stock - $1.00 par value; 10 shares authorized; none issued\": [0, 0, 0], \"Common Stock - $0.50 par value; 1,000 shares authorized; 286, 285 and 284 shares issued; 278, 277 and 276 shares outstanding, respectively\": [143, 142, 142], \"Paid-in Capital\": [879, 847, 828], \"Accumulated Other Comprehensive Income\": [48, 52, 53], \"Retained Earnings (Deficit)\": [-2280, -2182, -1907], \"Less: Treasury Stock, at Average Cost; 8, 8 and 8 shares, respectively\": [-358, -358, -358], \"Total L Brands, Inc. Shareholders  Equity (Deficit)\": [-1568, -1499, -1242], \"Noncontrolling Interest\": [4, 4, 4], \"Total Equity (Accumulated Deficit)\": [-1564, -1495, -1238]}, \"Total Liabilities and Equity (Deficit)\": [11161, 10125, 10630]}}"
+                },
+                "decision": "{\"ASSETS\": {\"Current Assets\": {\"Cash and Cash Equivalents\": [2622, 1499, 340], \"Accounts Receivable, Net\": [297, 306, 295], \"Inventories\": [1865, 1287, 2032], \"Other\": [143, 153, 259], \"Total Current Assets\": [4927, 3245, 2926]}, \"Property and Equipment, Net\": [2231, 2486, 2571], \"Operating Lease Assets\": [2558, 3053, 3130], \"Goodwill\": [628, 628, 1318], \"Trade Names\": [411, 411, 411], \"Deferred Income Taxes\": [69, 84, 63], \"Other Assets\": [337, 218, 211], \"Total Assets\": [11161, 10125, 10630]}, \"LIABILITIES AND EQUITY (DEFICIT)\": {\"Current Liabilities\": {\"Accounts Payable\": [1101, 647, 1024], \"Accrued Expenses and Other\": [1479, 1052, 980], \"Current Debt\": [11, 61, 75], \"Current Operating Lease Liabilities\": [625, 478, 460], \"Income Taxes\": [114, 134, 4], \"Total Current Liabilities\": [3330, 2372, 2543]}, \"Deferred Income Taxes\": [191, 219, 246], \"Long-term Debt\": [6451, 5487, 5477], \"Long-term Operating Lease Liabilities\": [2566, 3052, 3108], \"Other Long-term Liabilities\": [187, 490, 494], \"Shareholders  Equity (Deficit)\": {\"Preferred Stock - $1.00 par value; 10 shares authorized; none issued\": [0, 0, 0], \"Common Stock - $0.50 par value; 1,000 shares authorized; 286, 285 and 284 shares issued; 278, 277 and 276 shares outstanding, respectively\": [143, 142, 142], \"Paid-in Capital\": [879, 847, 828], \"Accumulated Other Comprehensive Income\": [48, 52, 53], \"Retained Earnings (Deficit)\": [-2280, -2182, -1907], \"Less: Treasury Stock, at Average Cost; 8, 8 and 8 shares, respectively\": [-358, -358, -358], \"Total L Brands, Inc. Shareholders  Equity (Deficit)\": [-1568, -1499, -1242], \"Noncontrolling Interest\": [4, 4, 4], \"Total Equity (Accumulated Deficit)\": [-1564, -1495, -1238]}, \"Total Liabilities and Equity (Deficit)\": [11161, 10125, 10630]}}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-16-44"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-16-44"
+    }
+}

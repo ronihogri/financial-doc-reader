@@ -1,0 +1,74 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 1,
+            "table_index": 0
+        },
+        "model": null,
+        "timestamp": "2025-01-21_09-35-10"
+    },
+    "table_comments": {
+        "data": "Consolidated Balance Sheet\tConocoPhillips\tAt December 31\tMillions of Dollars\t2021\t2020\t",
+        "timestamp": "2025-03-11_12-22-54"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-22-57"
+    },
+    "post_table_text": {
+        "data": "\tSee Notes to Consolidated Financial Statements.\tFinancial Statements\tTable of Contents\t85\tConoco",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tSee Notes to Consolidated Financial Statements.\tFinancial Statements\tTable of Contents\t85\tConoco'"
+                },
+                "decision": "'\tSee Notes to Consolidated Financial Statements.\tFinancial Statements\tTable of Contents\t85\tConoco'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-22-59"
+    },
+    "table_body": {
+        "data": "Assets\tCash and cash equivalents\t$\t5,028\t2,991\tShort-term investments\t446\t3,609\tAccounts and notes receivable (net of allowance\tof $\t2\tand $\t4\t, respectively)\t6,543\t2,634\tAccounts and notes receivable related\tparties\t127\t120\tInvestment in Cenovus Energy\t1,117\t1,256\tInventories\t1,208\t1,002\tPrepaid expenses and other current\tassets\t1,581\t454\tTotal\tCurrent Assets\t16,050\t12,066\tInvestments and long-term receivables\t7,113\t8,017\tLoans and advances related parties\t-\t114\tNet properties, plants and equipment\t(net of accumulated DD&A of $\t64,735\tand $\t62,213\t, respectively)\t64,911\t39,893\tOther assets\t2,587\t2,528\tTotal\tAssets\t$\t90,661\t62,618\tLiabilities\tAccounts payable\t$\t5,002\t2,669\tAccounts payable related\tparties\t23\t29\tShort-term debt\t1,200\t619\tAccrued income and other taxes\t2,862\t320\tEmployee benefit obligations\t755\t608\tOther accruals\t2,179\t1,121\tTotal\tCurrent Liabilities\t12,021\t5,366\tLong-term debt\t18,734\t14,750\tAsset retirement obligations\tand accrued environmental costs\t5,754\t5,430\tDeferred income taxes\t6,179\t3,747\tEmployee benefit obligations\t1,153\t1,697\tOther liabilities and deferred credits\t1,414\t1,779\tTotal\tLiabilities\t45,255\t32,769\tEquity\tCommon stock (\t2,500,000,000\tshares authorized at $\t0.01\tpar value)\tIssued (2021 \t2,091,562,747\tshares; 2020 \t1,798,844,267\tshares)\tPar value\t21\t18\tCapital in excess of par\t60,581\t47,133\tTreasury stock\t(at cost: 2021 \t789,319,875\tshares; 2020 \t730,802,089\tshares)\t(\t50,920\t)\t(\t47,297\t)\tAccumulated other comprehensive\tloss\t(\t4,950\t)\t(\t5,218\t)\tRetained earnings\t40,674\t35,213\tTotal\tEquity\t45,406\t29,849\tTotal\tLiabilities and Equity\t$\t90,661\t62,618",
+        "timestamp": "2025-03-11_12-22-59"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"Assets\": {\"Cash and cash equivalents\": [5028, 2991], \"Short-term investments\": [446, 3609], \"Accounts and notes receivable (net of allowance of $ 2 and $ 4 , respectively)\": [6543, 2634], \"Accounts and notes receivable related parties\": [127, 120], \"Investment in Cenovus Energy\": [1117, 1256], \"Inventories\": [1208, 1002], \"Prepaid expenses and other current assets\": [1581, 454], \"Total Current Assets\": [16050, 12066], \"Investments and long-term receivables\": [7113, 8017], \"Loans and advances related parties\": [0, 114], \"Net properties, plants and equipment (net of accumulated DD&A of $ 64,735 and $ 62,213 , respectively)\": [64911, 39893], \"Other assets\": [2587, 2528], \"Total Assets\": [90661, 62618]}, \"Liabilities\": {\"Accounts payable\": [5002, 2669], \"Accounts payable related parties\": [23, 29], \"Short-term debt\": [1200, 619], \"Accrued income and other taxes\": [2862, 320], \"Employee benefit obligations\": [755, 608], \"Other accruals\": [2179, 1121], \"Total Current Liabilities\": [12021, 5366], \"Long-term debt\": [18734, 14750], \"Asset retirement obligations and accrued environmental costs\": [5754, 5430], \"Deferred income taxes\": [6179, 3747], \"Employee benefit obligations\": [1153, 1697], \"Other liabilities and deferred credits\": [1414, 1779], \"Total Liabilities\": [45255, 32769]}, \"Equity\": {\"Common stock ( 2,500,000,000 shares authorized at $ 0.01 par value) Issued (2021  2,091,562,747 shares; 2020  1,798,844,267 shares) Par value\": [21, 18], \"Capital in excess of par\": [60581, 47133], \"Treasury stock (at cost: 2021  789,319,875 shares; 2020  730,802,089 shares)\": [-50920, -47297], \"Accumulated other comprehensive loss\": [-4950, -5218], \"Retained earnings\": [40674, 35213], \"Total Equity\": [45406, 29849]}, \"Total Liabilities and Equity\": [90661, 62618]}"
+                },
+                "decision": "{\"Assets\": {\"Cash and cash equivalents\": [5028, 2991], \"Short-term investments\": [446, 3609], \"Accounts and notes receivable (net of allowance of $ 2 and $ 4 , respectively)\": [6543, 2634], \"Accounts and notes receivable related parties\": [127, 120], \"Investment in Cenovus Energy\": [1117, 1256], \"Inventories\": [1208, 1002], \"Prepaid expenses and other current assets\": [1581, 454], \"Total Current Assets\": [16050, 12066], \"Investments and long-term receivables\": [7113, 8017], \"Loans and advances related parties\": [0, 114], \"Net properties, plants and equipment (net of accumulated DD&A of $ 64,735 and $ 62,213 , respectively)\": [64911, 39893], \"Other assets\": [2587, 2528], \"Total Assets\": [90661, 62618]}, \"Liabilities\": {\"Accounts payable\": [5002, 2669], \"Accounts payable related parties\": [23, 29], \"Short-term debt\": [1200, 619], \"Accrued income and other taxes\": [2862, 320], \"Employee benefit obligations\": [755, 608], \"Other accruals\": [2179, 1121], \"Total Current Liabilities\": [12021, 5366], \"Long-term debt\": [18734, 14750], \"Asset retirement obligations and accrued environmental costs\": [5754, 5430], \"Deferred income taxes\": [6179, 3747], \"Employee benefit obligations\": [1153, 1697], \"Other liabilities and deferred credits\": [1414, 1779], \"Total Liabilities\": [45255, 32769]}, \"Equity\": {\"Common stock ( 2,500,000,000 shares authorized at $ 0.01 par value) Issued (2021  2,091,562,747 shares; 2020  1,798,844,267 shares) Par value\": [21, 18], \"Capital in excess of par\": [60581, 47133], \"Treasury stock (at cost: 2021  789,319,875 shares; 2020  730,802,089 shares)\": [-50920, -47297], \"Accumulated other comprehensive loss\": [-4950, -5218], \"Retained earnings\": [40674, 35213], \"Total Equity\": [45406, 29849]}, \"Total Liabilities and Equity\": [90661, 62618]}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-26-51"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-26-51"
+    }
+}

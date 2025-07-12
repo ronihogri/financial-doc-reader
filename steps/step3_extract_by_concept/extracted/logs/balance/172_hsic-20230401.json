@@ -1,0 +1,87 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 2,
+            "table_index": 1
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1",
+                    "1": "1",
+                    "2": "1"
+                },
+                "decision": "1"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-01-21_09-39-33"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\t(in millions,\texcept share data)\tApril 1,\tDecember 31,\t2023\t2022\t(unaudited)\t",
+        "timestamp": "2025-03-11_12-32-44"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-32-47"
+    },
+    "post_table_text": {
+        "data": "\tTable of Contents\tSee accompanying notes.\t4\tHENRY SCHEIN, INC.\tCONDENSED CONSOLIDATED STATEMENTS",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tTable of Contents\tSee accompanying notes.\t4\tHENRY SCHEIN, INC.\tCONDENSED CONSOLIDATED STATEMENTS'"
+                },
+                "decision": "'\tTable of Contents\tSee accompanying notes.\t4\tHENRY SCHEIN, INC.\tCONDENSED CONSOLIDATED STATEMENTS'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-32-49"
+    },
+    "table_body": {
+        "data": "ASSETS\tCurrent assets:\tCash and cash equivalents\t$\t126\t$\t117\tAccounts receivable, net of allowances for credit losses of $\t65\tand $\t65\t1,470\t1,442\tInventories, net\t1,918\t1,963\tPrepaid expenses and other\t438\t466\tTotal current assets\t3,952\t3,988\tProperty and equipment, net\t396\t383\tOperating lease right-of-use assets\t280\t284\tGoodwill\t2,917\t2,893\tOther intangibles, net\t548\t587\tInvestments and other\t479\t472\tTotal assets\t$\t8,572\t$\t8,607\tLIABILITIES, REDEEMABLE NONCONTROLLING INTERESTS AND\tSTOCKHOLDERS' EQUITY\tCurrent liabilities:\tAccounts payable\t$\t855\t$\t1,004\tBank credit lines\t236\t103\tCurrent maturities of long-term debt\t55\t6\tOperating lease liabilities\t73\t73\tAccrued expenses:\tPayroll and related\t231\t314\tTaxes\t156\t132\tOther\t566\t592\tTotal current liabilities\t2,172\t2,224\tLong-term debt\t1,021\t1,040\tDeferred income taxes\t40\t36\tOperating lease liabilities\t274\t275\tOther liabilities\t368\t361\tTotal liabilities\t3,875\t3,936\tRedeemable noncontrolling interests\t570\t576\tCommitments and contingencies\t(nil)\t(nil)\tStockholders' equity:\tPreferred stock, $\t0.01\tpar value,\t1,000,000\tshares authorized,\tnone\toutstanding\t-\t-\tCommon stock, $\t0.01\tpar value,\t480,000,000\tshares authorized,\t131,196,783\toutstanding on April 01, 2023 and\t131,792,817\toutstanding on December 31, 2022\t1\t1\tAdditional paid-in capital\t-\t-\tRetained earnings\t3,684\t3,678\tAccumulated other comprehensive loss\t(\t213\t)\t(\t233\t)\tTotal Henry Schein, Inc. stockholders' equity\t3,472\t3,446\tNoncontrolling interests\t655\t649\tTotal stockholders' equity\t4,127\t4,095\tTotal liabilities, redeemable noncontrolling\tinterests and stockholders' equity\t$\t8,572\t$\t8,607",
+        "timestamp": "2025-03-11_12-32-49"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [126, 117], \"Accounts receivable, net of allowances for credit losses of $ 65 and $ 65\": [1470, 1442], \"Inventories, net\": [1918, 1963], \"Prepaid expenses and other\": [438, 466], \"Total current assets\": [3952, 3988]}, \"Property and equipment, net\": [396, 383], \"Operating lease right-of-use assets\": [280, 284], \"Goodwill\": [2917, 2893], \"Other intangibles, net\": [548, 587], \"Investments and other\": [479, 472], \"Total assets\": [8572, 8607]}, \"LIABILITIES, REDEEMABLE NONCONTROLLING INTERESTS AND STOCKHOLDERS' EQUITY\": {\"Current liabilities\": {\"Accounts payable\": [855, 1004], \"Bank credit lines\": [236, 103], \"Current maturities of long-term debt\": [55, 6], \"Operating lease liabilities\": [73, 73], \"Accrued expenses\": {\"Payroll and related\": [231, 314], \"Taxes\": [156, 132], \"Other\": [566, 592]}, \"Total current liabilities\": [2172, 2224]}, \"Long-term debt\": [1021, 1040], \"Deferred income taxes\": [40, 36], \"Operating lease liabilities\": [274, 275], \"Other liabilities\": [368, 361], \"Total liabilities\": [3875, 3936], \"Redeemable noncontrolling interests\": [570, 576], \"Commitments and contingencies\": [null, null], \"Stockholders' equity\": {\"Preferred stock, $ 0.01 par value, 1,000,000 shares authorized, none outstanding\": [0, 0], \"Common stock, $ 0.01 par value, 480,000,000 shares authorized, 131,196,783 outstanding on April 01, 2023 and 131,792,817 outstanding on December 31, 2022\": [1, 1], \"Additional paid-in capital\": [0, 0], \"Retained earnings\": [3684, 3678], \"Accumulated other comprehensive loss\": [-213, -233], \"Total Henry Schein, Inc. stockholders' equity\": [3472, 3446], \"Noncontrolling interests\": [655, 649], \"Total stockholders' equity\": [4127, 4095]}, \"Total liabilities, redeemable noncontrolling interests and stockholders' equity\": [8572, 8607]}  }"
+                },
+                "decision": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [126, 117], \"Accounts receivable, net of allowances for credit losses of $ 65 and $ 65\": [1470, 1442], \"Inventories, net\": [1918, 1963], \"Prepaid expenses and other\": [438, 466], \"Total current assets\": [3952, 3988]}, \"Property and equipment, net\": [396, 383], \"Operating lease right-of-use assets\": [280, 284], \"Goodwill\": [2917, 2893], \"Other intangibles, net\": [548, 587], \"Investments and other\": [479, 472], \"Total assets\": [8572, 8607]}, \"LIABILITIES, REDEEMABLE NONCONTROLLING INTERESTS AND STOCKHOLDERS' EQUITY\": {\"Current liabilities\": {\"Accounts payable\": [855, 1004], \"Bank credit lines\": [236, 103], \"Current maturities of long-term debt\": [55, 6], \"Operating lease liabilities\": [73, 73], \"Accrued expenses\": {\"Payroll and related\": [231, 314], \"Taxes\": [156, 132], \"Other\": [566, 592]}, \"Total current liabilities\": [2172, 2224]}, \"Long-term debt\": [1021, 1040], \"Deferred income taxes\": [40, 36], \"Operating lease liabilities\": [274, 275], \"Other liabilities\": [368, 361], \"Total liabilities\": [3875, 3936], \"Redeemable noncontrolling interests\": [570, 576], \"Commitments and contingencies\": [null, null], \"Stockholders' equity\": {\"Preferred stock, $ 0.01 par value, 1,000,000 shares authorized, none outstanding\": [0, 0], \"Common stock, $ 0.01 par value, 480,000,000 shares authorized, 131,196,783 outstanding on April 01, 2023 and 131,792,817 outstanding on December 31, 2022\": [1, 1], \"Additional paid-in capital\": [0, 0], \"Retained earnings\": [3684, 3678], \"Accumulated other comprehensive loss\": [-213, -233], \"Total Henry Schein, Inc. stockholders' equity\": [3472, 3446], \"Noncontrolling interests\": [655, 649], \"Total stockholders' equity\": [4127, 4095]}, \"Total liabilities, redeemable noncontrolling interests and stockholders' equity\": [8572, 8607]}  }"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-37-13"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-37-13"
+    }
+}

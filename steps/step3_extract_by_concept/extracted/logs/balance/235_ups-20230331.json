@@ -1,0 +1,87 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 2,
+            "table_index": 0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "0",
+                    "1": "0",
+                    "2": "0"
+                },
+                "decision": "0"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-01-21_09-42-36"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\tMarch 31, 2023 (unaudited) and December 31, 2022 (in millions)\tMarch 31,\t2023\tDecember 31,\t2022\t",
+        "timestamp": "2025-03-11_12-49-26"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-49-29"
+    },
+    "post_table_text": {
+        "data": "\tSee notes to unaudited, consolidated financial statements.\t2\tTable of Contents\tUNITED PARCEL",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tSee notes to unaudited, consolidated financial statements.\t2\tTable of Contents\tUNITED PARCEL'"
+                },
+                "decision": "'\tSee notes to unaudited, consolidated financial statements.\t2\tTable of Contents\tUNITED PARCEL'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-49-31"
+    },
+    "table_body": {
+        "data": "ASSETS\tCurrent Assets:\tCash and cash equivalents\t$\t6,190\t$\t5,602\tMarketable securities\t3,208\t1,993\tAccounts receivable\t10,448\t12,729\tLess: Allowance for credit losses\t(\t149\t)\t(\t146\t)\tAccounts receivable, net\t10,299\t12,583\tOther current assets\t2,028\t2,039\tTotal Current Assets\t21,725\t22,217\tProperty, Plant and Equipment, Net\t34,995\t34,719\tOperating Lease Right-Of-Use Assets\t4,089\t3,755\tGoodwill\t4,249\t4,223\tIntangible Assets, Net\t2,811\t2,796\tDeferred Income Tax Assets\t155\t139\tOther Non-Current Assets\t4,165\t3,275\tTotal Assets\t$\t72,189\t$\t71,124\tLIABILITIES AND SHAREOWNERS  EQUITY\tCurrent Liabilities:\tCurrent maturities of long-term debt, commercial paper and finance leases\t$\t2,332\t$\t2,341\tCurrent maturities of operating leases\t668\t621\tAccounts payable\t6,302\t7,515\tAccrued wages and withholdings\t3,012\t4,049\tSelf-insurance reserves\t1,069\t1,069\tAccrued group welfare and retirement plan contributions\t1,196\t1,078\tOther current liabilities\t1,683\t1,467\tTotal Current Liabilities\t16,262\t18,140\tLong-Term Debt and Finance Leases\t19,856\t17,321\tNon-Current Operating Leases\t3,539\t3,238\tPension and Postretirement Benefit Obligations\t4,602\t4,807\tDeferred Income Tax Liabilities\t4,345\t4,302\tOther Non-Current Liabilities\t3,532\t3,513\tShareowners  Equity:\tClass A common stock (\t135\tand\t134\tshares issued in 2023 and 2022, respectively)\t2\t2\tClass B common stock (\t724\tand\t725\tshares issued in 2023 and 2022, respectively)\t7\t7\tAdditional paid-in capital\t \t \tRetained earnings\t21,510\t21,326\tAccumulated other comprehensive loss\t(\t1,481\t)\t(\t1,549\t)\tDeferred compensation obligations\t9\t13\tLess: Treasury stock (\t0.2\tshares in both 2023 and 2022)\t(\t9\t)\t(\t13\t)\tTotal Equity for Controlling Interests\t20,038\t19,786\tNoncontrolling interests\t15\t17\tTotal Shareowners  Equity\t20,053\t19,803\tTotal Liabilities and Shareowners  Equity\t$\t72,189\t$\t71,124",
+        "timestamp": "2025-03-11_12-49-31"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current Assets\": {\"Cash and cash equivalents\": [6190, 5602], \"Marketable securities\": [3208, 1993], \"Accounts receivable\": [10448, 12729], \"Less: Allowance for credit losses\": [-149, -146], \"Accounts receivable, net\": [10299, 12583], \"Other current assets\": [2028, 2039], \"Total Current Assets\": [21725, 22217]}, \"Property, Plant and Equipment, Net\": [34995, 34719], \"Operating Lease Right-Of-Use Assets\": [4089, 3755], \"Goodwill\": [4249, 4223], \"Intangible Assets, Net\": [2811, 2796], \"Deferred Income Tax Assets\": [155, 139], \"Other Non-Current Assets\": [4165, 3275], \"Total Assets\": [72189, 71124]}, \"LIABILITIES AND SHAREOWNERS EQUITY\": {\"Current Liabilities\": {\"Current maturities of long-term debt, commercial paper and finance leases\": [2332, 2341], \"Current maturities of operating leases\": [668, 621], \"Accounts payable\": [6302, 7515], \"Accrued wages and withholdings\": [3012, 4049], \"Self-insurance reserves\": [1069, 1069], \"Accrued group welfare and retirement plan contributions\": [1196, 1078], \"Other current liabilities\": [1683, 1467], \"Total Current Liabilities\": [16262, 18140]}, \"Long-Term Debt and Finance Leases\": [19856, 17321], \"Non-Current Operating Leases\": [3539, 3238], \"Pension and Postretirement Benefit Obligations\": [4602, 4807], \"Deferred Income Tax Liabilities\": [4345, 4302], \"Other Non-Current Liabilities\": [3532, 3513], \"Shareowners Equity\": {\"Class A common stock (135 and 134 shares issued in 2023 and 2022, respectively)\": [2, 2], \"Class B common stock (724 and 725 shares issued in 2023 and 2022, respectively)\": [7, 7], \"Additional paid-in capital\": [null, null], \"Retained earnings\": [21510, 21326], \"Accumulated other comprehensive loss\": [-1481, -1549], \"Deferred compensation obligations\": [9, 13], \"Less: Treasury stock (0.2 shares in both 2023 and 2022)\": [-9, -13], \"Total Equity for Controlling Interests\": [20038, 19786], \"Noncontrolling interests\": [15, 17], \"Total Shareowners Equity\": [20053, 19803]}, \"Total Liabilities and Shareowners Equity\": [72189, 71124]}}"
+                },
+                "decision": "{\"ASSETS\": {\"Current Assets\": {\"Cash and cash equivalents\": [6190, 5602], \"Marketable securities\": [3208, 1993], \"Accounts receivable\": [10448, 12729], \"Less: Allowance for credit losses\": [-149, -146], \"Accounts receivable, net\": [10299, 12583], \"Other current assets\": [2028, 2039], \"Total Current Assets\": [21725, 22217]}, \"Property, Plant and Equipment, Net\": [34995, 34719], \"Operating Lease Right-Of-Use Assets\": [4089, 3755], \"Goodwill\": [4249, 4223], \"Intangible Assets, Net\": [2811, 2796], \"Deferred Income Tax Assets\": [155, 139], \"Other Non-Current Assets\": [4165, 3275], \"Total Assets\": [72189, 71124]}, \"LIABILITIES AND SHAREOWNERS EQUITY\": {\"Current Liabilities\": {\"Current maturities of long-term debt, commercial paper and finance leases\": [2332, 2341], \"Current maturities of operating leases\": [668, 621], \"Accounts payable\": [6302, 7515], \"Accrued wages and withholdings\": [3012, 4049], \"Self-insurance reserves\": [1069, 1069], \"Accrued group welfare and retirement plan contributions\": [1196, 1078], \"Other current liabilities\": [1683, 1467], \"Total Current Liabilities\": [16262, 18140]}, \"Long-Term Debt and Finance Leases\": [19856, 17321], \"Non-Current Operating Leases\": [3539, 3238], \"Pension and Postretirement Benefit Obligations\": [4602, 4807], \"Deferred Income Tax Liabilities\": [4345, 4302], \"Other Non-Current Liabilities\": [3532, 3513], \"Shareowners Equity\": {\"Class A common stock (135 and 134 shares issued in 2023 and 2022, respectively)\": [2, 2], \"Class B common stock (724 and 725 shares issued in 2023 and 2022, respectively)\": [7, 7], \"Additional paid-in capital\": [null, null], \"Retained earnings\": [21510, 21326], \"Accumulated other comprehensive loss\": [-1481, -1549], \"Deferred compensation obligations\": [9, 13], \"Less: Treasury stock (0.2 shares in both 2023 and 2022)\": [-9, -13], \"Total Equity for Controlling Interests\": [20038, 19786], \"Noncontrolling interests\": [15, 17], \"Total Shareowners Equity\": [20053, 19803]}, \"Total Liabilities and Shareowners Equity\": [72189, 71124]}}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-49-42"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-49-42"
+    }
+}

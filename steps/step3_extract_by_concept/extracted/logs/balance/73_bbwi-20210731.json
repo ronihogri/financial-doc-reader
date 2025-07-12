@@ -1,0 +1,87 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 2,
+            "table_index": 0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "0",
+                    "1": "0",
+                    "2": "0"
+                },
+                "decision": "0"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-01-21_09-29-14"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\t(in millions except par value amounts)\tJuly 31,\t2021\tJanuary 30,\t2021\tAugust 1,\t2020\t(Unaudited)\t(Unaudited)\t",
+        "timestamp": "2025-03-11_12-05-53"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-05-56"
+    },
+    "post_table_text": {
+        "data": "\tThe accompanying Notes are an integral part of these Consolidated Financial Statements.\t4\tTable o",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tThe accompanying Notes are an integral part of these Consolidated Financial Statements.\t4\tTable o'"
+                },
+                "decision": "'\tThe accompanying Notes are an integral part of these Consolidated Financial Statements.\t4\tTable o'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-05-58"
+    },
+    "table_body": {
+        "data": "ASSETS\tCurrent Assets:\tCash and Cash Equivalents\t$\t1,988\t$\t3,903\t$\t2,611\tCash in Escrow related to Victoria's Secret & Co. Spin-Off\t600\t \t \tAccounts Receivable, Net\t230\t269\t268\tInventories\t1,473\t1,273\t1,476\tOther\t223\t134\t150\tTotal Current Assets\t4,514\t5,579\t4,505\tProperty and Equipment, Net\t2,001\t2,095\t2,292\tOperating Lease Assets\t2,564\t2,558\t2,635\tGoodwill\t628\t628\t628\tTrade Names\t411\t411\t411\tDeferred Income Taxes\t70\t69\t74\tOther Assets\t204\t231\t335\tTotal Assets\t$\t10,392\t$\t11,571\t$\t10,880\tLIABILITIES AND EQUITY (DEFICIT)\tCurrent Liabilities:\tAccounts Payable\t$\t838\t$\t683\t$\t957\tAccrued Expenses and Other\t1,305\t1,457\t1,340\tCurrent Debt\t \t \t460\tCurrent Operating Lease Liabilities\t480\t594\t624\tIncome Taxes\t2\t92\t52\tTotal Current Liabilities\t2,625\t2,826\t3,433\tDeferred Income Taxes\t250\t234\t191\tLong-term Debt\t5,938\t6,366\t6,269\tLong-term Operating Lease Liabilities\t2,476\t2,495\t2,698\tOther Long-term Liabilities\t291\t311\t193\tShareholders  Equity (Deficit):\tPreferred Stock - $\t1.00\tpar value;\t10\tshares authorized;\tnone\tissued\t \t \t \tCommon Stock - $\t0.50\tpar value;\t1,000\tshares authorized;\t280\t,\t286\tand\t286\tshares issued;\t265\t,\t278\tand\t278\tshares outstanding, respectively\t140\t143\t143\tPaid-in Capital\t911\t891\t869\tAccumulated Other Comprehensive Income\t87\t83\t49\tRetained Earnings (Accumulated Deficit)\t(\t1,505\t)\t(\t1,421\t)\t(\t2,611\t)\tLess: Treasury Stock, at Average Cost;\t15\t,\t8\tand\t8\tshares, respectively\t(\t822\t)\t(\t358\t)\t(\t358\t)\tTotal Shareholders  Equity (Deficit)\t(\t1,189\t)\t(\t662\t)\t(\t1,908\t)\tNoncontrolling Interest\t1\t1\t4\tTotal Equity (Deficit)\t(\t1,188\t)\t(\t661\t)\t(\t1,904\t)\tTotal Liabilities and Equity (Deficit)\t$\t10,392\t$\t11,571\t$\t10,880",
+        "timestamp": "2025-03-11_12-05-58"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current Assets\": {\"Cash and Cash Equivalents\": [1988, 3903, 2611], \"Cash in Escrow related to Victoria's Secret & Co. Spin-Off\": [600, null, null], \"Accounts Receivable, Net\": [230, 269, 268], \"Inventories\": [1473, 1273, 1476], \"Other\": [223, 134, 150], \"Total Current Assets\": [4514, 5579, 4505]}, \"Property and Equipment, Net\": [2001, 2095, 2292], \"Operating Lease Assets\": [2564, 2558, 2635], \"Goodwill\": [628, 628, 628], \"Trade Names\": [411, 411, 411], \"Deferred Income Taxes\": [70, 69, 74], \"Other Assets\": [204, 231, 335], \"Total Assets\": [10392, 11571, 10880]}, \"LIABILITIES AND EQUITY (DEFICIT)\": {\"Current Liabilities\": {\"Accounts Payable\": [838, 683, 957], \"Accrued Expenses and Other\": [1305, 1457, 1340], \"Current Debt\": [0, 0, 460], \"Current Operating Lease Liabilities\": [480, 594, 624], \"Income Taxes\": [2, 92, 52], \"Total Current Liabilities\": [2625, 2826, 3433]}, \"Deferred Income Taxes\": [250, 234, 191], \"Long-term Debt\": [5938, 6366, 6269], \"Long-term Operating Lease Liabilities\": [2476, 2495, 2698], \"Other Long-term Liabilities\": [291, 311, 193], \"Shareholders  Equity (Deficit)\": {\"Preferred Stock - $ 1.00 par value; 10 shares authorized; none issued\": [0, 0, 0], \"Common Stock - $ 0.50 par value; 1,000 shares authorized; 280, 286 and 286 shares issued; 265, 278 and 278 shares outstanding, respectively\": [140, 143, 143], \"Paid-in Capital\": [911, 891, 869], \"Accumulated Other Comprehensive Income\": [87, 83, 49], \"Retained Earnings (Accumulated Deficit)\": [-1505, -1421, -2611], \"Less: Treasury Stock, at Average Cost; 15, 8 and 8 shares, respectively\": [-822, -358, -358], \"Total Shareholders  Equity (Deficit)\": [-1189, -662, -1908]}, \"Noncontrolling Interest\": [1, 1, 4], \"Total Equity (Deficit)\": [-1188, -661, -1904], \"Total Liabilities and Equity (Deficit)\": [10392, 11571, 10880]}}"
+                },
+                "decision": "{\"ASSETS\": {\"Current Assets\": {\"Cash and Cash Equivalents\": [1988, 3903, 2611], \"Cash in Escrow related to Victoria's Secret & Co. Spin-Off\": [600, null, null], \"Accounts Receivable, Net\": [230, 269, 268], \"Inventories\": [1473, 1273, 1476], \"Other\": [223, 134, 150], \"Total Current Assets\": [4514, 5579, 4505]}, \"Property and Equipment, Net\": [2001, 2095, 2292], \"Operating Lease Assets\": [2564, 2558, 2635], \"Goodwill\": [628, 628, 628], \"Trade Names\": [411, 411, 411], \"Deferred Income Taxes\": [70, 69, 74], \"Other Assets\": [204, 231, 335], \"Total Assets\": [10392, 11571, 10880]}, \"LIABILITIES AND EQUITY (DEFICIT)\": {\"Current Liabilities\": {\"Accounts Payable\": [838, 683, 957], \"Accrued Expenses and Other\": [1305, 1457, 1340], \"Current Debt\": [0, 0, 460], \"Current Operating Lease Liabilities\": [480, 594, 624], \"Income Taxes\": [2, 92, 52], \"Total Current Liabilities\": [2625, 2826, 3433]}, \"Deferred Income Taxes\": [250, 234, 191], \"Long-term Debt\": [5938, 6366, 6269], \"Long-term Operating Lease Liabilities\": [2476, 2495, 2698], \"Other Long-term Liabilities\": [291, 311, 193], \"Shareholders  Equity (Deficit)\": {\"Preferred Stock - $ 1.00 par value; 10 shares authorized; none issued\": [0, 0, 0], \"Common Stock - $ 0.50 par value; 1,000 shares authorized; 280, 286 and 286 shares issued; 265, 278 and 278 shares outstanding, respectively\": [140, 143, 143], \"Paid-in Capital\": [911, 891, 869], \"Accumulated Other Comprehensive Income\": [87, 83, 49], \"Retained Earnings (Accumulated Deficit)\": [-1505, -1421, -2611], \"Less: Treasury Stock, at Average Cost; 15, 8 and 8 shares, respectively\": [-822, -358, -358], \"Total Shareholders  Equity (Deficit)\": [-1189, -662, -1908]}, \"Noncontrolling Interest\": [1, 1, 4], \"Total Equity (Deficit)\": [-1188, -661, -1904], \"Total Liabilities and Equity (Deficit)\": [10392, 11571, 10880]}}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-16-09"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-16-09"
+    }
+}

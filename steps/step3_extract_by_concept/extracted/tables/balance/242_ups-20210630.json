@@ -1,0 +1,176 @@
+{
+    "ASSETS": {
+        "Current Assets": {
+            "Cash and cash equivalents": [
+                9608,
+                5910
+            ],
+            "Marketable securities": [
+                346,
+                406
+            ],
+            "Accounts receivable": [
+                10260,
+                10888
+            ],
+            "Less: Allowance for credit losses": [
+                -123,
+                -138
+            ],
+            "Accounts receivable, net": [
+                10137,
+                10750
+            ],
+            "Assets held for sale": [
+                0,
+                1197
+            ],
+            "Other current assets": [
+                1897,
+                1953
+            ],
+            "Total Current Assets": [
+                21988,
+                20216
+            ]
+        },
+        "Property, Plant and Equipment, Net": [
+            32631,
+            32254
+        ],
+        "Operating Lease Right-Of-Use Assets": [
+            3568,
+            3073
+        ],
+        "Goodwill": [
+            3357,
+            3367
+        ],
+        "Intangible Assets, Net": [
+            2238,
+            2274
+        ],
+        "Investments and Restricted Cash": [
+            25,
+            25
+        ],
+        "Deferred Income Tax Assets": [
+            187,
+            527
+        ],
+        "Other Non-Current Assets": [
+            875,
+            672
+        ],
+        "Total Assets": [
+            64869,
+            62408
+        ]
+    },
+    "LIABILITIES AND SHAREOWNERS EQUITY": {
+        "Current Liabilities": {
+            "Current maturities of long-term debt, commercial paper and finance leases": [
+                1564,
+                2623
+            ],
+            "Current maturities of operating leases": [
+                556,
+                560
+            ],
+            "Accounts payable": [
+                6563,
+                6455
+            ],
+            "Accrued wages and withholdings": [
+                3737,
+                3569
+            ],
+            "Self-insurance reserves": [
+                1110,
+                1085
+            ],
+            "Accrued group welfare and retirement plan contributions": [
+                884,
+                927
+            ],
+            "Liabilities to be disposed of": [
+                0,
+                347
+            ],
+            "Other current liabilities": [
+                1356,
+                1450
+            ],
+            "Total Current Liabilities": [
+                15770,
+                17016
+            ]
+        },
+        "Long-Term Debt and Finance Leases": [
+            21027,
+            22031
+        ],
+        "Non-Current Operating Leases": [
+            3038,
+            2540
+        ],
+        "Pension and Postretirement Benefit Obligations": [
+            7675,
+            15817
+        ],
+        "Deferred Income Tax Liabilities": [
+            2584,
+            488
+        ],
+        "Other Non-Current Liabilities": [
+            3953,
+            3847
+        ],
+        "Shareowners Equity": {
+            "Class A common stock ( 144 and 147 shares issued in 2021 and 2020, respectively)": [
+                2,
+                2
+            ],
+            "Class B common stock ( 728 and 718 shares issued in 2021 and 2020, respectively)": [
+                7,
+                7
+            ],
+            "Additional paid-in capital": [
+                1329,
+                865
+            ],
+            "Retained earnings": [
+                12531,
+                6896
+            ],
+            "Accumulated other comprehensive loss": [
+                -3064,
+                -7113
+            ],
+            "Deferred compensation obligations": [
+                16,
+                20
+            ],
+            "Less: Treasury stock ( 0.3 shares in 2021 and 0.4 shares in 2020)": [
+                -16,
+                -20
+            ],
+            "Total Equity for Controlling Interests": [
+                10805,
+                657
+            ],
+            "Noncontrolling interests": [
+                17,
+                12
+            ],
+            "Total Shareowners Equity": [
+                10822,
+                669
+            ]
+        },
+        "Total Liabilities and Shareowners Equity": [
+            64869,
+            62408
+        ]
+    }
+}

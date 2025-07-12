@@ -1,0 +1,105 @@
+{
+    "ASSETS": {
+        "Current assets": {
+            "Cash and cash equivalents": [
+                11969,
+                6266
+            ],
+            "Marketable securities": [
+                952,
+                4381
+            ],
+            "Trade receivables, net": [
+                4765,
+                4525
+            ],
+            "Inventories": [
+                4152,
+                3893
+            ],
+            "Other current assets": [
+                2542,
+                2079
+            ],
+            "Total current assets": [
+                24380,
+                21144
+            ]
+        },
+        "Property, plant and equipment, net": [
+            4982,
+            4889
+        ],
+        "Intangible assets, net": [
+            14659,
+            16587
+        ],
+        "Goodwill": [
+            14665,
+            14689
+        ],
+        "Other noncurrent assets": [
+            6307,
+            5639
+        ],
+        "Total assets": [
+            64993,
+            62948
+        ]
+    },
+    "LIABILITIES AND STOCKHOLDERS EQUITY": {
+        "Current liabilities": {
+            "Accounts payable": [
+                1171,
+                1421
+            ],
+            "Accrued liabilities": [
+                9383,
+                10141
+            ],
+            "Current portion of long-term debt": [
+                4288,
+                91
+            ],
+            "Total current liabilities": [
+                14842,
+                11653
+            ]
+        },
+        "Long-term debt": [
+            33291,
+            32895
+        ],
+        "Long-term tax liabilities": [
+            6483,
+            6968
+        ],
+        "Other noncurrent liabilities": [
+            2160,
+            2023
+        ],
+        "Contingencies and commitments": null,
+        "Stockholders equity": {
+            "Common stock and additional paid-in capital; $ 0.0001 par value; 2,750.0 shares authorized; outstanding 565.0 shares in 2021 and 578.3 shares in 2020": [
+                31989,
+                31802
+            ],
+            "Accumulated deficit": [
+                -22964,
+                -21408
+            ],
+            "Accumulated other comprehensive loss": [
+                -808,
+                -985
+            ],
+            "Total stockholders equity": [
+                8217,
+                9409
+            ]
+        },
+        "Total liabilities and stockholders equity": [
+            64993,
+            62948
+        ]
+    }
+}

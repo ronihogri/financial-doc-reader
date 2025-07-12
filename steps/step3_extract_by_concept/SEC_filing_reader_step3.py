@@ -1,5 +1,5 @@
 """
-Roni Hogri, June 2025
+Roni Hogri, July 2025
 
 This demo program utilizes large language models (LLMs) to extract Balance Sheet data from quarterly and yearly filings to the SEC (10-Q and 10-K, respectively).
 Specifically, this demo version focuses on companies included in the S&P 500 on March 5th, 2024, and looks at filing data during the prior 5 years.
@@ -50,7 +50,7 @@ import ast
 #paths, etc.
 curdir = os.path.dirname(os.path.abspath(__file__)) #path of this script
 filings_db_path = os.path.join(curdir, REPORT_DB_FN) #path to SQL file
-NEW_TASKS = ['CCP', 'LTD'] #tasks to be updated by this program in the SQL DB's Tasks table
+NEW_TASKS = ['ValueColumn', 'CCP', 'LTD'] #tasks to be updated by this program in the SQL DB's Tasks table
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY")) or OpenAI(api_key=MY_API_KEY) #openai client
 
 #third party interactions
@@ -568,11 +568,11 @@ def init_new_log_entries(log_path):
         None
     """
 
-    ccp_dict = {'data': None, 'model': None, 'timestamp': None}
-    ltd_dict = {'data': None, 'model': None, 'timestamp': None}
+    model_dict_template = {'data': None, 'model': None, 'timestamp': None}
+    dict_titles = ['value_date_column', 'current_cash_position', 'long_term_debt']
 
-    insert_into_json(log_path, ccp_dict, 'current_cash_position')
-    insert_into_json(log_path, ltd_dict, 'long_term_debt') 
+    for title in dict_titles:
+        insert_into_json(log_path, model_dict_template, title)
 
 
 def find_key(table_json, search_term):
@@ -615,12 +615,13 @@ def check_dict_paths(dict_paths, input_dict):
     return invalid_paths
 
 
-def get_dict_path_value(dict_path, input_dict):
+def get_dict_path_value(dict_path, input_dict, column):
     """Retrieve the first integer value from the list at a specific dictionary path in a nested JSON object.
 
     Args:
         dict_path (list): Sequence of keys representing a path through the nested dictionary.
         input_dict (dict): The JSON object to traverse.
+        column (int): The column in which the relevant value is stored
 
     Returns:
         int or None: The first element of the list at the target location, cast to int if possible; otherwise None.
@@ -630,32 +631,196 @@ def get_dict_path_value(dict_path, input_dict):
         input_dict = input_dict[key]
 
     if not isinstance(input_dict, list): #value pointed to is not a list
-        return None
-    
+        return None    
     try:
-        return int(input_dict[0]) #date value - expected int
+        return int(input_dict[column]) #date value - expected int
     except:
         return None    
     
 
-def get_sums_per_key_paths(dict_paths, table_json):
+def get_sums_per_key_paths(dict_paths, table_json, log_path):
     """Extract and return numeric values from specified key paths in a JSON table.
 
     Args:
         dict_paths (dict): Dictionary where each value is a list of keys representing a path in the JSON structure.
         table_json (dict): The JSON object from which values are to be extracted.
+        log_path (str): Path to the JSON log file containing metadata (e.g., the relevant value date column name).
 
     Returns:
         dict: Keys are path identifiers from dict_paths; values are the corresponding integer values (or None if invalid).
     """
 
+    column = read_from_json(log_path, ("value_date_column", "data", "value_date_column"))
     path_sums = {}
 
     for i, path in dict_paths.items():
-        path_sums[i] = get_dict_path_value(path, table_json)
+        path_sums[i] = get_dict_path_value(path, table_json, column)
 
     return path_sums  
         
+
+"""Functions for identifying the table column holding values for the report's value date (nested within get_vd_column())"""    
+
+def ask_column_dates(table_comments, model=MINI, trials=1, output_dtype='list', set_seed=True, response_type='text'):
+    """Ask GPT to extract dates from the Balance Sheet table header text.
+
+    Args:
+        table_comments (str): The text preceding the first row of Balance Sheet table (including column headers).
+        model (str, optional): Model used for querying; defaults to MINI.
+        trials (int, optional): Number of times to query the model (used for voting); defaults to 1.
+        output_dtype (str, optional): Desired datatype for model output; defaults to 'list'.
+        set_seed (bool, optional): Whether to set a random seed to encourage output diversity; defaults to True.
+        response_type (str, optional): Format requested from the model response; defaults to "text".
+
+    Returns:
+        dict: Keys are trial numbers; values are the model's outputs per trial.
+    """
+
+    print(f"...Asking the '{model}' model to extract column dates....")
+
+    get_column_dates_sys = """# Task
+
+    You're an intern at a mutual fund whose only job is to scan the 'Consolidated Balance Sheets' comments in a single 10-Q or 10-K and extract every date-like occurrence.
+
+    ## Date Extraction Rules
+    - The text may split dates across tabs or lines, and can be separated by other text (e.g. "December 30,\t2023", "March\t26,\t2022", "December 31\tMillions of Dollars\t2023\t2022") or even another date (e.g., "September 26,\tDecember 28,\t2020\t2019").
+
+    - A date can appear in any of these forms:
+    1. MonthName Day, Year (e.g. December 31, 2023)  
+    2. MonthName Day (e.g. December 31)  
+    3. A shared MonthName and Day followed by two or more years (e.g. December 31,\t2017\t2018) - in this case, the same month and day apply to both years, and should be expanded into full dates like ['2017-12-31', '2018-12-31']
+    4. MonthName Day [another MonthName Day] Year [another Year]
+
+    - Normalize each found date to the format YYYY-MM-DD, use zeros as placeholders for missing values:
+    • If the year is missing, use 0000 as a placeholder  
+    • If the month is missing, use 00 as a placeholder 
+    • If the day is missing, use 00 as a placeholder 
+    • **Exception**: In case of a structure like shown in Rule #3, **do not use placeholders** - instead, apply the shared MM-DD to all the relevant years.
+
+    - Scan left to right - append each normalized date string to a Python list in the order encountered.
+
+    ## Output Format
+    Return exactly one Python list literal - no extra text.  
+
+    Examples:
+    - Input: ...December 31, 2023...September 30, 2023...  
+    Output: ['2023-12-31', '2023-09-30']  
+    - Input: ...December 31...March 15...  
+    Output: ['0000-12-31', '0000-03-15']  
+    - Input: ...2021    2022...  
+    Output: ['2021-00-00', '2022-00-00']  
+    - Input: ...December 31,    2017    2018...  
+    Output: ['2017-12-31', '2018-12-31']
+    - Input: December 31\t...\t2023\t2022
+    Output: ['2023-12-31', '2022-12-31']
+    - Input: ...September 26,\tDecember 28,\t2020\t2019...
+    Output: ['2020-09-26', '2019-12-28']    
+
+    ## Constraints
+    - Don't use any outside context or explanations.  
+    - If you find no dates, return [].  
+    """
+
+
+    get_column_dates_user = f"""
+    Return a single list of dates found in this text snippet - per the rules in the system prompt:
+
+    '{table_comments}'
+    """
+
+    return gpt_completion(model, get_column_dates_sys, get_column_dates_user, response_type=response_type, output_dtype=output_dtype, trials=trials, set_seed=set_seed)
+
+
+def collect_list_lengths(data):
+    """Traverse a nested JSON object and collect the lengths of all list values.
+
+    Args:
+        data (dict): Nested dictionary representing a JSON object.
+
+    Returns:
+        list: List of integers representing the lengths of all list-type values found in the structure.
+    """
+
+    list_lens = []
+    def helper(obj):
+        if isinstance(obj, dict):
+            for value in obj.values():
+                if isinstance(value, list):
+                    list_lens.append(len(value))
+                elif isinstance(value, dict):
+                    helper(value)
+        # anything other than dicts and lists is ignored
+    helper(data)
+
+    return list_lens
+
+
+def get_num_columns(table_path):
+    """Estimate the number of columns in the table by computing the median length of lists contained in the table JSON.
+
+    Args:
+        table_path (str): Path to the JSON file containing the structured table.
+
+    Returns:
+        int: Estimated number of columns.
+    """
+
+    with open(table_path, 'r') as f:
+        data = json.load(f)
+    
+    list_lens = collect_list_lengths(data)
+
+    return round(np.median(list_lens))
+
+
+def get_vd_column(log_path, table_path, form_name):
+    """Main function for GPT-assisted identification of the value date column in a given Balance Sheet table.
+
+    Args:
+        log_path (str): Path to a JSON file where results and issues should be logged.
+        table_path (str): Path to a JSON file containing the Balance Sheet table.
+        form_name (str): Identifier for the specific form (e.g., 10-Q or 10-K) being processed.
+
+    Returns:
+        None
+    """
+    
+    table_comments = read_from_json(log_path, ("table_comments", "data"))
+    model_dict = {MINI: {'votes': None, 'decision': None}, GPT_4O: {'votes': None, 'decision': None}}
+    column_dict = {'num_columns': None, 'value_date_column': None}
+    column_dict['num_columns'] = get_num_columns(table_path)
+
+    for i in range(2): #first run with the mini model; if there are problems, repeat process with the large model
+
+        problems_list = [] #for temporarily storing problems (per model)
+
+        model, trials, set_seed = (MINI, MAX_MINI_VOTES, True) if i == 0 else (GPT_4O, 1, False)
+
+        #ask GPT model to identify the value date column based on the table comments 
+        #votes = ask_vd_index(table_comments, model=model, trials=trials, set_seed=set_seed)
+        votes = ask_column_dates(table_comments, model=model, trials=trials, set_seed=set_seed)
+        model_dict[model]['votes'] = votes
+        model_dict[model]['decision'] = count_votes(votes)
+
+        if not isinstance(model_dict[model]['decision'], list): #problem with model output
+            problems_list.append('value column: dates not returned as list')
+            continue #try with larger model
+        
+        if not problems_list: #valid result obtained
+            if model_dict[model]['decision']:
+                column_dict['value_date_column'] = model_dict[model]['decision'].index(max(model_dict[model]['decision'][:column_dict['num_columns']])) #get maximum value, this is most recent date
+            else:
+                column_dict['value_date_column'] = 0  #default index of value date column (also if [] is returned) - it's usually the first one
+            break #don't run again
+
+    update_json(
+        log_path, 
+        [('value_date_column',), ('value_date_column', 'model'), ('problems',)],
+        [column_dict, model_dict, problems_list]        
+        )
+
+    if problems_list: #after both models, problems remain        
+        report_problems(form_name, log_path, problems_list) #print out detected problems  
 
 
 """Functions for extracting current cash position (CCP) from the Balance Sheet JSON (nested within get_ccp())."""
@@ -902,7 +1067,7 @@ def get_ccp(log_path, table_path, form_name):
         form_name (str): Identifier for the specific form (e.g., 10-Q or 10-K) being processed.
 
     Returns:
-        None: The function logs CCP extraction results and problems but does not return any value directly.
+        None
     """
     
     table_json = read_from_json(table_path)
@@ -923,7 +1088,7 @@ def get_ccp(log_path, table_path, form_name):
 
         model, trials, set_seed = (MINI, MAX_MINI_VOTES, True) if i == 0 else (GPT_4O, 1, False)
 
-        #ask GPT model to identify the 
+        #ask GPT model to identify CCP entries
         votes = ask_ccp_dict_paths(assets, model=model, trials=trials, set_seed=set_seed)
         model_dict[model]['votes'] = votes
         model_dict[model]['decision'] = count_votes(votes)
@@ -967,7 +1132,7 @@ def get_ccp(log_path, table_path, form_name):
             else: #supervisor found no issues (or issue with supervisor output), flag to check manually
                 problems_list.append("CCP: suspicious key path(s) detected")
 
-        path_sums = get_sums_per_key_paths(dict_paths, assets)
+        path_sums = get_sums_per_key_paths(dict_paths, assets, log_path)
         for idx, path_sum in path_sums.items():
             if path_sum is None:
                 problems_list.append(f'CCP: missing sum(s) detected: index = {idx}')
@@ -1020,7 +1185,7 @@ A company's **long-term debt** consists of financial obligations that are due be
 This includes instruments such as **Convertible Senior Notes, Term Loans, Bonds Payable, Debentures, Mortgage Payable, Capital Lease Obligations, Finance Lease Obligations, Notes Payable, Subordinated Debt**.  
 These items are typically listed under **Non-Current Liabilities** in the Balance Sheet. However, some aspects of long-term debt may appear in the **Current Liabilities** section (e.g., "Term Debt" or "Current portion of long-term debt").
 Use your judgment and knowledge of balance sheets and 10-Q/10-K forms to determine if an item is relevant for the long-term debt.   
-Nevertheless, **do NOT include** non-specific entries like "Other non-current liabilities" or "Other long-term liabilities", or any instruments that do not **explicitly** represent borrowings, loans, or debt financing (e.g., "Operating Lease Liabilities").  
+Nevertheless, **do NOT include** non-specific entries like "Other non-current liabilities/obligations" or "Other long-term liabilities/obligations", or any instruments that do not **explicitly** represent borrowings, loans, or debt financing (e.g., "Operating Lease Liabilities").  
 Also, **do NOT include** any entries that MAY OR MAY NOT relate to long-term debt (i.e., entries where additional parts of the document would be required for you to reach a conclusion, e.g., "Long-term lease liabilities").  
 
 ## Requirements  
@@ -1043,9 +1208,10 @@ The expected output is a JSON object structured as follows:
 - Each numbered key maps to an **array of strings**, representing the exact JSON key sequence for that path.  
 - **Paths must be isolated**, meaning each numbered entry corresponds to a single, unbroken key sequence.  
 
-#### **Example**  
+#### **Examples**  
 
-##### **Input JSON (original balance sheet data):**  
+##### Example 1:
+**Input JSON (original balance sheet data):**  
 {
   "Current liabilities": {
     "Accounts payable": [32421, 46236],
@@ -1063,11 +1229,55 @@ The expected output is a JSON object structured as follows:
   "Total liabilities": [241975, 248028]
 }
 
-##### **Expected Output JSON:**  
+**Expected Output JSON:**  
 {
   "1": ["Current liabilities", "Term debt"], 
   "2": ["Non-current liabilities", "Term debt"]
 }
+
+##### Example 2:
+**Input JSON (original balance sheet data):**  
+{"Current Liabilities": 
+    {"Accounts payable": [6305, 6455],
+    "Accrued group welfare and retirement plan contributions": [934, 927],
+    "Accrued wages and withholdings": [3701, 3569],
+    "Current maturities of long-term debt, commercial paper and finance leases": [1811, 2623],
+    "Current maturities of operating leases": [548, 560],
+    "Liabilities to be disposed of": [296, 347],
+    "Other current liabilities": [1608, 1450],
+    "Self-insurance reserves": [1103, 1085],
+    "Total Current Liabilities": [16306, 17016]},
+ "Deferred Income Tax Liabilities": [1997, 488],
+ "Long-Term Debt and Finance Leases": [21916, 22031],
+ "Non-Current Operating Leases": [2524, 2540],
+ "Other Non-Current Liabilities": [3816, 3847],
+ "Pension and Postretirement Benefit Obligations": [9594, 15817]}
+
+**Expected Output JSON:**  
+{
+  "1": ["Current liabilities", "Current maturities of long-term debt, commercial paper and finance leases"], 
+  "2": ["Long-Term Debt and Finance Leases"]
+}
+
+##### Example 3:
+**Input JSON (original balance sheet data):**  
+{'Commitments and contingencies (Note 11)': None,
+ 'Current liabilities': 
+    {'Accounts payable': [617, 790],
+    'Accrued government and other rebates': [3585, 3928],
+    'Current portion of long-term debt and other obligations, net': [1999, 2748],
+    'Other accrued liabilities': [2760, 3139],
+    'Total current liabilities': [8961, 10605]},
+ 'Long-term debt, net': [24084, 24574],
+ 'Long-term income taxes payable': [5837, 5922],
+ 'Other long-term obligations': [1577, 1040]}
+
+**Expected Output JSON:**  
+{
+  "1": ["Current liabilities", "Current portion of long-term debt and other obligations, net"], 
+  "2": ["Long-term debt, net"]
+}
+
 
 ### **Important Note**  
 
@@ -1213,7 +1423,7 @@ def get_ltd(log_path, table_path, form_name):
         form_name (str): Identifier for the current filing (used in problem reporting).
 
     Returns:
-        None. Updates the log JSON in place with extracted LTD data and any issues encountered.
+        None
     """
 
     table_json = read_from_json(table_path)
@@ -1234,7 +1444,7 @@ def get_ltd(log_path, table_path, form_name):
 
         model, trials, set_seed = (MINI, MAX_MINI_VOTES, True) if i == 0 else (GPT_4O, 1, False)
 
-        #ask GPT model to identify the 
+        #ask GPT model to identify LTD entries 
         votes = ask_ltd_dict_paths(liabilities, model=model, trials=trials, set_seed=set_seed)
         model_dict[model]['votes'] = votes
         model_dict[model]['decision'] = count_votes(votes)
@@ -1279,7 +1489,7 @@ def get_ltd(log_path, table_path, form_name):
                 problems_list.append("LTD: suspicious key path(s) detected")
 
         #get values (sums) referenced by the last key in each path  
-        path_sums = get_sums_per_key_paths(dict_paths, liabilities)
+        path_sums = get_sums_per_key_paths(dict_paths, liabilities, log_path)
         for idx, path_sum in path_sums.items():
             if path_sum is None:
                 problems_list.append(f'LTD: missing sum(s) detected: index = {idx}')  
@@ -1359,10 +1569,12 @@ def update_sql(form_id, log_path, problem_ids):
 	"""
 
     sum_divider = read_from_json(log_path, ("units", "data", "sum_divider"))
+    vd_column = read_from_json(log_path, ("value_date_column", "data", "value_date_column"))
     ccp = read_from_json(log_path, ("current_cash_position", "data", "total_sum"))
     ltd = read_from_json(log_path, ("long_term_debt", "data", "total_sum"))
-
-    if sum_divider != 1:            
+    if vd_column is None:
+        ccp = ltd = None
+    elif sum_divider != 1:            
         ccp = round(ccp / sum_divider, 3)
         ltd = round(ltd / sum_divider, 3)
     
@@ -1375,7 +1587,7 @@ def update_sql(form_id, log_path, problem_ids):
             with sqlite3.connect(filings_db_path) as conn:
                 cur = conn.cursor()
                
-                cur.execute("UPDATE Tasks SET (CCP, LTD) = (?, ?) WHERE Form_id = ?", (ccp, ltd, form_id))
+                cur.execute("UPDATE Tasks SET (ValueColumn, CCP, LTD) = (?, ?, ?) WHERE Form_id = ?", (vd_column, ccp, ltd, form_id))
 
                 if (not SKIP_EXISTING) or RETRY_LIST: #if overwriting, delete previously logged problems
                     cur.execute("DELETE FROM FormProblems WHERE Form_id = ?", (form_id, ))
@@ -1450,7 +1662,7 @@ def report_done(forms_with_problems, start_time, form_cnt, previous_tasks_incomp
 Completed data extraction for batch of {form_cnt} 10-Q/10-K filings{skipped_previous_incomplete_text}.{task_text}{runtime_text}
 {problem_text}{db_text}
 *********************************************************************************************************\n
-""") 
+""")  
     
   
 
@@ -1516,11 +1728,14 @@ Note: If you wish to overwrite existing data, set SKIP_EXISTING to False, or spe
             #insert additional dicts to the log file, to be updated by this program
             init_new_log_entries(log_path)
 
+            #identify value date column
+            get_vd_column(log_path, table_path, form_name) 
+
             #get current cash position
             get_ccp(log_path, table_path, form_name)
 
             #get long-term debt
-            get_ltd(log_path, table_path, form_name)          
+            get_ltd(log_path, table_path, form_name)        
                          
             #check if problems were encountered for this form, and get their ids (see Problems table in the SQL DB)            
             sql_problem_ids = get_balance_problems(log_path) 
@@ -1528,7 +1743,7 @@ Note: If you wish to overwrite existing data, set SKIP_EXISTING to False, or spe
                 forms_with_problems.append(f'{form_id}_{form_name}')
 
             #update problems and results for this form in the SQL DB
-            update_sql(form_id, log_path, sql_problem_ids)                             
+            update_sql(form_id, log_path, sql_problem_ids)                            
 
     except KeyboardInterrupt:
         sys.exit("\n\n**** Program terminated by user (KeyboardInterrupt) ****\n\n")

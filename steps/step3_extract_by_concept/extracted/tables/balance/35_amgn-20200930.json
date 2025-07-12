@@ -1,0 +1,109 @@
+{
+    "ASSETS": {
+        "Current assets": {
+            "Cash and cash equivalents": [
+                9087,
+                6037
+            ],
+            "Marketable securities": [
+                3273,
+                2874
+            ],
+            "Trade receivables, net": [
+                4094,
+                4057
+            ],
+            "Inventories": [
+                3942,
+                3584
+            ],
+            "Other current assets": [
+                2265,
+                1888
+            ],
+            "Total current assets": [
+                22661,
+                18440
+            ]
+        },
+        "Property, plant and equipment, net": [
+            4816,
+            4928
+        ],
+        "Intangible assets, net": [
+            17254,
+            19413
+        ],
+        "Goodwill": [
+            14674,
+            14703
+        ],
+        "Other assets": [
+            5232,
+            2223
+        ],
+        "Total assets": [
+            64637,
+            59707
+        ]
+    },
+    "LIABILITIES AND STOCKHOLDERS EQUITY": {
+        "Current liabilities": {
+            "Accounts payable": [
+                1161,
+                1371
+            ],
+            "Accrued liabilities": [
+                8701,
+                8511
+            ],
+            "Current portion of long-term debt": [
+                91,
+                2953
+            ],
+            "Total current liabilities": [
+                9953,
+                12835
+            ]
+        },
+        "Long-term debt": [
+            34196,
+            26950
+        ],
+        "Long-term deferred tax liabilities": [
+            210,
+            606
+        ],
+        "Long-term tax liabilities": [
+            7560,
+            8037
+        ],
+        "Other noncurrent liabilities": [
+            1759,
+            1606
+        ],
+        "Contingencies and commitments": null,
+        "Stockholders equity": {
+            "Common stock and additional paid-in capital; $ 0.0001 par value; 2,750.0 shares authorized; outstanding 583.5 shares in 2020 and 591.4 shares in 2019": [
+                31713,
+                31531
+            ],
+            "Accumulated deficit": [
+                -19851,
+                -21330
+            ],
+            "Accumulated other comprehensive loss": [
+                -903,
+                -528
+            ],
+            "Total stockholders equity": [
+                10959,
+                9673
+            ]
+        },
+        "Total liabilities and stockholders equity": [
+            64637,
+            59707
+        ]
+    }
+}

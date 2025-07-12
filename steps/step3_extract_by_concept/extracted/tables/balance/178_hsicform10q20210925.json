@@ -1,0 +1,151 @@
+{
+    "ASSETS": {
+        "Current assets": {
+            "Cash and cash equivalents": [
+                119133,
+                421185
+            ],
+            "Accounts receivable, net of reserves of $ 73,095 and $ 88,030": [
+                1551946,
+                1424787
+            ],
+            "Inventories, net": [
+                1784050,
+                1512499
+            ],
+            "Prepaid expenses and other": [
+                457232,
+                432944
+            ],
+            "Total current assets": [
+                3912361,
+                3791415
+            ]
+        },
+        "Property and equipment, net": [
+            355675,
+            342004
+        ],
+        "Operating lease right-of-use assets": [
+            329886,
+            288847
+        ],
+        "Goodwill": [
+            2779234,
+            2504392
+        ],
+        "Other intangibles, net": [
+            645832,
+            479429
+        ],
+        "Investments and other": [
+            397764,
+            366445
+        ],
+        "Total assets": [
+            8420752,
+            7772532
+        ]
+    },
+    "LIABILITIES AND STOCKHOLDERS' EQUITY": {
+        "Current liabilities": {
+            "Accounts payable": [
+                1057127,
+                1005655
+            ],
+            "Bank credit lines": [
+                59394,
+                73366
+            ],
+            "Current maturities of long-term debt": [
+                9638,
+                109836
+            ],
+            "Operating lease liabilities": [
+                77383,
+                64716
+            ],
+            "Accrued expenses": {
+                "Payroll and related": [
+                    345438,
+                    295329
+                ],
+                "Taxes": [
+                    157446,
+                    138671
+                ],
+                "Other": [
+                    594979,
+                    595529
+                ]
+            },
+            "Total current liabilities": [
+                2301405,
+                2283102
+            ]
+        },
+        "Long-term debt": [
+            705540,
+            515773
+        ],
+        "Deferred income taxes": [
+            37248,
+            30065
+        ],
+        "Operating lease liabilities": [
+            270152,
+            238727
+        ],
+        "Other liabilities": [
+            388211,
+            392781
+        ],
+        "Total liabilities": [
+            3702556,
+            3460448
+        ],
+        "Redeemable noncontrolling interests": [
+            612582,
+            327699
+        ],
+        "Commitments and contingencies": null,
+        "Stockholders' equity": {
+            "Preferred stock, $ 0.01 par value, 1,000,000 shares authorized, none outstanding": [
+                0,
+                0
+            ],
+            "Common stock, $ 0.01 par value, 480,000,000 shares authorized, 139,129,543 outstanding on September 25, 2021 and 142,462,571 outstanding on December 26, 2020": [
+                1391,
+                1425
+            ],
+            "Additional paid-in capital": [
+                0,
+                0
+            ],
+            "Retained earnings": [
+                3594238,
+                3454831
+            ],
+            "Accumulated other comprehensive loss": [
+                -137640,
+                -108084
+            ],
+            "Total Henry Schein, Inc. stockholders' equity": [
+                3457989,
+                3348172
+            ],
+            "Noncontrolling interests": [
+                647625,
+                636213
+            ],
+            "Total stockholders' equity": [
+                4105614,
+                3984385
+            ]
+        },
+        "Total liabilities, redeemable noncontrolling interests and stockholders' equity": [
+            8420752,
+            7772532
+        ]
+    }
+}

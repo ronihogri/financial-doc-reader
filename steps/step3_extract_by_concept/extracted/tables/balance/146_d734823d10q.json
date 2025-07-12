@@ -1,0 +1,148 @@
+{
+    "Assets": {
+        "Cash and cash equivalents": [
+            6218,
+            5915
+        ],
+        "Short-term investments": [
+            249,
+            248
+        ],
+        "Accounts and notes receivable (net of allowance of $11 million in 2019 and $25 million in 2018)": [
+            3701,
+            3920
+        ],
+        "Accounts and notes receivable related parties": [
+            168,
+            147
+        ],
+        "Investment in Cenovus Energy": [
+            1805,
+            1462
+        ],
+        "Inventories": [
+            1014,
+            1007
+        ],
+        "Prepaid expenses and other current assets": [
+            528,
+            575
+        ],
+        "Total Current Assets": [
+            13683,
+            13274
+        ],
+        "Investments and long-term receivables": [
+            9302,
+            9329
+        ],
+        "Loans and advances related parties": [
+            268,
+            335
+        ],
+        "Net properties, plants and equipment (net of accumulated depreciation, depletion and amortization of $66,969 million in 2019 and $64,899 million in 2018)": [
+            45942,
+            45698
+        ],
+        "Other assets": [
+            2303,
+            1344
+        ],
+        "Total Assets": [
+            71498,
+            69980
+        ]
+    },
+    "Liabilities": {
+        "Accounts payable": [
+            3815,
+            3863
+        ],
+        "Accounts payable related parties": [
+            31,
+            32
+        ],
+        "Short-term debt": [
+            113,
+            112
+        ],
+        "Accrued income and other taxes": [
+            1539,
+            1320
+        ],
+        "Employee benefit obligations": [
+            1704,
+            1764
+        ],
+        "Other accruals": [
+            1402,
+            1259
+        ],
+        "Total Current Liabilities": [
+            7370,
+            7395
+        ],
+        "Long-term debt": [
+            14832,
+            14856
+        ],
+        "Asset retirement obligations and accrued environmental costs": [
+            7730,
+            7688
+        ],
+        "Deferred income taxes": [
+            5043,
+            5021
+        ],
+        "Other liabilities and deferred credits": [
+            1838,
+            1192
+        ],
+        "Total Liabilities": [
+            38517,
+            37916
+        ]
+    },
+    "Equity": {
+        "Common stock (2,500,000,000 shares authorized at $.01 par value)": {
+            "Issued (2019 1,794,681,042 shares; 2018 1,791,637,434 shares)": {
+                "Par value": [
+                    18,
+                    18
+                ],
+                "Capital in excess of par": [
+                    46877,
+                    46879
+                ],
+                "Treasury stock (at cost: 2019 664,505,107 shares; 2018 653,288,213 shares)": [
+                    -43656,
+                    -42905
+                ],
+                "Accumulated other comprehensive loss": [
+                    -5914,
+                    -6063
+                ],
+                "Retained earnings": [
+                    35534,
+                    34010
+                ]
+            }
+        },
+        "Total Common Stockholders Equity": [
+            32859,
+            31939
+        ],
+        "Noncontrolling interests": [
+            122,
+            125
+        ],
+        "Total Equity": [
+            32981,
+            32064
+        ]
+    },
+    "Total Liabilities and Equity": [
+        71498,
+        69980
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 2,
+            "table_index": 1
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1",
+                    "1": "1",
+                    "2": "1"
+                },
+                "decision": "1"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-01-21_09-40-54"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\t(In millions except par value)\tDecember 31,\t2020\t2019\t",
+        "timestamp": "2025-03-11_12-41-21"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-41-24"
+    },
+    "post_table_text": {
+        "data": "\tRefer to Notes to Consolidated Financial Statements.\t66\tTHE COCA-COLA COMPANY AND SUBSIDIARIES",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tRefer to Notes to Consolidated Financial Statements.\t66\tTHE COCA-COLA COMPANY AND SUBSIDIARIES'"
+                },
+                "decision": "'\tRefer to Notes to Consolidated Financial Statements.\t66\tTHE COCA-COLA COMPANY AND SUBSIDIARIES'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-41-26"
+    },
+    "table_body": {
+        "data": "ASSETS\tCurrent Assets\tCash and cash equivalents\t$\t6,795\t$\t6,480\tShort-term investments\t1,771\t1,467\tTotal Cash, Cash Equivalents and Short-Term Investments\t8,566\t7,947\tMarketable securities\t2,348\t3,228\tTrade accounts receivable, less allowances of $\t526\tand $\t524\t, respectively\t3,144\t3,971\tInventories\t3,266\t3,379\tPrepaid expenses and other assets\t1,916\t1,886\tTotal Current Assets\t19,240\t20,411\tEquity method investments\t19,273\t19,025\tOther investments\t812\t854\tOther assets\t6,184\t6,075\tDeferred income tax assets\t2,460\t2,412\tProperty, plant and equipment   net\t10,777\t10,838\tTrademarks with indefinite lives\t10,395\t9,266\tGoodwill\t17,506\t16,764\tOther intangible assets\t649\t736\tTotal Assets\t$\t87,296\t$\t86,381\tLIABILITIES AND EQUITY\tCurrent Liabilities\tAccounts payable and accrued expenses\t$\t11,145\t$\t11,312\tLoans and notes payable\t2,183\t10,994\tCurrent maturities of long-term debt\t485\t4,253\tAccrued income taxes\t788\t414\tTotal Current Liabilities\t14,601\t26,973\tLong-term debt\t40,125\t27,516\tOther liabilities\t9,453\t8,510\tDeferred income tax liabilities\t1,833\t2,284\tThe Coca-Cola Company Shareowners' Equity\tCommon stock, $\t0.25\tpar value; authorized  \t11,200\tshares; issued  \t7,040\tshares\t1,760\t1,760\tCapital surplus\t17,601\t17,154\tReinvested earnings\t66,555\t65,855\tAccumulated other comprehensive income (loss)\t(\t14,601\t)\t(\t13,544\t)\tTreasury stock, at cost  \t2,738\tand\t2,760\tshares, respectively\t(\t52,016\t)\t(\t52,244\t)\tEquity Attributable to Shareowners of The Coca-Cola Company\t19,299\t18,981\tEquity attributable to noncontrolling interests\t1,985\t2,117\tTotal Equity\t21,284\t21,098\tTotal Liabilities and Equity\t$\t87,296\t$\t86,381",
+        "timestamp": "2025-03-11_12-41-26"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current Assets\": {\"Cash and cash equivalents\": [6795, 6480], \"Short-term investments\": [1771, 1467], \"Total Cash, Cash Equivalents and Short-Term Investments\": [8566, 7947], \"Marketable securities\": [2348, 3228], \"Trade accounts receivable, less allowances of $ 526 and $ 524 , respectively\": [3144, 3971], \"Inventories\": [3266, 3379], \"Prepaid expenses and other assets\": [1916, 1886], \"Total Current Assets\": [19240, 20411]}, \"Equity method investments\": [19273, 19025], \"Other investments\": [812, 854], \"Other assets\": [6184, 6075], \"Deferred income tax assets\": [2460, 2412], \"Property, plant and equipment   net\": [10777, 10838], \"Trademarks with indefinite lives\": [10395, 9266], \"Goodwill\": [17506, 16764], \"Other intangible assets\": [649, 736], \"Total Assets\": [87296, 86381]}, \"LIABILITIES AND EQUITY\": {\"Current Liabilities\": {\"Accounts payable and accrued expenses\": [11145, 11312], \"Loans and notes payable\": [2183, 10994], \"Current maturities of long-term debt\": [485, 4253], \"Accrued income taxes\": [788, 414], \"Total Current Liabilities\": [14601, 26973]}, \"Long-term debt\": [40125, 27516], \"Other liabilities\": [9453, 8510], \"Deferred income tax liabilities\": [1833, 2284], \"The Coca-Cola Company Shareowners' Equity\": {\"Common stock, $ 0.25 par value; authorized 11,200 shares; issued 7,040 shares\": [1760, 1760], \"Capital surplus\": [17601, 17154], \"Reinvested earnings\": [66555, 65855], \"Accumulated other comprehensive income (loss)\": [-14601, -13544], \"Treasury stock, at cost 2,738 and 2,760 shares, respectively\": [-52016, -52244], \"Equity Attributable to Shareowners of The Coca-Cola Company\": [19299, 18981], \"Equity attributable to noncontrolling interests\": [1985, 2117], \"Total Equity\": [21284, 21098]}, \"Total Liabilities and Equity\": [87296, 86381]}}"
+                },
+                "decision": "{\"ASSETS\": {\"Current Assets\": {\"Cash and cash equivalents\": [6795, 6480], \"Short-term investments\": [1771, 1467], \"Total Cash, Cash Equivalents and Short-Term Investments\": [8566, 7947], \"Marketable securities\": [2348, 3228], \"Trade accounts receivable, less allowances of $ 526 and $ 524 , respectively\": [3144, 3971], \"Inventories\": [3266, 3379], \"Prepaid expenses and other assets\": [1916, 1886], \"Total Current Assets\": [19240, 20411]}, \"Equity method investments\": [19273, 19025], \"Other investments\": [812, 854], \"Other assets\": [6184, 6075], \"Deferred income tax assets\": [2460, 2412], \"Property, plant and equipment   net\": [10777, 10838], \"Trademarks with indefinite lives\": [10395, 9266], \"Goodwill\": [17506, 16764], \"Other intangible assets\": [649, 736], \"Total Assets\": [87296, 86381]}, \"LIABILITIES AND EQUITY\": {\"Current Liabilities\": {\"Accounts payable and accrued expenses\": [11145, 11312], \"Loans and notes payable\": [2183, 10994], \"Current maturities of long-term debt\": [485, 4253], \"Accrued income taxes\": [788, 414], \"Total Current Liabilities\": [14601, 26973]}, \"Long-term debt\": [40125, 27516], \"Other liabilities\": [9453, 8510], \"Deferred income tax liabilities\": [1833, 2284], \"The Coca-Cola Company Shareowners' Equity\": {\"Common stock, $ 0.25 par value; authorized 11,200 shares; issued 7,040 shares\": [1760, 1760], \"Capital surplus\": [17601, 17154], \"Reinvested earnings\": [66555, 65855], \"Accumulated other comprehensive income (loss)\": [-14601, -13544], \"Treasury stock, at cost 2,738 and 2,760 shares, respectively\": [-52016, -52244], \"Equity Attributable to Shareowners of The Coca-Cola Company\": [19299, 18981], \"Equity attributable to noncontrolling interests\": [1985, 2117], \"Total Equity\": [21284, 21098]}, \"Total Liabilities and Equity\": [87296, 86381]}}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-44-20"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-44-20"
+    }
+}

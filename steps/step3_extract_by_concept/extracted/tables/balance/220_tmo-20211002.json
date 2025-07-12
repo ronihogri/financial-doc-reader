@@ -1,0 +1,124 @@
+{
+    "Assets": {
+        "Current Assets": {
+            "Cash and cash equivalents": [
+                12027,
+                10325
+            ],
+            "Accounts receivable, less allowances of $ 138 and $ 135": [
+                5557,
+                5741
+            ],
+            "Inventories": [
+                4906,
+                4029
+            ],
+            "Contract assets, net": [
+                808,
+                731
+            ],
+            "Other current assets": [
+                1426,
+                1131
+            ],
+            "Total current assets": [
+                24724,
+                21957
+            ]
+        },
+        "Property, Plant and Equipment, Net": [
+            7049,
+            5912
+        ],
+        "Acquisition-related Intangible Assets, Net": [
+            11927,
+            12685
+        ],
+        "Other Assets": [
+            2991,
+            2457
+        ],
+        "Goodwill": [
+            26909,
+            26041
+        ],
+        "Total Assets": [
+            73600,
+            69052
+        ]
+    },
+    "Liabilities and Shareholders' Equity": {
+        "Current Liabilities": {
+            "Short-term obligations and current maturities of long-term obligations": [
+                19,
+                2628
+            ],
+            "Accounts payable": [
+                2301,
+                2175
+            ],
+            "Accrued payroll and employee benefits": [
+                1816,
+                1916
+            ],
+            "Contract liabilities": [
+                1442,
+                1271
+            ],
+            "Other accrued expenses": [
+                2175,
+                2314
+            ],
+            "Total current liabilities": [
+                7753,
+                10304
+            ]
+        },
+        "Deferred Income Taxes": [
+            1465,
+            1794
+        ],
+        "Other Long-term Liabilities": [
+            3984,
+            3340
+        ],
+        "Long-term Obligations": [
+            21688,
+            19107
+        ],
+        "Shareholders' Equity": {
+            "Preferred stock, $ 100 par value, 50,000 shares authorized; none issued": [
+                0,
+                0
+            ],
+            "Common stock, $ 1 par value, 1,200,000,000 shares authorized; 438,749,893 and 437,088,297 shares issued": [
+                439,
+                437
+            ],
+            "Capital in excess of par value": [
+                15960,
+                15579
+            ],
+            "Retained earnings": [
+                33876,
+                28116
+            ],
+            "Treasury stock at cost, 44,701,806 and 40,417,789 shares": [
+                -8911,
+                -6818
+            ],
+            "Accumulated other comprehensive items": [
+                -2654,
+                -2807
+            ],
+            "Total shareholders' equity": [
+                38710,
+                34507
+            ]
+        },
+        "Total Liabilities and Shareholders' Equity": [
+            73600,
+            69052
+        ]
+    }
+}

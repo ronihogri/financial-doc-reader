@@ -1,0 +1,74 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 1,
+            "table_index": 0
+        },
+        "model": null,
+        "timestamp": "2025-01-21_09-40-06"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\t(in thousands, except share and per share data)\tJune 29,\tDecember 29,\t2019\t2018\t(unaudited)\t",
+        "timestamp": "2025-03-11_12-36-52"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000,
+            "sum_divider": 1000.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000",
+                    "1": "1000"
+                },
+                "decision": "1000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-36-55"
+    },
+    "post_table_text": {
+        "data": "\tSee accompanying notes.\t3\tTable of Contents\tHENRY SCHEIN, INC.\tCONSOLIDATED STATEMENTS OF",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tSee accompanying notes.\t3\tTable of Contents\tHENRY SCHEIN, INC.\tCONSOLIDATED STATEMENTS OF'"
+                },
+                "decision": "'\tSee accompanying notes.\t3\tTable of Contents\tHENRY SCHEIN, INC.\tCONSOLIDATED STATEMENTS OF'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-36-56"
+    },
+    "table_body": {
+        "data": "ASSETS\tCurrent assets:\tCash and cash equivalents\t$\t84,924\t$\t56,885\tAccounts receivable, net of reserves of $54,130 and $53,121\t1,203,925\t1,168,776\tInventories, net\t1,367,516\t1,415,512\tPrepaid expenses and other\t452,349\t451,033\tAssets of discontinued operations\t-\t1,083,014\tTotal current assets\t3,108,714\t4,175,220\tProperty and equipment, net\t315,422\t314,221\tOperating lease right-of-use assets, net\t236,113\t-\tGoodwill\t2,431,103\t2,081,029\tOther intangibles, net\t631,337\t376,031\tInvestments and other\t389,648\t420,367\tAssets of discontinued operations\t-\t1,133,659\tTotal assets\t$\t7,112,337\t$\t8,500,527\tLIABILITIES AND STOCKHOLDERS' EQUITY\tCurrent liabilities:\tAccounts payable\t$\t745,621\t$\t785,756\tBank credit lines\t242,787\t951,458\tCurrent maturities of long-term debt\t9,136\t8,280\tOperating lease liabilities\t68,288\t-\tLiabilities of discontinued operations\t-\t577,607\tAccrued expenses:\tPayroll and related\t224,574\t242,876\tTaxes\t108,590\t154,613\tOther\t426,281\t498,237\tTotal current liabilities\t1,825,277\t3,218,827\tLong-term debt\t973,147\t980,344\tDeferred income taxes\t72,177\t27,218\tOperating lease liabilities\t178,240\t-\tOther liabilities\t329,568\t357,741\tLiabilities of discontinued operations\t-\t62,453\tTotal liabilities\t3,378,409\t4,646,583\tRedeemable noncontrolling interests\t287,714\t219,724\tRedeemable noncontrolling interests from discontinued operations\t-\t92,432\tCommitments and contingencies\tStockholders' equity:\tPreferred stock, $.01 par value, 1,000,000 shares authorized,\tnone\toutstanding\t-\t-\tCommon stock, $.01 par value, 480,000,000 shares authorized,\t147,823,846 outstanding on June 29, 2019 and\t151,401,668 outstanding on December 29, 2018\t1,478\t1,514\tAdditional paid-in capital\t65,356\t-\tRetained earnings\t2,900,387\t3,208,589\tAccumulated other comprehensive loss\t(\t139,944\t)\t(\t248,771\t)\tTotal Henry Schein, Inc. stockholders' equity\t2,827,277\t2,961,332\tNoncontrolling interests\t618,937\t580,456\tTotal stockholders' equity\t3,446,214\t3,541,788\tTotal liabilities, redeemable noncontrolling interests and stockholders' equity\t$\t7,112,337\t$\t8,500,527",
+        "timestamp": "2025-03-11_12-36-56"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [84924, 56885], \"Accounts receivable, net of reserves of $54,130 and $53,121\": [1203925, 1168776], \"Inventories, net\": [1367516, 1415512], \"Prepaid expenses and other\": [452349, 451033], \"Assets of discontinued operations\": [0, 1083014], \"Total current assets\": [3108714, 4175220]}, \"Property and equipment, net\": [315422, 314221], \"Operating lease right-of-use assets, net\": [236113, 0], \"Goodwill\": [2431103, 2081029], \"Other intangibles, net\": [631337, 376031], \"Investments and other\": [389648, 420367], \"Assets of discontinued operations\": [0, 1133659], \"Total assets\": [7112337, 8500527]}, \"LIABILITIES AND STOCKHOLDERS' EQUITY\": {\"Current liabilities\": {\"Accounts payable\": [745621, 785756], \"Bank credit lines\": [242787, 951458], \"Current maturities of long-term debt\": [9136, 8280], \"Operating lease liabilities\": [68288, 0], \"Liabilities of discontinued operations\": [0, 577607], \"Accrued expenses\": {\"Payroll and related\": [224574, 242876], \"Taxes\": [108590, 154613], \"Other\": [426281, 498237]}, \"Total current liabilities\": [1825277, 3218827]}, \"Long-term debt\": [973147, 980344], \"Deferred income taxes\": [72177, 27218], \"Operating lease liabilities\": [178240, 0], \"Other liabilities\": [329568, 357741], \"Liabilities of discontinued operations\": [0, 62453], \"Total liabilities\": [3378409, 4646583], \"Redeemable noncontrolling interests\": [287714, 219724], \"Redeemable noncontrolling interests from discontinued operations\": [0, 92432], \"Commitments and contingencies\": null, \"Stockholders' equity\": {\"Preferred stock, $.01 par value, 1,000,000 shares authorized, none outstanding\": [0, 0], \"Common stock, $.01 par value, 480,000,000 shares authorized, 147,823,846 outstanding on June 29, 2019 and 151,401,668 outstanding on December 29, 2018\": [1478, 1514], \"Additional paid-in capital\": [65356, 0], \"Retained earnings\": [2900387, 3208589], \"Accumulated other comprehensive loss\": [-139944, -248771], \"Total Henry Schein, Inc. stockholders' equity\": [2827277, 2961332], \"Noncontrolling interests\": [618937, 580456], \"Total stockholders' equity\": [3446214, 3541788]}, \"Total liabilities, redeemable noncontrolling interests and stockholders' equity\": [7112337, 8500527]}  }"
+                },
+                "decision": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [84924, 56885], \"Accounts receivable, net of reserves of $54,130 and $53,121\": [1203925, 1168776], \"Inventories, net\": [1367516, 1415512], \"Prepaid expenses and other\": [452349, 451033], \"Assets of discontinued operations\": [0, 1083014], \"Total current assets\": [3108714, 4175220]}, \"Property and equipment, net\": [315422, 314221], \"Operating lease right-of-use assets, net\": [236113, 0], \"Goodwill\": [2431103, 2081029], \"Other intangibles, net\": [631337, 376031], \"Investments and other\": [389648, 420367], \"Assets of discontinued operations\": [0, 1133659], \"Total assets\": [7112337, 8500527]}, \"LIABILITIES AND STOCKHOLDERS' EQUITY\": {\"Current liabilities\": {\"Accounts payable\": [745621, 785756], \"Bank credit lines\": [242787, 951458], \"Current maturities of long-term debt\": [9136, 8280], \"Operating lease liabilities\": [68288, 0], \"Liabilities of discontinued operations\": [0, 577607], \"Accrued expenses\": {\"Payroll and related\": [224574, 242876], \"Taxes\": [108590, 154613], \"Other\": [426281, 498237]}, \"Total current liabilities\": [1825277, 3218827]}, \"Long-term debt\": [973147, 980344], \"Deferred income taxes\": [72177, 27218], \"Operating lease liabilities\": [178240, 0], \"Other liabilities\": [329568, 357741], \"Liabilities of discontinued operations\": [0, 62453], \"Total liabilities\": [3378409, 4646583], \"Redeemable noncontrolling interests\": [287714, 219724], \"Redeemable noncontrolling interests from discontinued operations\": [0, 92432], \"Commitments and contingencies\": null, \"Stockholders' equity\": {\"Preferred stock, $.01 par value, 1,000,000 shares authorized, none outstanding\": [0, 0], \"Common stock, $.01 par value, 480,000,000 shares authorized, 147,823,846 outstanding on June 29, 2019 and 151,401,668 outstanding on December 29, 2018\": [1478, 1514], \"Additional paid-in capital\": [65356, 0], \"Retained earnings\": [2900387, 3208589], \"Accumulated other comprehensive loss\": [-139944, -248771], \"Total Henry Schein, Inc. stockholders' equity\": [2827277, 2961332], \"Noncontrolling interests\": [618937, 580456], \"Total stockholders' equity\": [3446214, 3541788]}, \"Total liabilities, redeemable noncontrolling interests and stockholders' equity\": [7112337, 8500527]}  }"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-41-45"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-41-45"
+    }
+}

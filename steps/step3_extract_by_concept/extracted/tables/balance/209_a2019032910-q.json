@@ -1,0 +1,160 @@
+{
+    "ASSETS": {
+        "CURRENT ASSETS": {
+            "Cash and cash equivalents": [
+                5645,
+                8926
+            ],
+            "Short-term investments": [
+                1538,
+                2025
+            ],
+            "TOTAL CASH, CASH EQUIVALENTS AND SHORT-TERM INVESTMENTS": [
+                7183,
+                10951
+            ],
+            "Marketable securities": [
+                4765,
+                5013
+            ],
+            "Trade accounts receivable, less allowances of $492 and $489, respectively": [
+                3852,
+                3396
+            ],
+            "Inventories": [
+                3178,
+                2766
+            ],
+            "Prepaid expenses and other assets": [
+                2935,
+                1962
+            ],
+            "Assets held for sale discontinued operations": [
+                6627,
+                6546
+            ],
+            "TOTAL CURRENT ASSETS": [
+                28540,
+                30634
+            ]
+        },
+        "EQUITY METHOD INVESTMENTS": [
+            19283,
+            19407
+        ],
+        "OTHER INVESTMENTS": [
+            915,
+            867
+        ],
+        "OTHER ASSETS": [
+            5382,
+            4139
+        ],
+        "DEFERRED INCOME TAX ASSETS": [
+            2617,
+            2667
+        ],
+        "PROPERTY, PLANT AND EQUIPMENT, less accumulated depreciation of $8,032 and $8,013, respectively": [
+            8866,
+            8232
+        ],
+        "TRADEMARKS WITH INDEFINITE LIVES": [
+            9351,
+            6682
+        ],
+        "BOTTLERS' FRANCHISE RIGHTS WITH INDEFINITE LIVES": [
+            111,
+            51
+        ],
+        "GOODWILL": [
+            12964,
+            10263
+        ],
+        "OTHER INTANGIBLE ASSETS": [
+            318,
+            274
+        ],
+        "TOTAL ASSETS": [
+            88347,
+            83216
+        ]
+    },
+    "LIABILITIES AND EQUITY": {
+        "CURRENT LIABILITIES": {
+            "Accounts payable and accrued expenses": [
+                10986,
+                8932
+            ],
+            "Loans and notes payable": [
+                11570,
+                13194
+            ],
+            "Current maturities of long-term debt": [
+                3297,
+                4997
+            ],
+            "Accrued income taxes": [
+                255,
+                378
+            ],
+            "Liabilities held for sale discontinued operations": [
+                1835,
+                1722
+            ],
+            "TOTAL CURRENT LIABILITIES": [
+                27943,
+                29223
+            ]
+        },
+        "LONG-TERM DEBT": [
+            29400,
+            25364
+        ],
+        "OTHER LIABILITIES": [
+            8598,
+            7638
+        ],
+        "DEFERRED INCOME TAX LIABILITIES": [
+            2602,
+            1933
+        ],
+        "THE COCA-COLA COMPANY SHAREOWNERS' EQUITY": {
+            "Common stock, $0.25 par value; Authorized 11,200 shares; Issued 7,040 and 7,040 shares, respectively": [
+                1760,
+                1760
+            ],
+            "Capital surplus": [
+                16577,
+                16520
+            ],
+            "Reinvested earnings": [
+                63704,
+                63234
+            ],
+            "Accumulated other comprehensive income (loss)": [
+                -12325,
+                -12814
+            ],
+            "Treasury stock, at cost 2,772 and 2,772 shares, respectively": [
+                -51981,
+                -51719
+            ],
+            "EQUITY ATTRIBUTABLE TO SHAREOWNERS OF THE COCA-COLA COMPANY": [
+                17735,
+                16981
+            ],
+            "EQUITY ATTRIBUTABLE TO NONCONTROLLING INTERESTS": [
+                2069,
+                2077
+            ],
+            "TOTAL EQUITY": [
+                19804,
+                19058
+            ]
+        },
+        "TOTAL LIABILITIES AND EQUITY": [
+            88347,
+            83216
+        ]
+    }
+}

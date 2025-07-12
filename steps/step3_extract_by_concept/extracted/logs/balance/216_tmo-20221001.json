@@ -1,0 +1,74 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 1,
+            "table_index": 0
+        },
+        "model": null,
+        "timestamp": "2025-01-21_09-41-32"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEET\t(Unaudited)\tOctober 1,\tDecember 31,\t(In millions except share and per share amounts)\t2022\t2021\t",
+        "timestamp": "2025-03-11_12-44-54"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-44-57"
+    },
+    "post_table_text": {
+        "data": "\t3\tTHERMO FISHER SCIENTIFIC INC.\tCONDENSED CONSOLIDATED STATEMENT OF INCOME\t(Unaudited)\tTh",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\t3\tTHERMO FISHER SCIENTIFIC INC.\tCONDENSED CONSOLIDATED STATEMENT OF INCOME\t(Unaudited)\tTh'"
+                },
+                "decision": "'\t3\tTHERMO FISHER SCIENTIFIC INC.\tCONDENSED CONSOLIDATED STATEMENT OF INCOME\t(Unaudited)\tTh'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-45-00"
+    },
+    "table_body": {
+        "data": "Assets\tCurrent assets:\tCash and cash equivalents\t$\t2,919\t$\t4,477\tAccounts receivable, less allowances of $\t185\tand $\t150\t7,671\t7,977\tInventories\t5,722\t5,051\tContract assets, net\t1,248\t968\tOther current assets\t1,739\t1,640\tTotal current assets\t19,299\t20,113\tProperty, plant and equipment, net\t8,628\t8,333\tAcquisition-related intangible assets, net\t17,813\t20,113\tOther assets\t4,308\t4,640\tGoodwill\t40,488\t41,924\tTotal assets\t$\t90,536\t$\t95,123\tLiabilities, redeemable noncontrolling interest and equity\tCurrent liabilities:\tShort-term obligations and current maturities of long-term obligations\t$\t1,010\t$\t2,537\tAccounts payable\t2,471\t2,867\tAccrued payroll and employee benefits\t1,864\t2,427\tContract liabilities\t2,567\t2,655\tOther accrued expenses\t3,206\t2,950\tTotal current liabilities\t11,118\t13,436\tDeferred income taxes\t3,140\t3,837\tOther long-term liabilities\t4,401\t4,540\tLong-term obligations\t28,150\t32,333\tRedeemable noncontrolling interest\t119\t122\tEquity:\tThermo Fisher Scientific Inc. shareholders  equity:\tPreferred stock, $\t100\tpar value,\t50,000\tshares authorized;\tnone\tissued\t \t \tCommon stock, $\t1\tpar value,\t1,200,000,000\tshares authorized;\t440,352,770\tand\t439,154,741\tshares issued\t440\t439\tCapital in excess of par value\t16,596\t16,174\tRetained earnings\t40,452\t35,431\tTreasury stock at cost,\t48,157,213\tand\t44,720,112\tshares\t(\t11,011\t)\t(\t8,922\t)\tAccumulated other comprehensive items\t(\t2,928\t)\t(\t2,329\t)\tTotal Thermo Fisher Scientific Inc. shareholders  equity\t43,549\t40,793\tNoncontrolling interests\t59\t62\tTotal equity\t43,608\t40,855\tTotal liabilities, redeemable noncontrolling interest and equity\t$\t90,536\t$\t95,123\tThe accompanying notes are an integral part of these condensed consolidated financial statements.",
+        "timestamp": "2025-03-11_12-45-00"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"Assets\": {\"Current assets\": {\"Cash and cash equivalents\": [2919, 4477], \"Accounts receivable, less allowances of $ 185 and $ 150\": [7671, 7977], \"Inventories\": [5722, 5051], \"Contract assets, net\": [1248, 968], \"Other current assets\": [1739, 1640], \"Total current assets\": [19299, 20113]}, \"Property, plant and equipment, net\": [8628, 8333], \"Acquisition-related intangible assets, net\": [17813, 20113], \"Other assets\": [4308, 4640], \"Goodwill\": [40488, 41924], \"Total assets\": [90536, 95123]}, \"Liabilities, redeemable noncontrolling interest and equity\": {\"Current liabilities\": {\"Short-term obligations and current maturities of long-term obligations\": [1010, 2537], \"Accounts payable\": [2471, 2867], \"Accrued payroll and employee benefits\": [1864, 2427], \"Contract liabilities\": [2567, 2655], \"Other accrued expenses\": [3206, 2950], \"Total current liabilities\": [11118, 13436]}, \"Deferred income taxes\": [3140, 3837], \"Other long-term liabilities\": [4401, 4540], \"Long-term obligations\": [28150, 32333], \"Redeemable noncontrolling interest\": [119, 122], \"Equity\": {\"Thermo Fisher Scientific Inc. shareholders equity\": {\"Preferred stock, $ 100 par value, 50,000 shares authorized; none issued\": [0, 0], \"Common stock, $ 1 par value, 1,200,000,000 shares authorized; 440,352,770 and 439,154,741 shares issued\": [440, 439], \"Capital in excess of par value\": [16596, 16174], \"Retained earnings\": [40452, 35431], \"Treasury stock at cost, 48,157,213 and 44,720,112 shares\": [-11011, -8922], \"Accumulated other comprehensive items\": [-2928, -2329], \"Total Thermo Fisher Scientific Inc. shareholders equity\": [43549, 40793]}, \"Noncontrolling interests\": [59, 62], \"Total equity\": [43608, 40855]}, \"Total liabilities, redeemable noncontrolling interest and equity\": [90536, 95123]}  }"
+                },
+                "decision": "{\"Assets\": {\"Current assets\": {\"Cash and cash equivalents\": [2919, 4477], \"Accounts receivable, less allowances of $ 185 and $ 150\": [7671, 7977], \"Inventories\": [5722, 5051], \"Contract assets, net\": [1248, 968], \"Other current assets\": [1739, 1640], \"Total current assets\": [19299, 20113]}, \"Property, plant and equipment, net\": [8628, 8333], \"Acquisition-related intangible assets, net\": [17813, 20113], \"Other assets\": [4308, 4640], \"Goodwill\": [40488, 41924], \"Total assets\": [90536, 95123]}, \"Liabilities, redeemable noncontrolling interest and equity\": {\"Current liabilities\": {\"Short-term obligations and current maturities of long-term obligations\": [1010, 2537], \"Accounts payable\": [2471, 2867], \"Accrued payroll and employee benefits\": [1864, 2427], \"Contract liabilities\": [2567, 2655], \"Other accrued expenses\": [3206, 2950], \"Total current liabilities\": [11118, 13436]}, \"Deferred income taxes\": [3140, 3837], \"Other long-term liabilities\": [4401, 4540], \"Long-term obligations\": [28150, 32333], \"Redeemable noncontrolling interest\": [119, 122], \"Equity\": {\"Thermo Fisher Scientific Inc. shareholders equity\": {\"Preferred stock, $ 100 par value, 50,000 shares authorized; none issued\": [0, 0], \"Common stock, $ 1 par value, 1,200,000,000 shares authorized; 440,352,770 and 439,154,741 shares issued\": [440, 439], \"Capital in excess of par value\": [16596, 16174], \"Retained earnings\": [40452, 35431], \"Treasury stock at cost, 48,157,213 and 44,720,112 shares\": [-11011, -8922], \"Accumulated other comprehensive items\": [-2928, -2329], \"Total Thermo Fisher Scientific Inc. shareholders equity\": [43549, 40793]}, \"Noncontrolling interests\": [59, 62], \"Total equity\": [43608, 40855]}, \"Total liabilities, redeemable noncontrolling interest and equity\": [90536, 95123]}  }"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-46-49"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-46-49"
+    }
+}

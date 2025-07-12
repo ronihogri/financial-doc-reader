@@ -1,0 +1,87 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 2,
+            "table_index": 1
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1",
+                    "1": "1",
+                    "2": "1"
+                },
+                "decision": "1"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-01-21_09-30-54"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\tDollars in millions\t(UNAUDITED)\t",
+        "timestamp": "2025-03-11_12-09-37"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-09-41"
+    },
+    "post_table_text": {
+        "data": "\tThe accompanying notes are an integral part of these consolidated financial statements.\t4\tBR",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tThe accompanying notes are an integral part of these consolidated financial statements.\t4\tBR'"
+                },
+                "decision": "'\tThe accompanying notes are an integral part of these consolidated financial statements.\t4\tBR'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-09-42"
+    },
+    "table_body": {
+        "data": "ASSETS\tMarch 31,\t2023\tDecember 31,\t2022\tCurrent assets:\tCash and cash equivalents\t$\t8,995\t$\t9,123\tMarketable debt securities\t274\t130\tReceivables\t10,054\t9,886\tInventories\t2,605\t2,339\tOther current assets\t5,158\t5,795\tTotal Current assets\t27,086\t27,273\tProperty, plant and equipment\t6,279\t6,255\tGoodwill\t21,162\t21,149\tOther intangible assets\t33,569\t35,859\tDeferred income taxes\t1,317\t1,344\tOther non-current assets\t4,868\t4,940\tTotal Assets\t$\t94,281\t$\t96,820\tLIABILITIES\tCurrent liabilities:\tShort-term debt obligations\t$\t2,752\t$\t4,264\tAccounts payable\t3,194\t3,040\tOther current liabilities\t13,139\t14,586\tTotal Current liabilities\t19,085\t21,890\tDeferred income taxes\t1,568\t2,166\tLong-term debt\t35,078\t35,056\tOther non-current liabilities\t6,664\t6,590\tTotal Liabilities\t62,395\t65,702\tCommitments and Contingencies\tEQUITY\tBMS Shareholders  equity:\tPreferred stock\t \t \tCommon stock\t292\t292\tCapital in excess of par value of stock\t45,140\t45,165\tAccumulated other comprehensive loss\t(\t1,368\t)\t(\t1,281\t)\tRetained earnings\t26,568\t25,503\tLess cost of treasury stock\t(\t38,808\t)\t(\t38,618\t)\tTotal BMS Shareholders  equity\t31,824\t31,061\tNoncontrolling interest\t62\t57\tTotal Equity\t31,886\t31,118\tTotal Liabilities and Equity\t$\t94,281\t$\t96,820",
+        "timestamp": "2025-03-11_12-09-42"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [8995, 9123], \"Marketable debt securities\": [274, 130], \"Receivables\": [10054, 9886], \"Inventories\": [2605, 2339], \"Other current assets\": [5158, 5795], \"Total Current assets\": [27086, 27273]}, \"Property, plant and equipment\": [6279, 6255], \"Goodwill\": [21162, 21149], \"Other intangible assets\": [33569, 35859], \"Deferred income taxes\": [1317, 1344], \"Other non-current assets\": [4868, 4940], \"Total Assets\": [94281, 96820]}, \"LIABILITIES\": {\"Current liabilities\": {\"Short-term debt obligations\": [2752, 4264], \"Accounts payable\": [3194, 3040], \"Other current liabilities\": [13139, 14586], \"Total Current liabilities\": [19085, 21890]}, \"Deferred income taxes\": [1568, 2166], \"Long-term debt\": [35078, 35056], \"Other non-current liabilities\": [6664, 6590], \"Total Liabilities\": [62395, 65702], \"Commitments and Contingencies\": null}, \"EQUITY\": {\"BMS Shareholders equity\": {\"Preferred stock\": [0, 0], \"Common stock\": [292, 292], \"Capital in excess of par value of stock\": [45140, 45165], \"Accumulated other comprehensive loss\": [-1368, -1281], \"Retained earnings\": [26568, 25503], \"Less cost of treasury stock\": [-38808, -38618], \"Total BMS Shareholders equity\": [31824, 31061]}, \"Noncontrolling interest\": [62, 57], \"Total Equity\": [31886, 31118]}, \"Total Liabilities and Equity\": [94281, 96820]}"
+                },
+                "decision": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [8995, 9123], \"Marketable debt securities\": [274, 130], \"Receivables\": [10054, 9886], \"Inventories\": [2605, 2339], \"Other current assets\": [5158, 5795], \"Total Current assets\": [27086, 27273]}, \"Property, plant and equipment\": [6279, 6255], \"Goodwill\": [21162, 21149], \"Other intangible assets\": [33569, 35859], \"Deferred income taxes\": [1317, 1344], \"Other non-current assets\": [4868, 4940], \"Total Assets\": [94281, 96820]}, \"LIABILITIES\": {\"Current liabilities\": {\"Short-term debt obligations\": [2752, 4264], \"Accounts payable\": [3194, 3040], \"Other current liabilities\": [13139, 14586], \"Total Current liabilities\": [19085, 21890]}, \"Deferred income taxes\": [1568, 2166], \"Long-term debt\": [35078, 35056], \"Other non-current liabilities\": [6664, 6590], \"Total Liabilities\": [62395, 65702], \"Commitments and Contingencies\": null}, \"EQUITY\": {\"BMS Shareholders equity\": {\"Preferred stock\": [0, 0], \"Common stock\": [292, 292], \"Capital in excess of par value of stock\": [45140, 45165], \"Accumulated other comprehensive loss\": [-1368, -1281], \"Retained earnings\": [26568, 25503], \"Less cost of treasury stock\": [-38808, -38618], \"Total BMS Shareholders equity\": [31824, 31061]}, \"Noncontrolling interest\": [62, 57], \"Total Equity\": [31886, 31118]}, \"Total Liabilities and Equity\": [94281, 96820]}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-18-57"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-18-57"
+    }
+}

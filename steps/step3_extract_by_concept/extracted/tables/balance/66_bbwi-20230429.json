@@ -1,0 +1,167 @@
+{
+    "ASSETS": {
+        "Current Assets": {
+            "Cash and Cash Equivalents": [
+                1046,
+                1232,
+                651
+            ],
+            "Accounts Receivable, Net": [
+                145,
+                226,
+                167
+            ],
+            "Inventories": [
+                771,
+                709,
+                820
+            ],
+            "Other": [
+                118,
+                99,
+                114
+            ],
+            "Total Current Assets": [
+                2080,
+                2266,
+                1752
+            ]
+        },
+        "Property and Equipment, Net": [
+            1223,
+            1193,
+            1059
+        ],
+        "Operating Lease Assets": [
+            1072,
+            1050,
+            1058
+        ],
+        "Goodwill": [
+            628,
+            628,
+            628
+        ],
+        "Trade Name": [
+            165,
+            165,
+            165
+        ],
+        "Deferred Income Taxes": [
+            37,
+            37,
+            44
+        ],
+        "Other Assets": [
+            158,
+            155,
+            154
+        ],
+        "Total Assets": [
+            5363,
+            5494,
+            4860
+        ]
+    },
+    "LIABILITIES AND EQUITY (DEFICIT)": {
+        "Current Liabilities": {
+            "Accounts Payable": [
+                426,
+                455,
+                470
+            ],
+            "Accrued Expenses and Other": [
+                585,
+                673,
+                534
+            ],
+            "Current Operating Lease Liabilities": [
+                165,
+                177,
+                163
+            ],
+            "Income Taxes": [
+                101,
+                74,
+                73
+            ],
+            "Total Current Liabilities": [
+                1277,
+                1379,
+                1240
+            ]
+        },
+        "Deferred Income Taxes": [
+            168,
+            168,
+            157
+        ],
+        "Long-term Debt": [
+            4781,
+            4862,
+            4856
+        ],
+        "Long-term Operating Lease Liabilities": [
+            1032,
+            1014,
+            1019
+        ],
+        "Other Long-term Liabilities": [
+            275,
+            276,
+            246
+        ],
+        "Shareholders  Equity (Deficit)": {
+            "Preferred Stock - $ 1.00 par value; 10 shares authorized; none issued": [
+                0,
+                0,
+                0
+            ],
+            "Common Stock - $ 0.50 par value; 1,000 shares authorized; 244, 244 and 251 shares issued; 229, 229 and 236 shares outstanding, respectively": [
+                122,
+                122,
+                126
+            ],
+            "Paid-in Capital": [
+                818,
+                817,
+                618
+            ],
+            "Accumulated Other Comprehensive Income": [
+                77,
+                78,
+                80
+            ],
+            "Retained Earnings (Accumulated Deficit)": [
+                -2366,
+                -2401,
+                -2661
+            ],
+            "Less: Treasury Stock, at Average Cost; 15, 15 and 15 shares, respectively": [
+                -822,
+                -822,
+                -822
+            ],
+            "Total Shareholders  Equity (Deficit)": [
+                -2171,
+                -2206,
+                -2659
+            ]
+        },
+        "Noncontrolling Interest": [
+            1,
+            1,
+            1
+        ],
+        "Total Equity (Deficit)": [
+            -2170,
+            -2205,
+            -2658
+        ],
+        "Total Liabilities and Equity (Deficit)": [
+            5363,
+            5494,
+            4860
+        ]
+    }
+}

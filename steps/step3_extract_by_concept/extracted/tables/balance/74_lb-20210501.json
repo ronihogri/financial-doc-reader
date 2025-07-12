@@ -1,0 +1,172 @@
+{
+    "ASSETS": {
+        "Current Assets": {
+            "Cash and Cash Equivalents": [
+                2807,
+                3903,
+                957
+            ],
+            "Accounts Receivable, Net": [
+                221,
+                269,
+                229
+            ],
+            "Inventories": [
+                1397,
+                1273,
+                1491
+            ],
+            "Other": [
+                187,
+                134,
+                172
+            ],
+            "Total Current Assets": [
+                4612,
+                5579,
+                2849
+            ]
+        },
+        "Property and Equipment, Net": [
+            2030,
+            2095,
+            2299
+        ],
+        "Operating Lease Assets": [
+            2596,
+            2558,
+            2947
+        ],
+        "Goodwill": [
+            628,
+            628,
+            628
+        ],
+        "Trade Names": [
+            411,
+            411,
+            411
+        ],
+        "Deferred Income Taxes": [
+            72,
+            69,
+            84
+        ],
+        "Other Assets": [
+            197,
+            231,
+            221
+        ],
+        "Total Assets": [
+            10546,
+            11571,
+            9439
+        ]
+    },
+    "LIABILITIES AND EQUITY (DEFICIT)": {
+        "Current Liabilities": {
+            "Accounts Payable": [
+                735,
+                683,
+                715
+            ],
+            "Accrued Expenses and Other": [
+                1292,
+                1457,
+                826
+            ],
+            "Current Debt": [
+                0,
+                0,
+                468
+            ],
+            "Current Operating Lease Liabilities": [
+                504,
+                594,
+                590
+            ],
+            "Income Taxes": [
+                149,
+                92,
+                84
+            ],
+            "Total Current Liabilities": [
+                2680,
+                2826,
+                2683
+            ]
+        },
+        "Deferred Income Taxes": [
+            245,
+            234,
+            198
+        ],
+        "Long-term Debt": [
+            5344,
+            6366,
+            5034
+        ],
+        "Long-term Operating Lease Liabilities": [
+            2504,
+            2495,
+            2945
+        ],
+        "Other Long-term Liabilities": [
+            306,
+            311,
+            437
+        ],
+        "Shareholders Equity (Deficit)": {
+            "Preferred Stock - $ 1.00 par value; 10 shares authorized; none issued": [
+                0,
+                0,
+                0
+            ],
+            "Common Stock - $ 0.50 par value; 1,000 shares authorized; 288, 286 and 286 shares issued; 277, 278 and 278 shares outstanding, respectively": [
+                144,
+                143,
+                143
+            ],
+            "Paid-in Capital": [
+                903,
+                891,
+                865
+            ],
+            "Accumulated Other Comprehensive Income": [
+                86,
+                83,
+                51
+            ],
+            "Retained Earnings (Accumulated Deficit)": [
+                -1144,
+                -1421,
+                -2562
+            ],
+            "Less: Treasury Stock, at Average Cost; 11, 8 and 8 shares, respectively": [
+                -523,
+                -358,
+                -358
+            ],
+            "Total L Brands, Inc. Shareholders Equity (Deficit)": [
+                -534,
+                -662,
+                -1861
+            ],
+            "Noncontrolling Interest": [
+                1,
+                1,
+                3
+            ],
+            "Total Equity (Deficit)": [
+                -533,
+                -661,
+                -1858
+            ]
+        },
+        "Total Liabilities and Equity (Deficit)": [
+            10546,
+            11571,
+            9439
+        ]
+    }
+}

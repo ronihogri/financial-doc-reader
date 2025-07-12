@@ -1,0 +1,144 @@
+{
+    "Assets": {
+        "Cash and cash equivalents": [
+            2490,
+            5088
+        ],
+        "Short-term investments": [
+            4032,
+            3028
+        ],
+        "Accounts and notes receivable (net of allowance of $ 4 and $ 13 , respectively)": [
+            1984,
+            3267
+        ],
+        "Accounts and notes receivable related parties": [
+            135,
+            134
+        ],
+        "Investment in Cenovus Energy": [
+            809,
+            2111
+        ],
+        "Inventories": [
+            1034,
+            1026
+        ],
+        "Prepaid expenses and other current assets": [
+            575,
+            2259
+        ],
+        "Total Current Assets": [
+            11059,
+            16913
+        ],
+        "Investments and long-term receivables": [
+            8295,
+            8687
+        ],
+        "Loans and advances related parties": [
+            114,
+            219
+        ],
+        "Net properties, plants and equipment (net of accumulated DD&A of $ 58,726 and $ 55,477 , respectively)": [
+            41269,
+            42269
+        ],
+        "Other assets": [
+            2420,
+            2426
+        ],
+        "Total Assets": [
+            63157,
+            70514
+        ]
+    },
+    "Liabilities": {
+        "Accounts payable": [
+            2217,
+            3176
+        ],
+        "Accounts payable related parties": [
+            22,
+            24
+        ],
+        "Short-term debt": [
+            482,
+            105
+        ],
+        "Accrued income and other taxes": [
+            339,
+            1030
+        ],
+        "Employee benefit obligations": [
+            1661,
+            1781
+        ],
+        "Other accruals": [
+            1111,
+            2045
+        ],
+        "Total Current Liabilities": [
+            4640,
+            7043
+        ],
+        "Long-term debt": [
+            14905,
+            14790
+        ],
+        "Asset retirement obligations and accrued environmental costs": [
+            5651,
+            5352
+        ],
+        "Deferred income taxes": [
+            3854,
+            4634
+        ],
+        "Other liabilities and deferred credits": [
+            1663,
+            1864
+        ],
+        "Total Liabilities": [
+            32374,
+            35464
+        ]
+    },
+    "Equity": {
+        "Common stock ( 2,500,000,000 shares authorized at $ 0.01 par value) Issued (2020  1,798,738,512 shares; 2019  1,795,652,203 shares)": [
+            18,
+            18
+        ],
+        "Capital in excess of par": [
+            47113,
+            46983
+        ],
+        "Treasury stock (at cost: 2020  725,996,869 shares; 2019  710,783,814 shares)": [
+            -47130,
+            -46405
+        ],
+        "Accumulated other comprehensive loss": [
+            -5666,
+            -5357
+        ],
+        "Retained earnings": [
+            36448,
+            39742
+        ],
+        "Total Common Stockholders Equity": [
+            30783,
+            34981
+        ],
+        "Noncontrolling interests": [
+            0,
+            69
+        ],
+        "Total Equity": [
+            30783,
+            35050
+        ]
+    },
+    "Total Liabilities and Equity": [
+        63157,
+        70514
+    ]
+}

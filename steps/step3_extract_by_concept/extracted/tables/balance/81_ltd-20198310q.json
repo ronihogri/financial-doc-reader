@@ -1,0 +1,172 @@
+{
+    "ASSETS": {
+        "Current Assets": {
+            "Cash and Cash Equivalents": [
+                853,
+                1413,
+                843
+            ],
+            "Accounts Receivable, Net": [
+                283,
+                367,
+                310
+            ],
+            "Inventories": [
+                1329,
+                1248,
+                1315
+            ],
+            "Other": [
+                188,
+                232,
+                247
+            ],
+            "Total Current Assets": [
+                2653,
+                3260,
+                2715
+            ]
+        },
+        "Property and Equipment, Net": [
+            2756,
+            2818,
+            2949
+        ],
+        "Operating Lease Assets": [
+            3209,
+            0,
+            0
+        ],
+        "Goodwill": [
+            1348,
+            1348,
+            1348
+        ],
+        "Trade Names": [
+            411,
+            411,
+            411
+        ],
+        "Deferred Income Taxes": [
+            62,
+            62,
+            21
+        ],
+        "Other Assets": [
+            179,
+            191,
+            176
+        ],
+        "Total Assets": [
+            10618,
+            8090,
+            7620
+        ]
+    },
+    "LIABILITIES AND EQUITY (DEFICIT)": {
+        "Current Liabilities": {
+            "Accounts Payable": [
+                763,
+                711,
+                821
+            ],
+            "Accrued Expenses and Other": [
+                919,
+                1082,
+                963
+            ],
+            "Current Debt": [
+                75,
+                72,
+                65
+            ],
+            "Current Operating Lease Liabilities": [
+                456,
+                0,
+                0
+            ],
+            "Income Taxes": [
+                3,
+                121,
+                7
+            ],
+            "Total Current Liabilities": [
+                2216,
+                1986,
+                1856
+            ]
+        },
+        "Deferred Income Taxes": [
+            241,
+            226,
+            237
+        ],
+        "Long-term Debt": [
+            5475,
+            5739,
+            5712
+        ],
+        "Long-term Operating Lease Liabilities": [
+            3165,
+            0,
+            0
+        ],
+        "Other Long-term Liabilities": [
+            450,
+            1004,
+            937
+        ],
+        "Shareholders Equity (Deficit)": {
+            "Preferred Stock - $1.00 par value; 10 shares authorized; none issued": [
+                0,
+                0,
+                0
+            ],
+            "Common Stock - $0.50 par value; 1,000 shares authorized; 284, 283 and 283 shares issued; 276, 275 and 275 shares outstanding, respectively": [
+                142,
+                141,
+                142
+            ],
+            "Paid-in Capital": [
+                806,
+                771,
+                718
+            ],
+            "Accumulated Other Comprehensive Income": [
+                49,
+                59,
+                12
+            ],
+            "Retained Earnings (Deficit)": [
+                -1572,
+                -1482,
+                -1648
+            ],
+            "Less: Treasury Stock, at Average Cost; 8, 8 and 8 shares, respectively": [
+                -358,
+                -358,
+                -348
+            ],
+            "Total L Brands, Inc. Shareholders Equity (Deficit)": [
+                -933,
+                -869,
+                -1124
+            ],
+            "Noncontrolling Interest": [
+                4,
+                4,
+                2
+            ],
+            "Total Equity (Accumulated Deficit)": [
+                -929,
+                -865,
+                -1122
+            ]
+        },
+        "Total Liabilities and Equity (Deficit)": [
+            10618,
+            8090,
+            7620
+        ]
+    }
+}

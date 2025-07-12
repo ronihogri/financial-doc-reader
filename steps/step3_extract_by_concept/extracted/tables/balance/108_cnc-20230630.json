@@ -1,0 +1,145 @@
+{
+    "ASSETS": {
+        "Current assets": {
+            "Cash and cash equivalents": [
+                17170,
+                12074
+            ],
+            "Premium and trade receivables": [
+                13601,
+                13272
+            ],
+            "Short-term investments": [
+                2212,
+                2321
+            ],
+            "Other current assets": [
+                1883,
+                2461
+            ],
+            "Total current assets": [
+                34866,
+                30128
+            ]
+        },
+        "Long-term investments": [
+            16108,
+            14684
+        ],
+        "Restricted deposits": [
+            1355,
+            1217
+        ],
+        "Property, software and equipment, net": [
+            2416,
+            2432
+        ],
+        "Goodwill": [
+            18716,
+            18812
+        ],
+        "Intangible assets, net": [
+            6520,
+            6911
+        ],
+        "Other long-term assets": [
+            2872,
+            2686
+        ],
+        "Total assets": [
+            82853,
+            76870
+        ]
+    },
+    "LIABILITIES, REDEEMABLE NONCONTROLLING INTERESTS AND STOCKHOLDERS' EQUITY": {
+        "Current liabilities": {
+            "Medical claims liability": [
+                16884,
+                16745
+            ],
+            "Accounts payable and accrued expenses": [
+                9868,
+                9525
+            ],
+            "Return of premium payable": [
+                2071,
+                1634
+            ],
+            "Unearned revenue": [
+                2373,
+                478
+            ],
+            "Current portion of long-term debt": [
+                110,
+                82
+            ],
+            "Total current liabilities": [
+                31306,
+                28464
+            ]
+        },
+        "Long-term debt": [
+            17896,
+            17938
+        ],
+        "Deferred tax liability": [
+            495,
+            615
+        ],
+        "Other long-term liabilities": [
+            7369,
+            5616
+        ],
+        "Total liabilities": [
+            57066,
+            52633
+        ],
+        "Commitments and contingencies": null,
+        "Redeemable noncontrolling interests": [
+            19,
+            56
+        ],
+        "Stockholders' equity": {
+            "Preferred stock, $ 0.001 par value; authorized 10,000 shares; no shares issued or outstanding at June 30, 2023 and December 31, 2022": [
+                0,
+                0
+            ],
+            "Common stock, $ 0.001 par value; authorized 800,000 shares; 614,743 issued and 546,003 outstanding at June 30, 2023, and 607,847 issued and 550,754 outstanding at December 31, 2022": [
+                1,
+                1
+            ],
+            "Additional paid-in capital": [
+                20183,
+                20060
+            ],
+            "Accumulated other comprehensive (loss)": [
+                -998,
+                -1132
+            ],
+            "Retained earnings": [
+                11529,
+                9341
+            ],
+            "Treasury stock, at cost ( 68,740 and 57,093 shares, respectively)": [
+                -5044,
+                -4213
+            ],
+            "Total Centene stockholders' equity": [
+                25671,
+                24057
+            ],
+            "Nonredeemable noncontrolling interest": [
+                97,
+                124
+            ],
+            "Total stockholders' equity": [
+                25768,
+                24181
+            ]
+        },
+        "Total liabilities, redeemable noncontrolling interests and stockholders' equity": [
+            82853,
+            76870
+        ]
+    }
+}

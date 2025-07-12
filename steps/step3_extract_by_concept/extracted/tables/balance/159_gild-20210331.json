@@ -1,0 +1,133 @@
+{
+    "Assets": {
+        "Current assets": {
+            "Cash and cash equivalents": [
+                4065,
+                5997
+            ],
+            "Short-term marketable securities": [
+                1601,
+                1411
+            ],
+            "Accounts receivable, net": [
+                3925,
+                4892
+            ],
+            "Inventories": [
+                1779,
+                1683
+            ],
+            "Prepaid and other current assets": [
+                1908,
+                2013
+            ],
+            "Total current assets": [
+                13278,
+                15996
+            ]
+        },
+        "Property, plant and equipment, net": [
+            4990,
+            4967
+        ],
+        "Long-term marketable securities": [
+            579,
+            502
+        ],
+        "Intangible assets, net": [
+            34781,
+            33126
+        ],
+        "Goodwill": [
+            8334,
+            8108
+        ],
+        "Other long-term assets": [
+            5530,
+            5708
+        ],
+        "Total assets": [
+            67492,
+            68407
+        ]
+    },
+    "Liabilities and Stockholders Equity": {
+        "Current liabilities": {
+            "Accounts payable": [
+                570,
+                844
+            ],
+            "Accrued government and other rebates": [
+                3369,
+                3460
+            ],
+            "Accrued and other current liabilities": [
+                3507,
+                4336
+            ],
+            "Current portion of long-term debt and other obligations, net": [
+                2259,
+                2757
+            ],
+            "Total current liabilities": [
+                9705,
+                11397
+            ]
+        },
+        "Long-term debt, net": [
+            27907,
+            28645
+        ],
+        "Long-term income taxes payable": [
+            5022,
+            5016
+        ],
+        "Deferred tax liability": [
+            4464,
+            3914
+        ],
+        "Other long-term obligations": [
+            1430,
+            1214
+        ],
+        "Commitments and contingencies (Note 11)": null,
+        "Stockholders equity": {
+            "Preferred stock, par value $ 0.001 per share; 5 shares authorized; no outstanding": [
+                0,
+                0
+            ],
+            "Common stock, par value $ 0.001 per share; 5,600 shares authorized; 1,254 shares issued and outstanding": [
+                1,
+                1
+            ],
+            "Additional paid-in capital": [
+                4092,
+                3880
+            ],
+            "Accumulated other comprehensive income (loss)": [
+                38,
+                -60
+            ],
+            "Retained earnings": [
+                14821,
+                14381
+            ],
+            "Total Gilead stockholders equity": [
+                18952,
+                18202
+            ],
+            "Noncontrolling interest": [
+                12,
+                19
+            ],
+            "Total stockholders equity": [
+                18964,
+                18221
+            ]
+        },
+        "Total liabilities and stockholders equity": [
+            67492,
+            68407
+        ]
+    }
+}

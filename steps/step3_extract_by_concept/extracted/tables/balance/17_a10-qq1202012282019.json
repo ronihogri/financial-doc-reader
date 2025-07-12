@@ -1,0 +1,125 @@
+{
+    "ASSETS": {
+        "Current assets": {
+            "Cash and cash equivalents": [
+                39771,
+                48844
+            ],
+            "Marketable securities": [
+                67391,
+                51713
+            ],
+            "Accounts receivable, net": [
+                20970,
+                22926
+            ],
+            "Inventories": [
+                4097,
+                4106
+            ],
+            "Vendor non-trade receivables": [
+                18976,
+                22878
+            ],
+            "Other current assets": [
+                12026,
+                12352
+            ],
+            "Total current assets": [
+                163231,
+                162819
+            ]
+        },
+        "Non-current assets": {
+            "Marketable securities": [
+                99899,
+                105341
+            ],
+            "Property, plant and equipment, net": [
+                37031,
+                37378
+            ],
+            "Other non-current assets": [
+                40457,
+                32978
+            ],
+            "Total non-current assets": [
+                177387,
+                175697
+            ]
+        },
+        "Total assets": [
+            340618,
+            338516
+        ]
+    },
+    "LIABILITIES AND SHAREHOLDERS EQUITY": {
+        "Current liabilities": {
+            "Accounts payable": [
+                45111,
+                46236
+            ],
+            "Other current liabilities": [
+                36263,
+                37720
+            ],
+            "Deferred revenue": [
+                5573,
+                5522
+            ],
+            "Commercial paper": [
+                4990,
+                5980
+            ],
+            "Term debt": [
+                10224,
+                10260
+            ],
+            "Total current liabilities": [
+                102161,
+                105718
+            ]
+        },
+        "Non-current liabilities": {
+            "Term debt": [
+                93078,
+                91807
+            ],
+            "Other non-current liabilities": [
+                55848,
+                50503
+            ],
+            "Total non-current liabilities": [
+                148926,
+                142310
+            ]
+        },
+        "Total liabilities": [
+            251087,
+            248028
+        ],
+        "Commitments and contingencies": null,
+        "Shareholders equity": {
+            "Common stock and additional paid-in capital, $0.00001 par value: 12,600,000 shares authorized; 4,384,959 and 4,443,236 shares issued and outstanding, respectively": [
+                45972,
+                45174
+            ],
+            "Retained earnings": [
+                43977,
+                45898
+            ],
+            "Accumulated other comprehensive income/(loss)": [
+                -418,
+                -584
+            ],
+            "Total shareholders equity": [
+                89531,
+                90488
+            ]
+        },
+        "Total liabilities and shareholders equity": [
+            340618,
+            338516
+        ]
+    }
+}

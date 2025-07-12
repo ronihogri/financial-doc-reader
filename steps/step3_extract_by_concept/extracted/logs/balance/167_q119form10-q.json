@@ -1,0 +1,87 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 10,
+            "table_index": 1
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1",
+                    "1": "1",
+                    "2": "1"
+                },
+                "decision": "1"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-01-21_09-39-01"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\t(unaudited)\t(in millions, except per share amounts)\tMarch 31, 2019\tDecember 31, 2018\t",
+        "timestamp": "2025-03-11_12-31-25"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-31-28"
+    },
+    "post_table_text": {
+        "data": "\tSee accompanying notes.\t2\tGILEAD SCIENCES, INC.\tCONDENSED CONSOLIDATED STATEMENTS OF IN",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tSee accompanying notes.\t2\tGILEAD SCIENCES, INC.\tCONDENSED CONSOLIDATED STATEMENTS OF IN'"
+                },
+                "decision": "'\tSee accompanying notes.\t2\tGILEAD SCIENCES, INC.\tCONDENSED CONSOLIDATED STATEMENTS OF IN'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-31-30"
+    },
+    "table_body": {
+        "data": "Assets\tCurrent assets:\tCash and cash equivalents\t$\t16,927\t$\t17,940\tShort-term marketable securities\t10,977\t12,149\tAccounts receivable, net of allowances of $669 and $583, respectively\t3,283\t3,327\tInventories\t898\t814\tPrepaid and other current assets\t1,939\t1,606\tTotal current assets\t34,024\t35,836\tProperty, plant and equipment, net\t4,116\t4,006\tLong-term marketable securities\t2,221\t1,423\tIntangible assets, net\t15,438\t15,738\tGoodwill\t4,117\t4,117\tOther long-term assets\t2,921\t2,555\tTotal assets\t$\t62,837\t$\t63,675\tLiabilities and Stockholders  Equity\tCurrent liabilities:\tAccounts payable\t$\t577\t$\t790\tAccrued government and other rebates\t3,974\t3,928\tOther accrued liabilities\t2,348\t3,139\tCurrent portion of long-term debt and other obligations, net\t2,498\t2,748\tTotal current liabilities\t9,397\t10,605\tLong-term debt, net\t24,080\t24,574\tLong-term income taxes payable\t5,809\t5,922\tOther long-term obligations\t1,460\t1,040\tCommitments and contingencies (Note 11)\tStockholders  equity:\tPreferred stock, par value $0.001 per share; 5 shares authorized; none outstanding\t \t \tCommon stock, par value $0.001 per share; 5,600 shares authorized; 1,274 and 1,282 shares issued and outstanding, respectively\t1\t1\tAdditional paid-in capital\t2,494\t2,282\tAccumulated other comprehensive income\t130\t80\tRetained earnings\t19,326\t19,024\tTotal Gilead stockholders  equity\t21,951\t21,387\tNoncontrolling interest\t140\t147\tTotal stockholders  equity\t22,091\t21,534\tTotal liabilities and stockholders  equity\t$\t62,837\t$\t63,675",
+        "timestamp": "2025-03-11_12-31-30"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"Assets\": {\"Current assets\": {\"Cash and cash equivalents\": [16927, 17940], \"Short-term marketable securities\": [10977, 12149], \"Accounts receivable, net of allowances of $669 and $583, respectively\": [3283, 3327], \"Inventories\": [898, 814], \"Prepaid and other current assets\": [1939, 1606], \"Total current assets\": [34024, 35836]}, \"Property, plant and equipment, net\": [4116, 4006], \"Long-term marketable securities\": [2221, 1423], \"Intangible assets, net\": [15438, 15738], \"Goodwill\": [4117, 4117], \"Other long-term assets\": [2921, 2555], \"Total assets\": [62837, 63675]}, \"Liabilities and Stockholders Equity\": {\"Current liabilities\": {\"Accounts payable\": [577, 790], \"Accrued government and other rebates\": [3974, 3928], \"Other accrued liabilities\": [2348, 3139], \"Current portion of long-term debt and other obligations, net\": [2498, 2748], \"Total current liabilities\": [9397, 10605]}, \"Long-term debt, net\": [24080, 24574], \"Long-term income taxes payable\": [5809, 5922], \"Other long-term obligations\": [1460, 1040], \"Commitments and contingencies (Note 11)\": null, \"Stockholders equity\": {\"Preferred stock, par value $0.001 per share; 5 shares authorized; none outstanding\": [0, 0], \"Common stock, par value $0.001 per share; 5,600 shares authorized; 1,274 and 1,282 shares issued and outstanding, respectively\": [1, 1], \"Additional paid-in capital\": [2494, 2282], \"Accumulated other comprehensive income\": [130, 80], \"Retained earnings\": [19326, 19024], \"Total Gilead stockholders equity\": [21951, 21387], \"Noncontrolling interest\": [140, 147], \"Total stockholders equity\": [22091, 21534]}, \"Total liabilities and stockholders equity\": [62837, 63675]}}"
+                },
+                "decision": "{\"Assets\": {\"Current assets\": {\"Cash and cash equivalents\": [16927, 17940], \"Short-term marketable securities\": [10977, 12149], \"Accounts receivable, net of allowances of $669 and $583, respectively\": [3283, 3327], \"Inventories\": [898, 814], \"Prepaid and other current assets\": [1939, 1606], \"Total current assets\": [34024, 35836]}, \"Property, plant and equipment, net\": [4116, 4006], \"Long-term marketable securities\": [2221, 1423], \"Intangible assets, net\": [15438, 15738], \"Goodwill\": [4117, 4117], \"Other long-term assets\": [2921, 2555], \"Total assets\": [62837, 63675]}, \"Liabilities and Stockholders Equity\": {\"Current liabilities\": {\"Accounts payable\": [577, 790], \"Accrued government and other rebates\": [3974, 3928], \"Other accrued liabilities\": [2348, 3139], \"Current portion of long-term debt and other obligations, net\": [2498, 2748], \"Total current liabilities\": [9397, 10605]}, \"Long-term debt, net\": [24080, 24574], \"Long-term income taxes payable\": [5809, 5922], \"Other long-term obligations\": [1460, 1040], \"Commitments and contingencies (Note 11)\": null, \"Stockholders equity\": {\"Preferred stock, par value $0.001 per share; 5 shares authorized; none outstanding\": [0, 0], \"Common stock, par value $0.001 per share; 5,600 shares authorized; 1,274 and 1,282 shares issued and outstanding, respectively\": [1, 1], \"Additional paid-in capital\": [2494, 2282], \"Accumulated other comprehensive income\": [130, 80], \"Retained earnings\": [19326, 19024], \"Total Gilead stockholders equity\": [21951, 21387], \"Noncontrolling interest\": [140, 147], \"Total stockholders equity\": [22091, 21534]}, \"Total liabilities and stockholders equity\": [62837, 63675]}}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-32-30"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-32-30"
+    }
+}

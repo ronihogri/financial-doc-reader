@@ -1,0 +1,87 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 3,
+            "table_index": 0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "0",
+                    "1": "0",
+                    "2": "0"
+                },
+                "decision": "0"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-01-21_09-29-05"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\t(in millions, except par value amounts)\tApril 30,\t2022\tJanuary 29,\t2022\tMay 1,\t2021\t(Unaudited)\t(Unaudited)\t",
+        "timestamp": "2025-03-11_12-05-00"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-05-03"
+    },
+    "post_table_text": {
+        "data": "\tThe accompanying Notes are an integral part of these Consolidated Financial Statements.\t4\tTable of ",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tThe accompanying Notes are an integral part of these Consolidated Financial Statements.\t4\tTable of '"
+                },
+                "decision": "'\tThe accompanying Notes are an integral part of these Consolidated Financial Statements.\t4\tTable of '"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-05-05"
+    },
+    "table_body": {
+        "data": "ASSETS\tCurrent Assets:\tCash and Cash Equivalents\t$\t651\t$\t1,979\t$\t2,475\tAccounts Receivable, Net\t167\t240\t110\tInventories\t820\t709\t636\tOther\t114\t81\t94\tCurrent Assets of Discontinued Operations\t \t \t1,297\tTotal Current Assets\t1,752\t3,009\t4,612\tProperty and Equipment, Net\t1,059\t1,009\t994\tOperating Lease Assets\t1,058\t1,021\t993\tGoodwill\t628\t628\t628\tTrade Names\t165\t165\t165\tDeferred Income Taxes\t44\t45\t61\tOther Assets\t154\t149\t146\tOther Assets of Discontinued Operations\t \t \t2,947\tTotal Assets\t$\t4,860\t$\t6,026\t$\t10,546\tLIABILITIES AND EQUITY (DEFICIT)\tCurrent Liabilities:\tAccounts Payable\t$\t470\t$\t435\t$\t369\tAccrued Expenses and Other\t534\t651\t678\tCurrent Operating Lease Liabilities\t163\t170\t149\tIncome Taxes\t73\t34\t140\tCurrent Liabilities of Discontinued Operations\t \t \t1,344\tTotal Current Liabilities\t1,240\t1,290\t2,680\tDeferred Income Taxes\t157\t157\t144\tLong-term Debt\t4,856\t4,854\t5,344\tLong-term Operating Lease Liabilities\t1,019\t989\t963\tOther Long-term Liabilities\t246\t253\t285\tOther Long-term Liabilities of Discontinued Operations\t \t \t1,663\tShareholders  Equity (Deficit):\tPreferred Stock - $\t1.00\tpar value;\t10\tshares authorized;\tnone\tissued\t \t \t \tCommon Stock - $\t0.50\tpar value;\t1,000\tshares authorized;\t251\t,\t269\tand\t288\tshares issued;\t236\t,\t254\tand\t277\tshares outstanding, respectively\t126\t134\t144\tPaid-in Capital\t618\t893\t903\tAccumulated Other Comprehensive Income\t80\t80\t86\tRetained Earnings (Accumulated Deficit)\t(\t2,661\t)\t(\t1,803\t)\t(\t1,144\t)\tLess: Treasury Stock, at Average Cost;\t15\t,\t15\tand\t11\tshares, respectively\t(\t822\t)\t(\t822\t)\t(\t523\t)\tTotal Shareholders  Equity (Deficit)\t(\t2,659\t)\t(\t1,518\t)\t(\t534\t)\tNoncontrolling Interest\t1\t1\t1\tTotal Equity (Deficit)\t(\t2,658\t)\t(\t1,517\t)\t(\t533\t)\tTotal Liabilities and Equity (Deficit)\t$\t4,860\t$\t6,026\t$\t10,546",
+        "timestamp": "2025-03-11_12-05-05"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current Assets\": {\"Cash and Cash Equivalents\": [651, 1979, 2475], \"Accounts Receivable, Net\": [167, 240, 110], \"Inventories\": [820, 709, 636], \"Other\": [114, 81, 94], \"Current Assets of Discontinued Operations\": [0, 0, 1297], \"Total Current Assets\": [1752, 3009, 4612]}, \"Property and Equipment, Net\": [1059, 1009, 994], \"Operating Lease Assets\": [1058, 1021, 993], \"Goodwill\": [628, 628, 628], \"Trade Names\": [165, 165, 165], \"Deferred Income Taxes\": [44, 45, 61], \"Other Assets\": [154, 149, 146], \"Other Assets of Discontinued Operations\": [0, 0, 2947], \"Total Assets\": [4860, 6026, 10546]}, \"LIABILITIES AND EQUITY (DEFICIT)\": {\"Current Liabilities\": {\"Accounts Payable\": [470, 435, 369], \"Accrued Expenses and Other\": [534, 651, 678], \"Current Operating Lease Liabilities\": [163, 170, 149], \"Income Taxes\": [73, 34, 140], \"Current Liabilities of Discontinued Operations\": [0, 0, 1344], \"Total Current Liabilities\": [1240, 1290, 2680]}, \"Deferred Income Taxes\": [157, 157, 144], \"Long-term Debt\": [4856, 4854, 5344], \"Long-term Operating Lease Liabilities\": [1019, 989, 963], \"Other Long-term Liabilities\": [246, 253, 285], \"Other Long-term Liabilities of Discontinued Operations\": [0, 0, 1663], \"Shareholders  Equity (Deficit)\": {\"Preferred Stock - $ 1.00 par value; 10 shares authorized; none issued\": [0, 0, 0], \"Common Stock - $ 0.50 par value; 1,000 shares authorized; 251, 269 and 288 shares issued; 236, 254 and 277 shares outstanding, respectively\": [126, 134, 144], \"Paid-in Capital\": [618, 893, 903], \"Accumulated Other Comprehensive Income\": [80, 80, 86], \"Retained Earnings (Accumulated Deficit)\": [-2661, -1803, -1144], \"Less: Treasury Stock, at Average Cost; 15, 15 and 11 shares, respectively\": [-822, -822, -523], \"Total Shareholders  Equity (Deficit)\": [-2659, -1518, -534], \"Noncontrolling Interest\": [1, 1, 1], \"Total Equity (Deficit)\": [-2658, -1517, -533]}, \"Total Liabilities and Equity (Deficit)\": [4860, 6026, 10546]}}"
+                },
+                "decision": "{\"ASSETS\": {\"Current Assets\": {\"Cash and Cash Equivalents\": [651, 1979, 2475], \"Accounts Receivable, Net\": [167, 240, 110], \"Inventories\": [820, 709, 636], \"Other\": [114, 81, 94], \"Current Assets of Discontinued Operations\": [0, 0, 1297], \"Total Current Assets\": [1752, 3009, 4612]}, \"Property and Equipment, Net\": [1059, 1009, 994], \"Operating Lease Assets\": [1058, 1021, 993], \"Goodwill\": [628, 628, 628], \"Trade Names\": [165, 165, 165], \"Deferred Income Taxes\": [44, 45, 61], \"Other Assets\": [154, 149, 146], \"Other Assets of Discontinued Operations\": [0, 0, 2947], \"Total Assets\": [4860, 6026, 10546]}, \"LIABILITIES AND EQUITY (DEFICIT)\": {\"Current Liabilities\": {\"Accounts Payable\": [470, 435, 369], \"Accrued Expenses and Other\": [534, 651, 678], \"Current Operating Lease Liabilities\": [163, 170, 149], \"Income Taxes\": [73, 34, 140], \"Current Liabilities of Discontinued Operations\": [0, 0, 1344], \"Total Current Liabilities\": [1240, 1290, 2680]}, \"Deferred Income Taxes\": [157, 157, 144], \"Long-term Debt\": [4856, 4854, 5344], \"Long-term Operating Lease Liabilities\": [1019, 989, 963], \"Other Long-term Liabilities\": [246, 253, 285], \"Other Long-term Liabilities of Discontinued Operations\": [0, 0, 1663], \"Shareholders  Equity (Deficit)\": {\"Preferred Stock - $ 1.00 par value; 10 shares authorized; none issued\": [0, 0, 0], \"Common Stock - $ 0.50 par value; 1,000 shares authorized; 251, 269 and 288 shares issued; 236, 254 and 277 shares outstanding, respectively\": [126, 134, 144], \"Paid-in Capital\": [618, 893, 903], \"Accumulated Other Comprehensive Income\": [80, 80, 86], \"Retained Earnings (Accumulated Deficit)\": [-2661, -1803, -1144], \"Less: Treasury Stock, at Average Cost; 15, 15 and 11 shares, respectively\": [-822, -822, -523], \"Total Shareholders  Equity (Deficit)\": [-2659, -1518, -534], \"Noncontrolling Interest\": [1, 1, 1], \"Total Equity (Deficit)\": [-2658, -1517, -533]}, \"Total Liabilities and Equity (Deficit)\": [4860, 6026, 10546]}}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-15-24"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-15-24"
+    }
+}

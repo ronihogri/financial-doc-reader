@@ -1,0 +1,138 @@
+{
+    "Assets": {
+        "Current assets": {
+            "Cash and cash equivalents": [
+                6151,
+                8524
+            ],
+            "Accounts receivable, less allowances of $ 184 and $ 189": [
+                8370,
+                8115
+            ],
+            "Inventories": [
+                5404,
+                5634
+            ],
+            "Contract assets, net": [
+                1465,
+                1312
+            ],
+            "Other current assets": [
+                1702,
+                1644
+            ],
+            "Total current assets": [
+                23092,
+                25229
+            ]
+        },
+        "Property, plant and equipment, net": [
+            9167,
+            9280
+        ],
+        "Acquisition-related intangible assets, net": [
+            17091,
+            17442
+        ],
+        "Other assets": [
+            4124,
+            4007
+        ],
+        "Goodwill": [
+            43583,
+            41196
+        ],
+        "Total assets": [
+            97057,
+            97154
+        ]
+    },
+    "Liabilities, redeemable noncontrolling interest and equity": {
+        "Current liabilities": {
+            "Short-term obligations and current maturities of long-term obligations": [
+                4795,
+                5579
+            ],
+            "Accounts payable": [
+                2508,
+                3381
+            ],
+            "Accrued payroll and employee benefits": [
+                1460,
+                2095
+            ],
+            "Contract liabilities": [
+                2547,
+                2601
+            ],
+            "Other accrued expenses": [
+                2848,
+                3354
+            ],
+            "Total current liabilities": [
+                14158,
+                17010
+            ]
+        },
+        "Deferred income taxes": [
+            2620,
+            2849
+        ],
+        "Other long-term liabilities": [
+            4326,
+            4238
+        ],
+        "Long-term obligations": [
+            30489,
+            28909
+        ],
+        "Redeemable noncontrolling interest": [
+            118,
+            116
+        ],
+        "Equity": {
+            "Thermo Fisher Scientific Inc. shareholders equity": {
+                "Preferred stock, $ 100 par value, 50,000 shares authorized; none issued": [
+                    0,
+                    0
+                ],
+                "Common stock, $ 1 par value, 1,200,000,000 shares authorized; 441,889,500 and 440,668,112 shares issued": [
+                    442,
+                    441
+                ],
+                "Capital in excess of par value": [
+                    17165,
+                    16743
+                ],
+                "Retained earnings": [
+                    45869,
+                    41910
+                ],
+                "Treasury stock at cost, 55,517,179 and 50,157,275 shares": [
+                    -15121,
+                    -12017
+                ],
+                "Accumulated other comprehensive income/(loss)": [
+                    -3027,
+                    -3099
+                ],
+                "Total Thermo Fisher Scientific Inc. shareholders equity": [
+                    45328,
+                    43978
+                ]
+            },
+            "Noncontrolling interests": [
+                18,
+                54
+            ],
+            "Total equity": [
+                45346,
+                44032
+            ]
+        },
+        "Total liabilities, redeemable noncontrolling interest and equity": [
+            97057,
+            97154
+        ]
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 2,
+            "table_index": 0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "0",
+                    "1": "0",
+                    "2": "0"
+                },
+                "decision": "0"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-01-21_09-44-54"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\t(In millions)\tDecember 31,\t2018\t2017\t",
+        "timestamp": "2025-03-11_12-54-23"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-54-26"
+    },
+    "post_table_text": {
+        "data": "\tSee notes to consolidated financial statements.\t66\tUNITED PARCEL SERVICE, INC. AND SUBSIDIARIES\tSTATEMENTS O",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tSee notes to consolidated financial statements.\t66\tUNITED PARCEL SERVICE, INC. AND SUBSIDIARIES\tSTATEMENTS O'"
+                },
+                "decision": "'\tSee notes to consolidated financial statements.\t66\tUNITED PARCEL SERVICE, INC. AND SUBSIDIARIES\tSTATEMENTS O'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-54-28"
+    },
+    "table_body": {
+        "data": "ASSETS\tCurrent Assets:\tCash and cash equivalents\t$\t4,225\t$\t3,320\tMarketable securities\t810\t749\tAccounts receivable, net\t8,958\t8,773\tCurrent income taxes receivable\t940\t1,573\tOther current assets\t1,277\t1,303\tTotal Current Assets\t16,210\t15,718\tProperty, Plant and Equipment, Net\t26,576\t22,118\tGoodwill\t3,811\t3,872\tIntangible Assets, Net\t2,075\t1,964\tInvestments and Restricted Cash\t170\t483\tDeferred Income Tax Assets\t141\t266\tOther Non-Current Assets\t1,033\t1,153\tTotal Assets\t$\t50,016\t$\t45,574\tLIABILITIES AND SHAREOWNERS  EQUITY\tCurrent Liabilities:\tCurrent maturities of long-term debt and commercial paper\t$\t2,805\t$\t4,011\tAccounts payable\t5,188\t3,934\tAccrued wages and withholdings\t3,047\t2,608\tSelf-insurance reserves\t810\t705\tAccrued group welfare and retirement plan contributions\t715\t677\tOther current liabilities\t1,522\t951\tTotal Current Liabilities\t14,087\t12,886\tLong-Term Debt\t19,931\t20,278\tPension and Postretirement Benefit Obligations\t8,347\t7,061\tDeferred Income Tax Liabilities\t1,619\t756\tSelf-Insurance Reserves\t1,571\t1,765\tOther Non-Current Liabilities\t1,424\t1,804\tShareowners  Equity:\tClass A common stock (163 and 173 shares issued in 2018 and 2017)\t2\t2\tClass B common stock (696 and 687 shares issued in 2018 and 2017)\t7\t7\tAdditional paid-in capital\t \t \tRetained earnings\t8,006\t5,852\tAccumulated other comprehensive loss\t(4,994\t)\t(4,867\t)\tDeferred compensation obligations\t32\t37\tLess: Treasury stock (1 share in 2018 and 2017)\t(32\t)\t(37\t)\tTotal Equity for Controlling Interests\t3,021\t994\tNoncontrolling Interests\t16\t30\tTotal Shareowners  Equity\t3,037\t1,024\tTotal Liabilities and Shareowners  Equity\t$\t50,016\t$\t45,574",
+        "timestamp": "2025-03-11_12-54-28"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current Assets\": {\"Cash and cash equivalents\": [4225, 3320], \"Marketable securities\": [810, 749], \"Accounts receivable, net\": [8958, 8773], \"Current income taxes receivable\": [940, 1573], \"Other current assets\": [1277, 1303], \"Total Current Assets\": [16210, 15718]}, \"Property, Plant and Equipment, Net\": [26576, 22118], \"Goodwill\": [3811, 3872], \"Intangible Assets, Net\": [2075, 1964], \"Investments and Restricted Cash\": [170, 483], \"Deferred Income Tax Assets\": [141, 266], \"Other Non-Current Assets\": [1033, 1153], \"Total Assets\": [50016, 45574]}, \"LIABILITIES AND SHAREOWNERS EQUITY\": {\"Current Liabilities\": {\"Current maturities of long-term debt and commercial paper\": [2805, 4011], \"Accounts payable\": [5188, 3934], \"Accrued wages and withholdings\": [3047, 2608], \"Self-insurance reserves\": [810, 705], \"Accrued group welfare and retirement plan contributions\": [715, 677], \"Other current liabilities\": [1522, 951], \"Total Current Liabilities\": [14087, 12886]}, \"Long-Term Debt\": [19931, 20278], \"Pension and Postretirement Benefit Obligations\": [8347, 7061], \"Deferred Income Tax Liabilities\": [1619, 756], \"Self-Insurance Reserves\": [1571, 1765], \"Other Non-Current Liabilities\": [1424, 1804], \"Shareowners Equity\": {\"Class A common stock (163 and 173 shares issued in 2018 and 2017)\": [2, 2], \"Class B common stock (696 and 687 shares issued in 2018 and 2017)\": [7, 7], \"Additional paid-in capital\": [0, 0], \"Retained earnings\": [8006, 5852], \"Accumulated other comprehensive loss\": [-4994, -4867], \"Deferred compensation obligations\": [32, 37], \"Less: Treasury stock (1 share in 2018 and 2017)\": [-32, -37], \"Total Equity for Controlling Interests\": [3021, 994], \"Noncontrolling Interests\": [16, 30], \"Total Shareowners Equity\": [3037, 1024]}, \"Total Liabilities and Shareowners Equity\": [50016, 45574]}}"
+                },
+                "decision": "{\"ASSETS\": {\"Current Assets\": {\"Cash and cash equivalents\": [4225, 3320], \"Marketable securities\": [810, 749], \"Accounts receivable, net\": [8958, 8773], \"Current income taxes receivable\": [940, 1573], \"Other current assets\": [1277, 1303], \"Total Current Assets\": [16210, 15718]}, \"Property, Plant and Equipment, Net\": [26576, 22118], \"Goodwill\": [3811, 3872], \"Intangible Assets, Net\": [2075, 1964], \"Investments and Restricted Cash\": [170, 483], \"Deferred Income Tax Assets\": [141, 266], \"Other Non-Current Assets\": [1033, 1153], \"Total Assets\": [50016, 45574]}, \"LIABILITIES AND SHAREOWNERS EQUITY\": {\"Current Liabilities\": {\"Current maturities of long-term debt and commercial paper\": [2805, 4011], \"Accounts payable\": [5188, 3934], \"Accrued wages and withholdings\": [3047, 2608], \"Self-insurance reserves\": [810, 705], \"Accrued group welfare and retirement plan contributions\": [715, 677], \"Other current liabilities\": [1522, 951], \"Total Current Liabilities\": [14087, 12886]}, \"Long-Term Debt\": [19931, 20278], \"Pension and Postretirement Benefit Obligations\": [8347, 7061], \"Deferred Income Tax Liabilities\": [1619, 756], \"Self-Insurance Reserves\": [1571, 1765], \"Other Non-Current Liabilities\": [1424, 1804], \"Shareowners Equity\": {\"Class A common stock (163 and 173 shares issued in 2018 and 2017)\": [2, 2], \"Class B common stock (696 and 687 shares issued in 2018 and 2017)\": [7, 7], \"Additional paid-in capital\": [0, 0], \"Retained earnings\": [8006, 5852], \"Accumulated other comprehensive loss\": [-4994, -4867], \"Deferred compensation obligations\": [32, 37], \"Less: Treasury stock (1 share in 2018 and 2017)\": [-32, -37], \"Total Equity for Controlling Interests\": [3021, 994], \"Noncontrolling Interests\": [16, 30], \"Total Shareowners Equity\": [3037, 1024]}, \"Total Liabilities and Shareowners Equity\": [50016, 45574]}}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-52-56"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-52-56"
+    }
+}

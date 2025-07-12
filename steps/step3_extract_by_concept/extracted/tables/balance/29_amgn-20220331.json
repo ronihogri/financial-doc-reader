@@ -1,0 +1,105 @@
+{
+    "ASSETS": {
+        "Current assets": {
+            "Cash and cash equivalents": [
+                6528,
+                7989
+            ],
+            "Marketable securities": [
+                16,
+                48
+            ],
+            "Trade receivables, net": [
+                5077,
+                4895
+            ],
+            "Inventories": [
+                4411,
+                4086
+            ],
+            "Other current assets": [
+                2488,
+                2367
+            ],
+            "Total current assets": [
+                18520,
+                19385
+            ]
+        },
+        "Property, plant and equipment, net": [
+            5142,
+            5184
+        ],
+        "Intangible assets, net": [
+            14567,
+            15182
+        ],
+        "Goodwill": [
+            14897,
+            14890
+        ],
+        "Other noncurrent assets": [
+            6070,
+            6524
+        ],
+        "Total assets": [
+            59196,
+            61165
+        ]
+    },
+    "LIABILITIES AND STOCKHOLDERS EQUITY": {
+        "Current liabilities": {
+            "Accounts payable": [
+                1403,
+                1366
+            ],
+            "Accrued liabilities": [
+                10639,
+                10731
+            ],
+            "Current portion of long-term debt": [
+                844,
+                87
+            ],
+            "Total current liabilities": [
+                12886,
+                12184
+            ]
+        },
+        "Long-term debt": [
+            36010,
+            33222
+        ],
+        "Long-term tax liabilities": [
+            6652,
+            6594
+        ],
+        "Other noncurrent liabilities": [
+            2732,
+            2465
+        ],
+        "Contingencies and commitments": null,
+        "Stockholders equity": {
+            "Common stock and additional paid-in capital; $ 0.0001 par value; 2,750.0 shares authorized; outstanding 534.2 shares in 2022 and 558.3 shares in 2021": [
+                31247,
+                32096
+            ],
+            "Accumulated deficit": [
+                -29568,
+                -24600
+            ],
+            "Accumulated other comprehensive loss": [
+                -763,
+                -796
+            ],
+            "Total stockholders equity": [
+                916,
+                6700
+            ]
+        },
+        "Total liabilities and stockholders equity": [
+            59196,
+            61165
+        ]
+    }
+}

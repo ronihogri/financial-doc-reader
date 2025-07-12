@@ -1,0 +1,74 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 1,
+            "table_index": 0
+        },
+        "model": null,
+        "timestamp": "2025-01-21_09-30-45"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\tDollars in millions\t(UNAUDITED)\t",
+        "timestamp": "2025-03-11_12-09-11"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-09-14"
+    },
+    "post_table_text": {
+        "data": "\tThe accompanying notes are an integral part of these consolidated financial statements.\t4\tBRIS",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tThe accompanying notes are an integral part of these consolidated financial statements.\t4\tBRIS'"
+                },
+                "decision": "'\tThe accompanying notes are an integral part of these consolidated financial statements.\t4\tBRIS'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-09-16"
+    },
+    "table_body": {
+        "data": "ASSETS\tSeptember 30,\t2023\tDecember 31,\t2022\tCurrent assets:\tCash and cash equivalents\t$\t7,514\t$\t9,123\tMarketable debt securities\t171\t130\tReceivables\t10,304\t9,886\tInventories\t2,436\t2,339\tOther current assets\t7,207\t5,795\tTotal Current assets\t27,632\t27,273\tProperty, plant and equipment\t6,481\t6,255\tGoodwill\t21,147\t21,149\tOther intangible assets\t28,950\t35,859\tDeferred income taxes\t1,514\t1,344\tMarketable debt securities\t325\t \tOther non-current assets\t5,214\t4,940\tTotal Assets\t$\t91,263\t$\t96,820\tLIABILITIES\tCurrent liabilities:\tShort-term debt obligations\t$\t5,467\t$\t4,264\tAccounts payable\t2,813\t3,040\tOther current liabilities\t15,182\t14,586\tTotal Current liabilities\t23,462\t21,890\tDeferred income taxes\t399\t2,166\tLong-term debt\t32,137\t35,056\tOther non-current liabilities\t6,203\t6,590\tTotal Liabilities\t62,201\t65,702\tCommitments and Contingencies\tEQUITY\tBMS Shareholders  equity:\tPreferred stock\t \t \tCommon stock\t292\t292\tCapital in excess of par value of stock\t44,849\t45,165\tAccumulated other comprehensive loss\t(\t1,286\t)\t(\t1,281\t)\tRetained earnings\t28,218\t25,503\tLess cost of treasury stock\t(\t43,075\t)\t(\t38,618\t)\tTotal BMS Shareholders  equity\t28,998\t31,061\tNoncontrolling interest\t64\t57\tTotal Equity\t29,062\t31,118\tTotal Liabilities and Equity\t$\t91,263\t$\t96,820",
+        "timestamp": "2025-03-11_12-09-16"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [7514, 9123], \"Marketable debt securities\": [171, 130], \"Receivables\": [10304, 9886], \"Inventories\": [2436, 2339], \"Other current assets\": [7207, 5795], \"Total Current assets\": [27632, 27273]}, \"Property, plant and equipment\": [6481, 6255], \"Goodwill\": [21147, 21149], \"Other intangible assets\": [28950, 35859], \"Deferred income taxes\": [1514, 1344], \"Marketable debt securities\": [325, 0], \"Other non-current assets\": [5214, 4940], \"Total Assets\": [91263, 96820]}, \"LIABILITIES\": {\"Current liabilities\": {\"Short-term debt obligations\": [5467, 4264], \"Accounts payable\": [2813, 3040], \"Other current liabilities\": [15182, 14586], \"Total Current liabilities\": [23462, 21890]}, \"Deferred income taxes\": [399, 2166], \"Long-term debt\": [32137, 35056], \"Other non-current liabilities\": [6203, 6590], \"Total Liabilities\": [62201, 65702], \"Commitments and Contingencies\": null}, \"EQUITY\": {\"BMS Shareholders equity\": {\"Preferred stock\": [0, 0], \"Common stock\": [292, 292], \"Capital in excess of par value of stock\": [44849, 45165], \"Accumulated other comprehensive loss\": [-1286, -1281], \"Retained earnings\": [28218, 25503], \"Less cost of treasury stock\": [-43075, -38618], \"Total BMS Shareholders equity\": [28998, 31061]}, \"Noncontrolling interest\": [64, 57], \"Total Equity\": [29062, 31118]}, \"Total Liabilities and Equity\": [91263, 96820]}"
+                },
+                "decision": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [7514, 9123], \"Marketable debt securities\": [171, 130], \"Receivables\": [10304, 9886], \"Inventories\": [2436, 2339], \"Other current assets\": [7207, 5795], \"Total Current assets\": [27632, 27273]}, \"Property, plant and equipment\": [6481, 6255], \"Goodwill\": [21147, 21149], \"Other intangible assets\": [28950, 35859], \"Deferred income taxes\": [1514, 1344], \"Marketable debt securities\": [325, 0], \"Other non-current assets\": [5214, 4940], \"Total Assets\": [91263, 96820]}, \"LIABILITIES\": {\"Current liabilities\": {\"Short-term debt obligations\": [5467, 4264], \"Accounts payable\": [2813, 3040], \"Other current liabilities\": [15182, 14586], \"Total Current liabilities\": [23462, 21890]}, \"Deferred income taxes\": [399, 2166], \"Long-term debt\": [32137, 35056], \"Other non-current liabilities\": [6203, 6590], \"Total Liabilities\": [62201, 65702], \"Commitments and Contingencies\": null}, \"EQUITY\": {\"BMS Shareholders equity\": {\"Preferred stock\": [0, 0], \"Common stock\": [292, 292], \"Capital in excess of par value of stock\": [44849, 45165], \"Accumulated other comprehensive loss\": [-1286, -1281], \"Retained earnings\": [28218, 25503], \"Less cost of treasury stock\": [-43075, -38618], \"Total BMS Shareholders equity\": [28998, 31061]}, \"Noncontrolling interest\": [64, 57], \"Total Equity\": [29062, 31118]}, \"Total Liabilities and Equity\": [91263, 96820]}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-18-42"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-18-42"
+    }
+}

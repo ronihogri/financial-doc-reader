@@ -1,0 +1,74 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 1,
+            "table_index": 0
+        },
+        "model": null,
+        "timestamp": "2025-01-17_11-47-22"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS (Unaudited)\t(In millions, except number of shares which are reflected in thousands and par value)\tApril 1,\t2023\tSeptember 24,\t2022\t",
+        "timestamp": "2025-03-11_11-46-06"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_11-46-09"
+    },
+    "post_table_text": {
+        "data": "\tSee accompanying Notes to Condensed Consolidated Financial Statements.\tApple Inc. | Q2 2023 For",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tSee accompanying Notes to Condensed Consolidated Financial Statements.\tApple Inc. | Q2 2023 For'"
+                },
+                "decision": "'\tSee accompanying Notes to Condensed Consolidated Financial Statements.\tApple Inc. | Q2 2023 For'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_11-46-11"
+    },
+    "table_body": {
+        "data": "ASSETS:\tCurrent assets:\tCash and cash equivalents\t$\t24,687\t$\t23,646\tMarketable securities\t31,185\t24,658\tAccounts receivable, net\t17,936\t28,184\tInventories\t7,482\t4,946\tVendor non-trade receivables\t17,963\t32,748\tOther current assets\t13,660\t21,223\tTotal current assets\t112,913\t135,405\tNon-current assets:\tMarketable securities\t110,461\t120,805\tProperty, plant and equipment, net\t43,398\t42,117\tOther non-current assets\t65,388\t54,428\tTotal non-current assets\t219,247\t217,350\tTotal assets\t$\t332,160\t$\t352,755\tLIABILITIES AND SHAREHOLDERS  EQUITY:\tCurrent liabilities:\tAccounts payable\t$\t42,945\t$\t64,115\tOther current liabilities\t56,425\t60,845\tDeferred revenue\t8,131\t7,912\tCommercial paper\t1,996\t9,982\tTerm debt\t10,578\t11,128\tTotal current liabilities\t120,075\t153,982\tNon-current liabilities:\tTerm debt\t97,041\t98,959\tOther non-current liabilities\t52,886\t49,142\tTotal non-current liabilities\t149,927\t148,101\tTotal liabilities\t270,002\t302,083\tCommitments and contingencies\tShareholders  equity:\tCommon stock and additional paid-in capital, $\t0.00001\tpar value:\t50,400,000\tshares authorized;\t15,723,406\tand\t15,943,425\tshares issued and outstanding, respectively\t69,568\t64,849\tRetained earnings/(Accumulated deficit)\t4,336\t(\t3,068\t)\tAccumulated other comprehensive income/(loss)\t(\t11,746\t)\t(\t11,109\t)\tTotal shareholders  equity\t62,158\t50,672\tTotal liabilities and shareholders  equity\t$\t332,160\t$\t352,755",
+        "timestamp": "2025-03-11_11-46-11"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [24687, 23646], \"Marketable securities\": [31185, 24658], \"Accounts receivable, net\": [17936, 28184], \"Inventories\": [7482, 4946], \"Vendor non-trade receivables\": [17963, 32748], \"Other current assets\": [13660, 21223], \"Total current assets\": [112913, 135405]}, \"Non-current assets\": {\"Marketable securities\": [110461, 120805], \"Property, plant and equipment, net\": [43398, 42117], \"Other non-current assets\": [65388, 54428], \"Total non-current assets\": [219247, 217350]}, \"Total assets\": [332160, 352755]}, \"LIABILITIES AND SHAREHOLDERS EQUITY\": {\"Current liabilities\": {\"Accounts payable\": [42945, 64115], \"Other current liabilities\": [56425, 60845], \"Deferred revenue\": [8131, 7912], \"Commercial paper\": [1996, 9982], \"Term debt\": [10578, 11128], \"Total current liabilities\": [120075, 153982]}, \"Non-current liabilities\": {\"Term debt\": [97041, 98959], \"Other non-current liabilities\": [52886, 49142], \"Total non-current liabilities\": [149927, 148101]}, \"Total liabilities\": [270002, 302083], \"Commitments and contingencies\": null, \"Shareholders equity\": {\"Common stock and additional paid-in capital, $ 0.00001 par value: 50,400,000 shares authorized; 15,723,406 and 15,943,425 shares issued and outstanding, respectively\": [69568, 64849], \"Retained earnings/(Accumulated deficit)\": [4336, -3068], \"Accumulated other comprehensive income/(loss)\": [-11746, -11109], \"Total shareholders equity\": [62158, 50672]}, \"Total liabilities and shareholders equity\": [332160, 352755]}}"
+                },
+                "decision": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [24687, 23646], \"Marketable securities\": [31185, 24658], \"Accounts receivable, net\": [17936, 28184], \"Inventories\": [7482, 4946], \"Vendor non-trade receivables\": [17963, 32748], \"Other current assets\": [13660, 21223], \"Total current assets\": [112913, 135405]}, \"Non-current assets\": {\"Marketable securities\": [110461, 120805], \"Property, plant and equipment, net\": [43398, 42117], \"Other non-current assets\": [65388, 54428], \"Total non-current assets\": [219247, 217350]}, \"Total assets\": [332160, 352755]}, \"LIABILITIES AND SHAREHOLDERS EQUITY\": {\"Current liabilities\": {\"Accounts payable\": [42945, 64115], \"Other current liabilities\": [56425, 60845], \"Deferred revenue\": [8131, 7912], \"Commercial paper\": [1996, 9982], \"Term debt\": [10578, 11128], \"Total current liabilities\": [120075, 153982]}, \"Non-current liabilities\": {\"Term debt\": [97041, 98959], \"Other non-current liabilities\": [52886, 49142], \"Total non-current liabilities\": [149927, 148101]}, \"Total liabilities\": [270002, 302083], \"Commitments and contingencies\": null, \"Shareholders equity\": {\"Common stock and additional paid-in capital, $ 0.00001 par value: 50,400,000 shares authorized; 15,723,406 and 15,943,425 shares issued and outstanding, respectively\": [69568, 64849], \"Retained earnings/(Accumulated deficit)\": [4336, -3068], \"Accumulated other comprehensive income/(loss)\": [-11746, -11109], \"Total shareholders equity\": [62158, 50672]}, \"Total liabilities and shareholders equity\": [332160, 352755]}}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-05-46"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-05-46"
+    }
+}

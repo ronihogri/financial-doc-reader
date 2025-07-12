@@ -1,0 +1,152 @@
+{
+    "ASSETS": {
+        "Current Assets": {
+            "Cash and Cash Equivalents": [
+                1979,
+                3568
+            ],
+            "Accounts Receivable, Net": [
+                240,
+                148
+            ],
+            "Inventories": [
+                709,
+                572
+            ],
+            "Other": [
+                81,
+                52
+            ],
+            "Current Assets of Discontinued Operations": [
+                0,
+                1239
+            ],
+            "Total Current Assets": [
+                3009,
+                5579
+            ]
+        },
+        "Property and Equipment, Net": [
+            1009,
+            1017
+        ],
+        "Operating Lease Assets": [
+            1021,
+            968
+        ],
+        "Goodwill": [
+            628,
+            628
+        ],
+        "Trade Name": [
+            165,
+            165
+        ],
+        "Deferred Income Taxes": [
+            45,
+            58
+        ],
+        "Other Assets": [
+            149,
+            175
+        ],
+        "Other Assets of Discontinued Operations": [
+            0,
+            2981
+        ],
+        "Total Assets": [
+            6026,
+            11571
+        ]
+    },
+    "LIABILITIES AND EQUITY (DEFICIT)": {
+        "Current Liabilities": {
+            "Accounts Payable": [
+                435,
+                345
+            ],
+            "Accrued Expenses and Other": [
+                651,
+                727
+            ],
+            "Current Operating Lease Liabilities": [
+                170,
+                173
+            ],
+            "Income Taxes": [
+                34,
+                83
+            ],
+            "Current Liabilities of Discontinued Operations": [
+                0,
+                1498
+            ],
+            "Total Current Liabilities": [
+                1290,
+                2826
+            ]
+        },
+        "Deferred Income Taxes": [
+            157,
+            141
+        ],
+        "Long-term Debt": [
+            4854,
+            6366
+        ],
+        "Long-term Operating Lease Liabilities": [
+            989,
+            942
+        ],
+        "Other Long-term Liabilities": [
+            253,
+            290
+        ],
+        "Other Long-term Liabilities of Discontinued Operations": [
+            0,
+            1667
+        ],
+        "Shareholders  Equity (Deficit)": {
+            "Preferred Stock $ 1.00 par value; 10 shares authorized; none issued": [
+                0,
+                0
+            ],
+            "Common Stock $ 0.50 par value; 1,000 shares authorized; 269 and 286 shares issued; 254 and 278 shares outstanding, respectively": [
+                134,
+                143
+            ],
+            "Paid-in Capital": [
+                893,
+                891
+            ],
+            "Accumulated Other Comprehensive Income": [
+                80,
+                83
+            ],
+            "Retained Earnings (Accumulated Deficit)": [
+                -1803,
+                -1421
+            ],
+            "Less: Treasury Stock, at Average Cost; 15 and 8 shares, respectively": [
+                -822,
+                -358
+            ],
+            "Total Bath & Body Works, Inc. Shareholders  Equity (Deficit)": [
+                -1518,
+                -662
+            ],
+            "Noncontrolling Interest": [
+                1,
+                1
+            ],
+            "Total Equity (Deficit)": [
+                -1517,
+                -661
+            ]
+        },
+        "Total Liabilities and Equity (Deficit)": [
+            6026,
+            11571
+        ]
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 1,
+            "table_index": 0
+        },
+        "model": null,
+        "timestamp": "2025-01-21_09-30-44"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\tDollars in millions, except share and per share data\tDecember 31,\t",
+        "timestamp": "2025-03-11_12-08-57"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-09-00"
+    },
+    "post_table_text": {
+        "data": "\tThe accompanying notes are an integral part of these consolidated financial statements.\t72\tBRIST",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tThe accompanying notes are an integral part of these consolidated financial statements.\t72\tBRIST'"
+                },
+                "decision": "'\tThe accompanying notes are an integral part of these consolidated financial statements.\t72\tBRIST'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-09-02"
+    },
+    "table_body": {
+        "data": "ASSETS\t2023\t2022\tCurrent Assets:\tCash and cash equivalents\t$\t11,464\t$\t9,123\tMarketable debt securities\t816\t130\tReceivables\t10,921\t9,886\tInventories\t2,662\t2,339\tOther current assets\t5,907\t5,795\tTotal Current assets\t31,770\t27,273\tProperty, plant and equipment\t6,646\t6,255\tGoodwill\t21,169\t21,149\tOther intangible assets\t27,072\t35,859\tDeferred income taxes\t2,768\t1,344\tMarketable debt securities\t364\t \tOther non-current assets\t5,370\t4,940\tTotal Assets\t$\t95,159\t$\t96,820\tLIABILITIES\tCurrent Liabilities:\tShort-term debt obligations\t$\t3,119\t$\t4,264\tAccounts payable\t3,259\t3,040\tOther current liabilities\t15,884\t14,586\tTotal Current liabilities\t22,262\t21,890\tDeferred income taxes\t338\t2,166\tLong-term debt\t36,653\t35,056\tOther non-current liabilities\t6,421\t6,590\tTotal Liabilities\t65,674\t65,702\tCommitments and contingencies\tEQUITY\tBristol-Myers Squibb Company Shareholders  Equity:\tPreferred stock, $\t2\tconvertible series, par value $\t1\tper share: Authorized\t10\tmillion shares; issued and outstanding\t2,953\tin 2023 and\t2,991\tin 2022, liquidation value of $\t50\tper share\t \t \tCommon stock, par value of $\t0.10\tper share: Authorized\t4.5\tbillion shares;\t2.9\tbillion issued in 2023 and 2022\t292\t292\tCapital in excess of par value of stock\t45,684\t45,165\tAccumulated other comprehensive loss\t(\t1,546\t)\t(\t1,281\t)\tRetained earnings\t28,766\t25,503\tLess cost of treasury stock  \t902\tmillion common shares in 2023 and\t825\tmillion common shares in 2022\t(\t43,766\t)\t(\t38,618\t)\tTotal BMS Shareholders  Equity\t29,430\t31,061\tNoncontrolling interest\t55\t57\tTotal Equity\t29,485\t31,118\tTotal Liabilities and Equity\t$\t95,159\t$\t96,820",
+        "timestamp": "2025-03-11_12-09-02"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current Assets\": {\"Cash and cash equivalents\": [11464, 9123], \"Marketable debt securities\": [816, 130], \"Receivables\": [10921, 9886], \"Inventories\": [2662, 2339], \"Other current assets\": [5907, 5795], \"Total Current assets\": [31770, 27273]}, \"Property, plant and equipment\": [6646, 6255], \"Goodwill\": [21169, 21149], \"Other intangible assets\": [27072, 35859], \"Deferred income taxes\": [2768, 1344], \"Marketable debt securities\": [364, 0], \"Other non-current assets\": [5370, 4940], \"Total Assets\": [95159, 96820]}, \"LIABILITIES\": {\"Current Liabilities\": {\"Short-term debt obligations\": [3119, 4264], \"Accounts payable\": [3259, 3040], \"Other current liabilities\": [15884, 14586], \"Total Current liabilities\": [22262, 21890]}, \"Deferred income taxes\": [338, 2166], \"Long-term debt\": [36653, 35056], \"Other non-current liabilities\": [6421, 6590], \"Total Liabilities\": [65674, 65702], \"Commitments and contingencies\": null}, \"EQUITY\": {\"Bristol-Myers Squibb Company Shareholders  Equity\": {\"Preferred stock, $ 2 convertible series, par value $ 1 per share: Authorized 10 million shares; issued and outstanding 2,953 in 2023 and 2,991 in 2022, liquidation value of $ 50 per share\": [0, 0], \"Common stock, par value of $ 0.10 per share: Authorized 4.5 billion shares; 2.9 billion issued in 2023 and 2022\": [292, 292], \"Capital in excess of par value of stock\": [45684, 45165], \"Accumulated other comprehensive loss\": [-1546, -1281], \"Retained earnings\": [28766, 25503], \"Less cost of treasury stock   902 million common shares in 2023 and 825 million common shares in 2022\": [-43766, -38618], \"Total BMS Shareholders  Equity\": [29430, 31061]}, \"Noncontrolling interest\": [55, 57], \"Total Equity\": [29485, 31118]}, \"Total Liabilities and Equity\": [95159, 96820]}"
+                },
+                "decision": "{\"ASSETS\": {\"Current Assets\": {\"Cash and cash equivalents\": [11464, 9123], \"Marketable debt securities\": [816, 130], \"Receivables\": [10921, 9886], \"Inventories\": [2662, 2339], \"Other current assets\": [5907, 5795], \"Total Current assets\": [31770, 27273]}, \"Property, plant and equipment\": [6646, 6255], \"Goodwill\": [21169, 21149], \"Other intangible assets\": [27072, 35859], \"Deferred income taxes\": [2768, 1344], \"Marketable debt securities\": [364, 0], \"Other non-current assets\": [5370, 4940], \"Total Assets\": [95159, 96820]}, \"LIABILITIES\": {\"Current Liabilities\": {\"Short-term debt obligations\": [3119, 4264], \"Accounts payable\": [3259, 3040], \"Other current liabilities\": [15884, 14586], \"Total Current liabilities\": [22262, 21890]}, \"Deferred income taxes\": [338, 2166], \"Long-term debt\": [36653, 35056], \"Other non-current liabilities\": [6421, 6590], \"Total Liabilities\": [65674, 65702], \"Commitments and contingencies\": null}, \"EQUITY\": {\"Bristol-Myers Squibb Company Shareholders  Equity\": {\"Preferred stock, $ 2 convertible series, par value $ 1 per share: Authorized 10 million shares; issued and outstanding 2,953 in 2023 and 2,991 in 2022, liquidation value of $ 50 per share\": [0, 0], \"Common stock, par value of $ 0.10 per share: Authorized 4.5 billion shares; 2.9 billion issued in 2023 and 2022\": [292, 292], \"Capital in excess of par value of stock\": [45684, 45165], \"Accumulated other comprehensive loss\": [-1546, -1281], \"Retained earnings\": [28766, 25503], \"Less cost of treasury stock   902 million common shares in 2023 and 825 million common shares in 2022\": [-43766, -38618], \"Total BMS Shareholders  Equity\": [29430, 31061]}, \"Noncontrolling interest\": [55, 57], \"Total Equity\": [29485, 31118]}, \"Total Liabilities and Equity\": [95159, 96820]}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-18-30"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-18-30"
+    }
+}

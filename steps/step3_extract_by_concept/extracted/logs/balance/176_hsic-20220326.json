@@ -1,0 +1,74 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 1,
+            "table_index": 0
+        },
+        "model": null,
+        "timestamp": "2025-01-21_09-39-39"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\t(in millions,\texcept share data)\tMarch 26,\tDecember 25,\t2022\t2021\t(unaudited)\t",
+        "timestamp": "2025-03-11_12-33-49"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-33-52"
+    },
+    "post_table_text": {
+        "data": "\tTable of Contents\tSee accompanying notes.\t4\tHENRY SCHEIN, INC.\tCONDENSED CONSOLIDATED STAT",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tTable of Contents\tSee accompanying notes.\t4\tHENRY SCHEIN, INC.\tCONDENSED CONSOLIDATED STAT'"
+                },
+                "decision": "'\tTable of Contents\tSee accompanying notes.\t4\tHENRY SCHEIN, INC.\tCONDENSED CONSOLIDATED STAT'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-33-54"
+    },
+    "table_body": {
+        "data": "ASSETS\tCurrent assets:\tCash and cash equivalents\t$\t126\t$\t118\tAccounts receivable, net of reserves of $\t70\tand $\t67\t1,444\t1,452\tInventories, net\t1,871\t1,861\tPrepaid expenses and other\t389\t413\tTotal current assets\t3,830\t3,844\tProperty and equipment, net\t358\t366\tOperating lease right-of-use assets\t331\t325\tGoodwill\t2,857\t2,854\tOther intangibles, net\t644\t668\tInvestments and other\t427\t424\tTotal assets\t$\t8,447\t$\t8,481\tLIABILITIES AND STOCKHOLDERS' EQUITY\tCurrent liabilities:\tAccounts payable\t$\t914\t$\t1,054\tBank credit lines\t90\t51\tCurrent maturities of long-term debt\t3\t11\tOperating lease liabilities\t76\t76\tAccrued expenses:\tPayroll and related\t326\t385\tTaxes\t174\t137\tOther\t561\t593\tTotal current liabilities\t2,144\t2,307\tLong-term debt\t773\t811\tDeferred income taxes\t40\t42\tOperating lease liabilities\t277\t268\tOther liabilities\t376\t377\tTotal liabilities\t3,610\t3,805\tRedeemable noncontrolling interests\t613\t613\tCommitments and contingencies\t(nil)\t(nil)\tStockholders' equity:\tPreferred stock, $\t0.01\tpar value,\t1,000,000\tshares authorized,\tnone\toutstanding\t-\t-\tCommon stock, $\t0.01\tpar value,\t480,000,000\tshares authorized,\t137,708,809\toutstanding on March 26, 2022 and\t137,145,558\toutstanding on December 25, 2021\t1\t1\tAdditional paid-in capital\t-\t-\tRetained earnings\t3,759\t3,595\tAccumulated other comprehensive loss\t(\t168\t)\t(\t171\t)\tTotal Henry Schein, Inc. stockholders' equity\t3,592\t3,425\tNoncontrolling interests\t632\t638\tTotal stockholders' equity\t4,224\t4,063\tTotal liabilities, redeemable noncontrolling\tinterests and stockholders' equity\t$\t8,447\t$\t8,481",
+        "timestamp": "2025-03-11_12-33-54"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [126, 118], \"Accounts receivable, net of reserves of $ 70 and $ 67\": [1444, 1452], \"Inventories, net\": [1871, 1861], \"Prepaid expenses and other\": [389, 413], \"Total current assets\": [3830, 3844]}, \"Property and equipment, net\": [358, 366], \"Operating lease right-of-use assets\": [331, 325], \"Goodwill\": [2857, 2854], \"Other intangibles, net\": [644, 668], \"Investments and other\": [427, 424], \"Total assets\": [8447, 8481]}, \"LIABILITIES AND STOCKHOLDERS' EQUITY\": {\"Current liabilities\": {\"Accounts payable\": [914, 1054], \"Bank credit lines\": [90, 51], \"Current maturities of long-term debt\": [3, 11], \"Operating lease liabilities\": [76, 76], \"Accrued expenses\": {\"Payroll and related\": [326, 385], \"Taxes\": [174, 137], \"Other\": [561, 593]}, \"Total current liabilities\": [2144, 2307]}, \"Long-term debt\": [773, 811], \"Deferred income taxes\": [40, 42], \"Operating lease liabilities\": [277, 268], \"Other liabilities\": [376, 377], \"Total liabilities\": [3610, 3805], \"Redeemable noncontrolling interests\": [613, 613], \"Commitments and contingencies\": null, \"Stockholders' equity\": {\"Preferred stock, $ 0.01 par value, 1,000,000 shares authorized, none outstanding\": [0, 0], \"Common stock, $ 0.01 par value, 480,000,000 shares authorized, 137,708,809 outstanding on March 26, 2022 and 137,145,558 outstanding on December 25, 2021\": [1, 1], \"Additional paid-in capital\": [0, 0], \"Retained earnings\": [3759, 3595], \"Accumulated other comprehensive loss\": [-168, -171], \"Total Henry Schein, Inc. stockholders' equity\": [3592, 3425], \"Noncontrolling interests\": [632, 638], \"Total stockholders' equity\": [4224, 4063]}, \"Total liabilities, redeemable noncontrolling interests and stockholders' equity\": [8447, 8481]}}"
+                },
+                "decision": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [126, 118], \"Accounts receivable, net of reserves of $ 70 and $ 67\": [1444, 1452], \"Inventories, net\": [1871, 1861], \"Prepaid expenses and other\": [389, 413], \"Total current assets\": [3830, 3844]}, \"Property and equipment, net\": [358, 366], \"Operating lease right-of-use assets\": [331, 325], \"Goodwill\": [2857, 2854], \"Other intangibles, net\": [644, 668], \"Investments and other\": [427, 424], \"Total assets\": [8447, 8481]}, \"LIABILITIES AND STOCKHOLDERS' EQUITY\": {\"Current liabilities\": {\"Accounts payable\": [914, 1054], \"Bank credit lines\": [90, 51], \"Current maturities of long-term debt\": [3, 11], \"Operating lease liabilities\": [76, 76], \"Accrued expenses\": {\"Payroll and related\": [326, 385], \"Taxes\": [174, 137], \"Other\": [561, 593]}, \"Total current liabilities\": [2144, 2307]}, \"Long-term debt\": [773, 811], \"Deferred income taxes\": [40, 42], \"Operating lease liabilities\": [277, 268], \"Other liabilities\": [376, 377], \"Total liabilities\": [3610, 3805], \"Redeemable noncontrolling interests\": [613, 613], \"Commitments and contingencies\": null, \"Stockholders' equity\": {\"Preferred stock, $ 0.01 par value, 1,000,000 shares authorized, none outstanding\": [0, 0], \"Common stock, $ 0.01 par value, 480,000,000 shares authorized, 137,708,809 outstanding on March 26, 2022 and 137,145,558 outstanding on December 25, 2021\": [1, 1], \"Additional paid-in capital\": [0, 0], \"Retained earnings\": [3759, 3595], \"Accumulated other comprehensive loss\": [-168, -171], \"Total Henry Schein, Inc. stockholders' equity\": [3592, 3425], \"Noncontrolling interests\": [632, 638], \"Total stockholders' equity\": [4224, 4063]}, \"Total liabilities, redeemable noncontrolling interests and stockholders' equity\": [8447, 8481]}}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-37-52"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-37-52"
+    }
+}

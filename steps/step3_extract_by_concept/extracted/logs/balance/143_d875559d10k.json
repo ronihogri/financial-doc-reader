@@ -1,0 +1,87 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 2,
+            "table_index": 0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "0",
+                    "1": "0",
+                    "2": "0"
+                },
+                "decision": "0"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-01-21_09-35-49"
+    },
+    "table_comments": {
+        "data": "Consolidated Balance Sheet\tConocoPhillips\tAt December 31\tMillions of Dollars\t2019\t2018\t",
+        "timestamp": "2025-03-11_12-24-58"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-25-01"
+    },
+    "post_table_text": {
+        "data": "\tSee Notes to Consolidated Financial Statements.\t84\tConsolidated Statement of Cash Flows\tCon",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tSee Notes to Consolidated Financial Statements.\t84\tConsolidated Statement of Cash Flows\tCon'"
+                },
+                "decision": "'\tSee Notes to Consolidated Financial Statements.\t84\tConsolidated Statement of Cash Flows\tCon'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-25-03"
+    },
+    "table_body": {
+        "data": "Assets\tCash and cash equivalents\t$\t5,088\t5,915\tShort-term investments\t3,028\t248\tAccounts and notes receivable (net of allowance of $\t13\tmillion in 2019\tand $\t25\tmillion in 2018)\t3,267\t3,920\tAccounts and notes receivable related parties\t134\t147\tInvestment in Cenovus Energy\t2,111\t1,462\tInventories\t1,026\t1,007\tPrepaid expenses and other current assets\t2,259\t575\tTotal Current Assets\t16,913\t13,274\tInvestments and long-term receivables\t8,687\t9,329\tLoans and advances related parties\t219\t335\tNet properties, plants and equipment (net of accumulated depreciation,\tdepletion\tand amortization of $\t55,477\tmillion in 2019 and $\t64,899\tmillion in 2018)\t42,269\t45,698\tOther assets\t2,426\t1,344\tTotal Assets\t$\t70,514\t69,980\tLiabilities\tAccounts payable\t$\t3,176\t3,863\tAccounts payable related parties\t24\t32\tShort-term debt\t105\t112\tAccrued income and other taxes\t1,030\t1,320\tEmployee benefit obligations\t663\t809\tOther accruals\t2,045\t1,259\tTotal Current Liabilities\t7,043\t7,395\tLong-term debt\t14,790\t14,856\tAsset retirement obligations and accrued environmental costs\t5,352\t7,688\tDeferred income taxes\t4,634\t5,021\tEmployee benefit obligations\t1,781\t1,764\tOther liabilities and deferred credits\t1,864\t1,192\tTotal Liabilities\t35,464\t37,916\tEquity\tCommon stock (\t2,500,000,000\tshares authorized at $\t0.01\tpar value)\tIssued (2019 \t1,795,652,203\tshares; 2018 \t1,791,637,434\tshares)\tPar value\t18\t18\tCapital in excess of par\t46,983\t46,879\tTreasury stock (at cost: 2019 \t710,783,814\tshares; 2018 \t653,288,213\tshares)\t(\t46,405\t)\t(\t42,905\t)\tAccumulated other comprehensive loss\t(\t5,357\t)\t(\t6,063\t)\tRetained earnings\t39,742\t34,010\tTotal Common\tStockholders  Equity\t34,981\t31,939\tNoncontrolling interests\t69\t125\tTotal Equity\t35,050\t32,064\tTotal Liabilities and Equity\t$\t70,514\t69,980",
+        "timestamp": "2025-03-11_12-25-03"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"Assets\": {\"Cash and cash equivalents\": [5088, 5915], \"Short-term investments\": [3028, 248], \"Accounts and notes receivable (net of allowance of $ 13 million in 2019 and $ 25 million in 2018)\": [3267, 3920], \"Accounts and notes receivable related parties\": [134, 147], \"Investment in Cenovus Energy\": [2111, 1462], \"Inventories\": [1026, 1007], \"Prepaid expenses and other current assets\": [2259, 575], \"Total Current Assets\": [16913, 13274], \"Investments and long-term receivables\": [8687, 9329], \"Loans and advances related parties\": [219, 335], \"Net properties, plants and equipment (net of accumulated depreciation, depletion and amortization of $ 55,477 million in 2019 and $ 64,899 million in 2018)\": [42269, 45698], \"Other assets\": [2426, 1344], \"Total Assets\": [70514, 69980]}, \"Liabilities\": {\"Accounts payable\": [3176, 3863], \"Accounts payable related parties\": [24, 32], \"Short-term debt\": [105, 112], \"Accrued income and other taxes\": [1030, 1320], \"Employee benefit obligations\": [663, 809], \"Other accruals\": [2045, 1259], \"Total Current Liabilities\": [7043, 7395], \"Long-term debt\": [14790, 14856], \"Asset retirement obligations and accrued environmental costs\": [5352, 7688], \"Deferred income taxes\": [4634, 5021], \"Employee benefit obligations\": [1781, 1764], \"Other liabilities and deferred credits\": [1864, 1192], \"Total Liabilities\": [35464, 37916]}, \"Equity\": {\"Common stock ( 2,500,000,000 shares authorized at $ 0.01 par value) Issued (2019  1,795,652,203 shares; 2018  1,791,637,434 shares)\": [18, 18], \"Capital in excess of par\": [46983, 46879], \"Treasury stock (at cost: 2019  710,783,814 shares; 2018  653,288,213 shares)\": [-46405, -42905], \"Accumulated other comprehensive loss\": [-5357, -6063], \"Retained earnings\": [39742, 34010], \"Total Common Stockholders Equity\": [34981, 31939], \"Noncontrolling interests\": [69, 125], \"Total Equity\": [35050, 32064]}, \"Total Liabilities and Equity\": [70514, 69980]}"
+                },
+                "decision": "{\"Assets\": {\"Cash and cash equivalents\": [5088, 5915], \"Short-term investments\": [3028, 248], \"Accounts and notes receivable (net of allowance of $ 13 million in 2019 and $ 25 million in 2018)\": [3267, 3920], \"Accounts and notes receivable related parties\": [134, 147], \"Investment in Cenovus Energy\": [2111, 1462], \"Inventories\": [1026, 1007], \"Prepaid expenses and other current assets\": [2259, 575], \"Total Current Assets\": [16913, 13274], \"Investments and long-term receivables\": [8687, 9329], \"Loans and advances related parties\": [219, 335], \"Net properties, plants and equipment (net of accumulated depreciation, depletion and amortization of $ 55,477 million in 2019 and $ 64,899 million in 2018)\": [42269, 45698], \"Other assets\": [2426, 1344], \"Total Assets\": [70514, 69980]}, \"Liabilities\": {\"Accounts payable\": [3176, 3863], \"Accounts payable related parties\": [24, 32], \"Short-term debt\": [105, 112], \"Accrued income and other taxes\": [1030, 1320], \"Employee benefit obligations\": [663, 809], \"Other accruals\": [2045, 1259], \"Total Current Liabilities\": [7043, 7395], \"Long-term debt\": [14790, 14856], \"Asset retirement obligations and accrued environmental costs\": [5352, 7688], \"Deferred income taxes\": [4634, 5021], \"Employee benefit obligations\": [1781, 1764], \"Other liabilities and deferred credits\": [1864, 1192], \"Total Liabilities\": [35464, 37916]}, \"Equity\": {\"Common stock ( 2,500,000,000 shares authorized at $ 0.01 par value) Issued (2019  1,795,652,203 shares; 2018  1,791,637,434 shares)\": [18, 18], \"Capital in excess of par\": [46983, 46879], \"Treasury stock (at cost: 2019  710,783,814 shares; 2018  653,288,213 shares)\": [-46405, -42905], \"Accumulated other comprehensive loss\": [-5357, -6063], \"Retained earnings\": [39742, 34010], \"Total Common Stockholders Equity\": [34981, 31939], \"Noncontrolling interests\": [69, 125], \"Total Equity\": [35050, 32064]}, \"Total Liabilities and Equity\": [70514, 69980]}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-28-18"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-28-18"
+    }
+}

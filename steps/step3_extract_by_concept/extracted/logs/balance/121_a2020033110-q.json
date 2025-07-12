@@ -1,0 +1,87 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 2,
+            "table_index": 0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "0",
+                    "1": "0",
+                    "2": "0"
+                },
+                "decision": "0"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-01-21_09-33-34"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\t(In millions, except shares in thousands and per share data in dollars)\tMarch 31, 2020\tDecember 31, 2019\t(Unaudited)\t",
+        "timestamp": "2025-03-11_12-19-24"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-19-27"
+    },
+    "post_table_text": {
+        "data": "\tThe accompanying notes to the consolidated financial statements are an integral part of these statements.\t1",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tThe accompanying notes to the consolidated financial statements are an integral part of these statements.\t1'"
+                },
+                "decision": "'\tThe accompanying notes to the consolidated financial statements are an integral part of these statements.\t1'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-19-29"
+    },
+    "table_body": {
+        "data": "ASSETS\tCurrent assets:\tCash and cash equivalents\t$\t9,308\t$\t12,123\tPremium and trade receivables\t11,304\t6,247\tShort-term investments\t1,386\t863\tOther current assets\t2,698\t1,090\tTotal current assets\t24,696\t20,323\tLong-term investments\t10,521\t7,717\tRestricted deposits\t1,014\t658\tProperty, software and equipment, net\t2,439\t2,121\tGoodwill\t17,417\t6,863\tIntangible assets, net\t8,898\t2,063\tOther long-term assets\t1,446\t1,249\tTotal assets\t$\t66,431\t$\t40,994\tLIABILITIES, REDEEMABLE NONCONTROLLING INTERESTS AND STOCKHOLDERS  EQUITY\tCurrent liabilities:\tMedical claims liability\t$\t11,413\t$\t7,473\tAccounts payable and accrued expenses\t8,531\t4,164\tReturn of premium payable\t1,052\t824\tUnearned revenue\t526\t383\tCurrent portion of long-term debt\t129\t88\tTotal current liabilities\t21,651\t12,932\tLong-term debt\t17,150\t13,638\tOther long-term liabilities\t3,938\t1,732\tTotal liabilities\t42,739\t28,302\tCommitments and contingencies\tRedeemable noncontrolling interests\t36\t33\tStockholders  equity:\tPreferred stock, $0.001 par value; authorized 10,000 shares; no shares issued or outstanding at March 31, 2020 and December 31, 2019\t \t \tCommon stock, $0.001 par value; authorized 800,000 shares; 594,890 issued and 579,122 outstanding at March 31, 2020, and 421,508 issued and 415,048 outstanding at December 31, 2019\t \t \tAdditional paid-in capital\t19,279\t7,647\tAccumulated other comprehensive earnings (loss)\t(\t5\t)\t134\tRetained earnings\t5,030\t4,984\tTreasury stock, at cost (15,768 and 6,460 shares, respectively)\t(\t755\t)\t(\t214\t)\tTotal Centene stockholders  equity\t23,549\t12,551\tNonredeemable Noncontrolling interest\t107\t108\tTotal stockholders  equity\t23,656\t12,659\tTotal liabilities, redeemable noncontrolling interests and stockholders  equity\t$\t66,431\t$\t40,994",
+        "timestamp": "2025-03-11_12-19-29"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [9308, 12123], \"Premium and trade receivables\": [11304, 6247], \"Short-term investments\": [1386, 863], \"Other current assets\": [2698, 1090], \"Total current assets\": [24696, 20323]}, \"Long-term investments\": [10521, 7717], \"Restricted deposits\": [1014, 658], \"Property, software and equipment, net\": [2439, 2121], \"Goodwill\": [17417, 6863], \"Intangible assets, net\": [8898, 2063], \"Other long-term assets\": [1446, 1249], \"Total assets\": [66431, 40994]}, \"LIABILITIES, REDEEMABLE NONCONTROLLING INTERESTS AND STOCKHOLDERS EQUITY\": {\"Current liabilities\": {\"Medical claims liability\": [11413, 7473], \"Accounts payable and accrued expenses\": [8531, 4164], \"Return of premium payable\": [1052, 824], \"Unearned revenue\": [526, 383], \"Current portion of long-term debt\": [129, 88], \"Total current liabilities\": [21651, 12932]}, \"Long-term debt\": [17150, 13638], \"Other long-term liabilities\": [3938, 1732], \"Total liabilities\": [42739, 28302], \"Commitments and contingencies\": null, \"Redeemable noncontrolling interests\": [36, 33], \"Stockholders equity\": {\"Preferred stock, $0.001 par value; authorized 10,000 shares; no shares issued or outstanding at March 31, 2020 and December 31, 2019\": [0, 0], \"Common stock, $0.001 par value; authorized 800,000 shares; 594,890 issued and 579,122 outstanding at March 31, 2020, and 421,508 issued and 415,048 outstanding at December 31, 2019\": [0, 0], \"Additional paid-in capital\": [19279, 7647], \"Accumulated other comprehensive earnings (loss)\": [-5, 134], \"Retained earnings\": [5030, 4984], \"Treasury stock, at cost (15,768 and 6,460 shares, respectively)\": [-755, -214], \"Total Centene stockholders equity\": [23549, 12551], \"Nonredeemable Noncontrolling interest\": [107, 108], \"Total stockholders equity\": [23656, 12659]}, \"Total liabilities, redeemable noncontrolling interests and stockholders equity\": [66431, 40994]}}"
+                },
+                "decision": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [9308, 12123], \"Premium and trade receivables\": [11304, 6247], \"Short-term investments\": [1386, 863], \"Other current assets\": [2698, 1090], \"Total current assets\": [24696, 20323]}, \"Long-term investments\": [10521, 7717], \"Restricted deposits\": [1014, 658], \"Property, software and equipment, net\": [2439, 2121], \"Goodwill\": [17417, 6863], \"Intangible assets, net\": [8898, 2063], \"Other long-term assets\": [1446, 1249], \"Total assets\": [66431, 40994]}, \"LIABILITIES, REDEEMABLE NONCONTROLLING INTERESTS AND STOCKHOLDERS EQUITY\": {\"Current liabilities\": {\"Medical claims liability\": [11413, 7473], \"Accounts payable and accrued expenses\": [8531, 4164], \"Return of premium payable\": [1052, 824], \"Unearned revenue\": [526, 383], \"Current portion of long-term debt\": [129, 88], \"Total current liabilities\": [21651, 12932]}, \"Long-term debt\": [17150, 13638], \"Other long-term liabilities\": [3938, 1732], \"Total liabilities\": [42739, 28302], \"Commitments and contingencies\": null, \"Redeemable noncontrolling interests\": [36, 33], \"Stockholders equity\": {\"Preferred stock, $0.001 par value; authorized 10,000 shares; no shares issued or outstanding at March 31, 2020 and December 31, 2019\": [0, 0], \"Common stock, $0.001 par value; authorized 800,000 shares; 594,890 issued and 579,122 outstanding at March 31, 2020, and 421,508 issued and 415,048 outstanding at December 31, 2019\": [0, 0], \"Additional paid-in capital\": [19279, 7647], \"Accumulated other comprehensive earnings (loss)\": [-5, 134], \"Retained earnings\": [5030, 4984], \"Treasury stock, at cost (15,768 and 6,460 shares, respectively)\": [-755, -214], \"Total Centene stockholders equity\": [23549, 12551], \"Nonredeemable Noncontrolling interest\": [107, 108], \"Total stockholders equity\": [23656, 12659]}, \"Total liabilities, redeemable noncontrolling interests and stockholders equity\": [66431, 40994]}}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-24-26"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-24-26"
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 8,
+            "table_index": 0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "0",
+                    "1": "0",
+                    "2": "0"
+                },
+                "decision": "0"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-01-21_09-28-03"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\tDecember 31, 2018\tand\t2017\t(In millions, except per-share data)\t2018\t2017\t",
+        "timestamp": "2025-03-11_11-57-50"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_11-57-53"
+    },
+    "post_table_text": {
+        "data": "\tSee accompanying notes.\tF-4\tAMGEN INC.\tCONSOLIDATED STATEMENTS OF STOCKHOLDERS  EQUITY\tYears ended",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tSee accompanying notes.\tF-4\tAMGEN INC.\tCONSOLIDATED STATEMENTS OF STOCKHOLDERS  EQUITY\tYears ended'"
+                },
+                "decision": "'\tSee accompanying notes.\tF-4\tAMGEN INC.\tCONSOLIDATED STATEMENTS OF STOCKHOLDERS  EQUITY\tYears ended'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_11-57-55"
+    },
+    "table_body": {
+        "data": "ASSETS\tCurrent assets:\tCash and cash equivalents\t$\t6,945\t$\t3,800\tMarketable securities\t22,359\t37,878\tTrade receivables, net\t3,580\t3,237\tInventories\t2,940\t2,834\tOther current assets\t1,794\t1,727\tTotal current assets\t37,618\t49,476\tProperty, plant and equipment, net\t4,958\t4,989\tIntangible assets, net\t7,443\t8,609\tGoodwill\t14,699\t14,761\tOther assets\t1,698\t2,119\tTotal assets\t$\t66,416\t$\t79,954\tLIABILITIES AND STOCKHOLDERS  EQUITY\tCurrent liabilities:\tAccounts payable\t$\t1,207\t$\t1,352\tAccrued liabilities\t7,862\t6,516\tCurrent portion of long-term debt\t4,419\t1,152\tTotal current liabilities\t13,488\t9,020\tLong-term debt\t29,510\t34,190\tLong-term deferred tax liabilities\t864\t1,166\tLong-term tax liabilities\t8,770\t9,099\tOther noncurrent liabilities\t1,284\t1,238\tContingencies and commitments\tStockholders  equity:\tCommon stock and additional paid-in capital; $0.0001 par value per share; 2,750.0 shares authorized; outstanding 629.6 shares in 2018 and 722.2 shares in 2017\t31,246\t30,992\tAccumulated deficit\t(17,977\t)\t(5,072\t)\tAccumulated other comprehensive loss\t(769\t)\t(679\t)\tTotal stockholders  equity\t12,500\t25,241\tTotal liabilities and stockholders  equity\t$\t66,416\t$\t79,954",
+        "timestamp": "2025-03-11_11-57-55"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [6945, 3800], \"Marketable securities\": [22359, 37878], \"Trade receivables, net\": [3580, 3237], \"Inventories\": [2940, 2834], \"Other current assets\": [1794, 1727], \"Total current assets\": [37618, 49476]}, \"Property, plant and equipment, net\": [4958, 4989], \"Intangible assets, net\": [7443, 8609], \"Goodwill\": [14699, 14761], \"Other assets\": [1698, 2119], \"Total assets\": [66416, 79954]}, \"LIABILITIES AND STOCKHOLDERS EQUITY\": {\"Current liabilities\": {\"Accounts payable\": [1207, 1352], \"Accrued liabilities\": [7862, 6516], \"Current portion of long-term debt\": [4419, 1152], \"Total current liabilities\": [13488, 9020]}, \"Long-term debt\": [29510, 34190], \"Long-term deferred tax liabilities\": [864, 1166], \"Long-term tax liabilities\": [8770, 9099], \"Other noncurrent liabilities\": [1284, 1238], \"Contingencies and commitments\": null, \"Stockholders equity\": {\"Common stock and additional paid-in capital; $0.0001 par value per share; 2,750.0 shares authorized; outstanding 629.6 shares in 2018 and 722.2 shares in 2017\": [31246, 30992], \"Accumulated deficit\": [-17977, -5072], \"Accumulated other comprehensive loss\": [-769, -679], \"Total stockholders equity\": [12500, 25241]}, \"Total liabilities and stockholders equity\": [66416, 79954]}}"
+                },
+                "decision": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [6945, 3800], \"Marketable securities\": [22359, 37878], \"Trade receivables, net\": [3580, 3237], \"Inventories\": [2940, 2834], \"Other current assets\": [1794, 1727], \"Total current assets\": [37618, 49476]}, \"Property, plant and equipment, net\": [4958, 4989], \"Intangible assets, net\": [7443, 8609], \"Goodwill\": [14699, 14761], \"Other assets\": [1698, 2119], \"Total assets\": [66416, 79954]}, \"LIABILITIES AND STOCKHOLDERS EQUITY\": {\"Current liabilities\": {\"Accounts payable\": [1207, 1352], \"Accrued liabilities\": [7862, 6516], \"Current portion of long-term debt\": [4419, 1152], \"Total current liabilities\": [13488, 9020]}, \"Long-term debt\": [29510, 34190], \"Long-term deferred tax liabilities\": [864, 1166], \"Long-term tax liabilities\": [8770, 9099], \"Other noncurrent liabilities\": [1284, 1238], \"Contingencies and commitments\": null, \"Stockholders equity\": {\"Common stock and additional paid-in capital; $0.0001 par value per share; 2,750.0 shares authorized; outstanding 629.6 shares in 2018 and 722.2 shares in 2017\": [31246, 30992], \"Accumulated deficit\": [-17977, -5072], \"Accumulated other comprehensive loss\": [-769, -679], \"Total stockholders equity\": [12500, 25241]}, \"Total liabilities and stockholders equity\": [66416, 79954]}}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-11-11"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-11-11"
+    }
+}

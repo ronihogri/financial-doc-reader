@@ -1,0 +1,75 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 1,
+            "table_index": 0
+        },
+        "model": null,
+        "timestamp": "2025-01-21_09-29-07"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\t(in millions except par value amounts)\tJanuary 29,\t2022\tJanuary 30,\t2021\t",
+        "timestamp": "2025-03-11_12-05-17"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-05-20"
+    },
+    "post_table_text": {
+        "data": "\tThe accompanying Notes are an integral part of these Consolidated Financial Statements.\t56\tTable of",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\t(Note: The accompanying Notes are an integral part of these Consolidated Financial Statements.\t56'",
+                    "1": "'\tThe accompanying Notes are an integral part of these Consolidated Financial Statements.\t56\tTable of'"
+                },
+                "decision": "'\tThe accompanying Notes are an integral part of these Consolidated Financial Statements.\t56\tTable of'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-05-24"
+    },
+    "table_body": {
+        "data": "ASSETS\tCurrent Assets:\tCash and Cash Equivalents\t$\t1,979\t$\t3,568\tAccounts Receivable, Net\t240\t148\tInventories\t709\t572\tOther\t81\t52\tCurrent Assets of Discontinued Operations\t \t1,239\tTotal Current Assets\t3,009\t5,579\tProperty and Equipment, Net\t1,009\t1,017\tOperating Lease Assets\t1,021\t968\tGoodwill\t628\t628\tTrade Name\t165\t165\tDeferred Income Taxes\t45\t58\tOther Assets\t149\t175\tOther Assets of Discontinued Operations\t \t2,981\tTotal Assets\t$\t6,026\t$\t11,571\tLIABILITIES AND EQUITY (DEFICIT)\tCurrent Liabilities:\tAccounts Payable\t$\t435\t$\t345\tAccrued Expenses and Other\t651\t727\tCurrent Operating Lease Liabilities\t170\t173\tIncome Taxes\t34\t83\tCurrent Liabilities of Discontinued Operations\t \t1,498\tTotal Current Liabilities\t1,290\t2,826\tDeferred Income Taxes\t157\t141\tLong-term Debt\t4,854\t6,366\tLong-term Operating Lease Liabilities\t989\t942\tOther Long-term Liabilities\t253\t290\tOther Long-term Liabilities of Discontinued Operations\t \t1,667\tShareholders  Equity (Deficit):\tPreferred Stock $\t1.00\tpar value;\t10\tshares authorized;\tnone\tissued\t \t \tCommon Stock $\t0.50\tpar value;\t1,000\tshares authorized;\t269\tand\t286\tshares issued;\t254\tand\t278\tshares outstanding, respectively\t134\t143\tPaid-in Capital\t893\t891\tAccumulated Other Comprehensive Income\t80\t83\tRetained Earnings (Accumulated Deficit)\t(\t1,803\t)\t(\t1,421\t)\tLess: Treasury Stock, at Average Cost;\t15\tand\t8\tshares, respectively\t(\t822\t)\t(\t358\t)\tTotal Bath & Body Works, Inc. Shareholders  Equity (Deficit)\t(\t1,518\t)\t(\t662\t)\tNoncontrolling Interest\t1\t1\tTotal Equity (Deficit)\t(\t1,517\t)\t(\t661\t)\tTotal Liabilities and Equity (Deficit)\t$\t6,026\t$\t11,571",
+        "timestamp": "2025-03-11_12-05-24"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current Assets\": {\"Cash and Cash Equivalents\": [1979, 3568], \"Accounts Receivable, Net\": [240, 148], \"Inventories\": [709, 572], \"Other\": [81, 52], \"Current Assets of Discontinued Operations\": [0, 1239], \"Total Current Assets\": [3009, 5579]}, \"Property and Equipment, Net\": [1009, 1017], \"Operating Lease Assets\": [1021, 968], \"Goodwill\": [628, 628], \"Trade Name\": [165, 165], \"Deferred Income Taxes\": [45, 58], \"Other Assets\": [149, 175], \"Other Assets of Discontinued Operations\": [0, 2981], \"Total Assets\": [6026, 11571]}, \"LIABILITIES AND EQUITY (DEFICIT)\": {\"Current Liabilities\": {\"Accounts Payable\": [435, 345], \"Accrued Expenses and Other\": [651, 727], \"Current Operating Lease Liabilities\": [170, 173], \"Income Taxes\": [34, 83], \"Current Liabilities of Discontinued Operations\": [0, 1498], \"Total Current Liabilities\": [1290, 2826]}, \"Deferred Income Taxes\": [157, 141], \"Long-term Debt\": [4854, 6366], \"Long-term Operating Lease Liabilities\": [989, 942], \"Other Long-term Liabilities\": [253, 290], \"Other Long-term Liabilities of Discontinued Operations\": [0, 1667], \"Shareholders  Equity (Deficit)\": {\"Preferred Stock $ 1.00 par value; 10 shares authorized; none issued\": [0, 0], \"Common Stock $ 0.50 par value; 1,000 shares authorized; 269 and 286 shares issued; 254 and 278 shares outstanding, respectively\": [134, 143], \"Paid-in Capital\": [893, 891], \"Accumulated Other Comprehensive Income\": [80, 83], \"Retained Earnings (Accumulated Deficit)\": [-1803, -1421], \"Less: Treasury Stock, at Average Cost; 15 and 8 shares, respectively\": [-822, -358], \"Total Bath & Body Works, Inc. Shareholders  Equity (Deficit)\": [-1518, -662], \"Noncontrolling Interest\": [1, 1], \"Total Equity (Deficit)\": [-1517, -661]}, \"Total Liabilities and Equity (Deficit)\": [6026, 11571]}}"
+                },
+                "decision": "{\"ASSETS\": {\"Current Assets\": {\"Cash and Cash Equivalents\": [1979, 3568], \"Accounts Receivable, Net\": [240, 148], \"Inventories\": [709, 572], \"Other\": [81, 52], \"Current Assets of Discontinued Operations\": [0, 1239], \"Total Current Assets\": [3009, 5579]}, \"Property and Equipment, Net\": [1009, 1017], \"Operating Lease Assets\": [1021, 968], \"Goodwill\": [628, 628], \"Trade Name\": [165, 165], \"Deferred Income Taxes\": [45, 58], \"Other Assets\": [149, 175], \"Other Assets of Discontinued Operations\": [0, 2981], \"Total Assets\": [6026, 11571]}, \"LIABILITIES AND EQUITY (DEFICIT)\": {\"Current Liabilities\": {\"Accounts Payable\": [435, 345], \"Accrued Expenses and Other\": [651, 727], \"Current Operating Lease Liabilities\": [170, 173], \"Income Taxes\": [34, 83], \"Current Liabilities of Discontinued Operations\": [0, 1498], \"Total Current Liabilities\": [1290, 2826]}, \"Deferred Income Taxes\": [157, 141], \"Long-term Debt\": [4854, 6366], \"Long-term Operating Lease Liabilities\": [989, 942], \"Other Long-term Liabilities\": [253, 290], \"Other Long-term Liabilities of Discontinued Operations\": [0, 1667], \"Shareholders  Equity (Deficit)\": {\"Preferred Stock $ 1.00 par value; 10 shares authorized; none issued\": [0, 0], \"Common Stock $ 0.50 par value; 1,000 shares authorized; 269 and 286 shares issued; 254 and 278 shares outstanding, respectively\": [134, 143], \"Paid-in Capital\": [893, 891], \"Accumulated Other Comprehensive Income\": [80, 83], \"Retained Earnings (Accumulated Deficit)\": [-1803, -1421], \"Less: Treasury Stock, at Average Cost; 15 and 8 shares, respectively\": [-822, -358], \"Total Bath & Body Works, Inc. Shareholders  Equity (Deficit)\": [-1518, -662], \"Noncontrolling Interest\": [1, 1], \"Total Equity (Deficit)\": [-1517, -661]}, \"Total Liabilities and Equity (Deficit)\": [6026, 11571]}}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-15-37"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-15-37"
+    }
+}

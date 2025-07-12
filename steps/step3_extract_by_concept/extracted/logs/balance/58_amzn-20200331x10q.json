@@ -1,0 +1,74 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 1,
+            "table_index": 0
+        },
+        "model": null,
+        "timestamp": "2025-01-21_09-28-26"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\t(in millions, except per share data)\tDecember 31, 2019\tMarch 31, 2020\t(unaudited)\t",
+        "timestamp": "2025-03-11_12-01-34"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-01-38"
+    },
+    "post_table_text": {
+        "data": "\t6\tTable of Contents\tAMAZON.COM, INC.\tNOTES TO CONSOLIDATED FINANCIAL STATEMENTS\t(unaudited)\tNote 1  \t",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\t6\tTable of Contents\tAMAZON.COM, INC.\tNOTES TO CONSOLIDATED FINANCIAL STATEMENTS\t(unaudited)\tNote 1  \t'"
+                },
+                "decision": "'\t6\tTable of Contents\tAMAZON.COM, INC.\tNOTES TO CONSOLIDATED FINANCIAL STATEMENTS\t(unaudited)\tNote 1  \t'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-01-41"
+    },
+    "table_body": {
+        "data": "ASSETS\tCurrent assets:\tCash and cash equivalents\t$\t36,092\t$\t27,201\tMarketable securities\t18,929\t22,091\tInventories\t20,497\t18,857\tAccounts receivable, net and other\t20,816\t17,836\tTotal current assets\t96,334\t85,985\tProperty and equipment, net\t72,705\t77,779\tOperating leases\t25,141\t26,279\tGoodwill\t14,754\t14,739\tOther assets\t16,314\t16,456\tTotal assets\t$\t225,248\t$\t221,238\tLIABILITIES AND STOCKHOLDERS  EQUITY\tCurrent liabilities:\tAccounts payable\t$\t47,183\t$\t40,056\tAccrued expenses and other\t32,439\t30,791\tUnearned revenue\t8,190\t8,864\tTotal current liabilities\t87,812\t79,711\tLong-term lease liabilities\t39,791\t40,300\tLong-term debt\t23,414\t23,437\tOther long-term liabilities\t12,171\t12,518\tCommitments and contingencies (Note 4)\tStockholders  equity:\tPreferred stock, $0.01 par value:\tAuthorized shares   500\tIssued and outstanding shares   none\t \t \tCommon stock, $0.01 par value:\tAuthorized shares   5,000\tIssued shares   521 and 522\tOutstanding shares   498 and 499\t5\t5\tTreasury stock, at cost\t(\t1,837\t)\t(\t1,837\t)\tAdditional paid-in capital\t33,658\t35,412\tAccumulated other comprehensive income (loss)\t(\t986\t)\t(\t2,063\t)\tRetained earnings\t31,220\t33,755\tTotal stockholders  equity\t62,060\t65,272\tTotal liabilities and stockholders  equity\t$\t225,248\t$\t221,238\tSee accompanying notes to consolidated financial statements.",
+        "timestamp": "2025-03-11_12-01-41"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [36092, 27201], \"Marketable securities\": [18929, 22091], \"Inventories\": [20497, 18857], \"Accounts receivable, net and other\": [20816, 17836], \"Total current assets\": [96334, 85985]}, \"Property and equipment, net\": [72705, 77779], \"Operating leases\": [25141, 26279], \"Goodwill\": [14754, 14739], \"Other assets\": [16314, 16456], \"Total assets\": [225248, 221238]}, \"LIABILITIES AND STOCKHOLDERS EQUITY\": {\"Current liabilities\": {\"Accounts payable\": [47183, 40056], \"Accrued expenses and other\": [32439, 30791], \"Unearned revenue\": [8190, 8864], \"Total current liabilities\": [87812, 79711]}, \"Long-term lease liabilities\": [39791, 40300], \"Long-term debt\": [23414, 23437], \"Other long-term liabilities\": [12171, 12518], \"Commitments and contingencies\": null, \"Stockholders equity\": {\"Preferred stock, $0.01 par value: Authorized shares 500 Issued and outstanding shares none\": [0, 0], \"Common stock, $0.01 par value: Authorized shares 5,000 Issued shares 521 and 522 Outstanding shares 498 and 499\": [5, 5], \"Treasury stock, at cost\": [-1837, -1837], \"Additional paid-in capital\": [33658, 35412], \"Accumulated other comprehensive income (loss)\": [-986, -2063], \"Retained earnings\": [31220, 33755], \"Total stockholders equity\": [62060, 65272]}, \"Total liabilities and stockholders equity\": [225248, 221238]} \n\n      \t\t\n     \t}"
+                },
+                "decision": "{\"ASSETS\": {\"Current assets\": {\"Cash and cash equivalents\": [36092, 27201], \"Marketable securities\": [18929, 22091], \"Inventories\": [20497, 18857], \"Accounts receivable, net and other\": [20816, 17836], \"Total current assets\": [96334, 85985]}, \"Property and equipment, net\": [72705, 77779], \"Operating leases\": [25141, 26279], \"Goodwill\": [14754, 14739], \"Other assets\": [16314, 16456], \"Total assets\": [225248, 221238]}, \"LIABILITIES AND STOCKHOLDERS EQUITY\": {\"Current liabilities\": {\"Accounts payable\": [47183, 40056], \"Accrued expenses and other\": [32439, 30791], \"Unearned revenue\": [8190, 8864], \"Total current liabilities\": [87812, 79711]}, \"Long-term lease liabilities\": [39791, 40300], \"Long-term debt\": [23414, 23437], \"Other long-term liabilities\": [12171, 12518], \"Commitments and contingencies\": null, \"Stockholders equity\": {\"Preferred stock, $0.01 par value: Authorized shares 500 Issued and outstanding shares none\": [0, 0], \"Common stock, $0.01 par value: Authorized shares 5,000 Issued shares 521 and 522 Outstanding shares 498 and 499\": [5, 5], \"Treasury stock, at cost\": [-1837, -1837], \"Additional paid-in capital\": [33658, 35412], \"Accumulated other comprehensive income (loss)\": [-986, -2063], \"Retained earnings\": [31220, 33755], \"Total stockholders equity\": [62060, 65272]}, \"Total liabilities and stockholders equity\": [225248, 221238]} \n\n      \t\t\n     \t}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-13-25"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-13-25"
+    }
+}

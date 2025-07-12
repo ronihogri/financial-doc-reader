@@ -1,0 +1,74 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 1,
+            "table_index": 0
+        },
+        "model": null,
+        "timestamp": "2025-01-21_09-31-12"
+    },
+    "table_comments": {
+        "data": "CONSOLIDATED BALANCE SHEETS\tDollars in Millions\t(UNAUDITED)\t",
+        "timestamp": "2025-03-11_12-11-02"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-11-05"
+    },
+    "post_table_text": {
+        "data": "\tThe accompanying notes are an integral part of these consolidated financial statements.\t4",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tThe accompanying notes are an integral part of these consolidated financial statements.\t4'"
+                },
+                "decision": "'\tThe accompanying notes are an integral part of these consolidated financial statements.\t4'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-11-07"
+    },
+    "table_body": {
+        "data": "ASSETS\tSeptember 30,\t2021\tDecember 31,\t2020\tCurrent Assets:\tCash and cash equivalents\t$\t13,540\t$\t14,546\tMarketable debt securities\t2,123\t1,285\tReceivables\t9,245\t8,501\tInventories\t2,163\t2,074\tOther current assets\t4,372\t3,786\tTotal Current Assets\t31,443\t30,192\tProperty, plant and equipment\t5,868\t5,886\tGoodwill\t20,519\t20,547\tOther intangible assets\t44,930\t53,243\tDeferred income taxes\t684\t1,161\tMarketable debt securities\t46\t433\tOther non-current assets\t7,403\t7,019\tTotal Assets\t$\t110,893\t$\t118,481\tLIABILITIES\tCurrent Liabilities:\tShort-term debt obligations\t$\t5,065\t$\t2,340\tAccounts payable\t2,695\t2,713\tOther current liabilities\t13,700\t14,027\tTotal Current Liabilities\t21,460\t19,080\tDeferred income taxes\t4,956\t5,407\tLong-term debt\t39,677\t48,336\tOther non-current liabilities\t7,516\t7,776\tTotal Liabilities\t73,609\t80,599\tCommitments and contingencies\tEQUITY\tBristol-Myers Squibb Company Shareholders  Equity:\tPreferred stock\t \t \tCommon stock\t292\t292\tCapital in excess of par value of stock\t44,292\t44,325\tAccumulated other comprehensive loss\t(\t1,424\t)\t(\t1,839\t)\tRetained earnings\t22,625\t21,281\tLess cost of treasury stock\t(\t28,572\t)\t(\t26,237\t)\tTotal Bristol-Myers Squibb Company Shareholders  Equity\t37,213\t37,822\tNoncontrolling interest\t71\t60\tTotal Equity\t37,284\t37,882\tTotal Liabilities and Equity\t$\t110,893\t$\t118,481",
+        "timestamp": "2025-03-11_12-11-07"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"ASSETS\": {\"Current Assets\": {\"Cash and cash equivalents\": [13540, 14546], \"Marketable debt securities\": [2123, 1285], \"Receivables\": [9245, 8501], \"Inventories\": [2163, 2074], \"Other current assets\": [4372, 3786], \"Total Current Assets\": [31443, 30192]}, \"Property, plant and equipment\": [5868, 5886], \"Goodwill\": [20519, 20547], \"Other intangible assets\": [44930, 53243], \"Deferred income taxes\": [684, 1161], \"Marketable debt securities\": [46, 433], \"Other non-current assets\": [7403, 7019], \"Total Assets\": [110893, 118481]}, \"LIABILITIES\": {\"Current Liabilities\": {\"Short-term debt obligations\": [5065, 2340], \"Accounts payable\": [2695, 2713], \"Other current liabilities\": [13700, 14027], \"Total Current Liabilities\": [21460, 19080]}, \"Deferred income taxes\": [4956, 5407], \"Long-term debt\": [39677, 48336], \"Other non-current liabilities\": [7516, 7776], \"Total Liabilities\": [73609, 80599], \"Commitments and contingencies\": null}, \"EQUITY\": {\"Bristol-Myers Squibb Company Shareholders Equity\": {\"Preferred stock\": [0, 0], \"Common stock\": [292, 292], \"Capital in excess of par value of stock\": [44292, 44325], \"Accumulated other comprehensive loss\": [-1424, -1839], \"Retained earnings\": [22625, 21281], \"Less cost of treasury stock\": [-28572, -26237], \"Total Bristol-Myers Squibb Company Shareholders Equity\": [37213, 37822]}, \"Noncontrolling interest\": [71, 60], \"Total Equity\": [37284, 37882]}, \"Total Liabilities and Equity\": [110893, 118481]}"
+                },
+                "decision": "{\"ASSETS\": {\"Current Assets\": {\"Cash and cash equivalents\": [13540, 14546], \"Marketable debt securities\": [2123, 1285], \"Receivables\": [9245, 8501], \"Inventories\": [2163, 2074], \"Other current assets\": [4372, 3786], \"Total Current Assets\": [31443, 30192]}, \"Property, plant and equipment\": [5868, 5886], \"Goodwill\": [20519, 20547], \"Other intangible assets\": [44930, 53243], \"Deferred income taxes\": [684, 1161], \"Marketable debt securities\": [46, 433], \"Other non-current assets\": [7403, 7019], \"Total Assets\": [110893, 118481]}, \"LIABILITIES\": {\"Current Liabilities\": {\"Short-term debt obligations\": [5065, 2340], \"Accounts payable\": [2695, 2713], \"Other current liabilities\": [13700, 14027], \"Total Current Liabilities\": [21460, 19080]}, \"Deferred income taxes\": [4956, 5407], \"Long-term debt\": [39677, 48336], \"Other non-current liabilities\": [7516, 7776], \"Total Liabilities\": [73609, 80599], \"Commitments and contingencies\": null}, \"EQUITY\": {\"Bristol-Myers Squibb Company Shareholders Equity\": {\"Preferred stock\": [0, 0], \"Common stock\": [292, 292], \"Capital in excess of par value of stock\": [44292, 44325], \"Accumulated other comprehensive loss\": [-1424, -1839], \"Retained earnings\": [22625, 21281], \"Less cost of treasury stock\": [-28572, -26237], \"Total Bristol-Myers Squibb Company Shareholders Equity\": [37213, 37822]}, \"Noncontrolling interest\": [71, 60], \"Total Equity\": [37284, 37882]}, \"Total Liabilities and Equity\": [110893, 118481]}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-19-49"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-19-49"
+    }
+}

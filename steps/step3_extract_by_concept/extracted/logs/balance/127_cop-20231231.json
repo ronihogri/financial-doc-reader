@@ -1,0 +1,74 @@
+{
+    "text_blocks": {
+        "data": {
+            "block_count": 1,
+            "table_index": 0
+        },
+        "model": null,
+        "timestamp": "2025-01-21_09-34-17"
+    },
+    "table_comments": {
+        "data": "Consolidated Balance Sheet\tConocoPhillips\tAt December 31\tMillions of Dollars\t2023\t2022\t",
+        "timestamp": "2025-03-11_12-20-49"
+    },
+    "units": {
+        "data": {
+            "sum_units": 1000000,
+            "sum_divider": 1.0
+        },
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "votes": {
+                    "0": "1000000",
+                    "1": "1000000"
+                },
+                "decision": "1000000"
+            },
+            "gpt-4o-2024-08-06": {
+                "votes": null,
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-20-53"
+    },
+    "post_table_text": {
+        "data": "\tSee Notes to Consolidated Financial Statements.\t77\tConocoPhillips   2023 10-K\tFinancial Stat",
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "'\tSee Notes to Consolidated Financial Statements.\t77\tConocoPhillips   2023 10-K\tFinancial Stat'"
+                },
+                "decision": "'\tSee Notes to Consolidated Financial Statements.\t77\tConocoPhillips   2023 10-K\tFinancial Stat'"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-11_12-20-55"
+    },
+    "table_body": {
+        "data": "Assets\tCash and cash equivalents\t$\t5,635\t6,458\tShort-term investments\t971\t2,785\tAccounts and notes receivable (net of allowance of $\t3\tand $\t2\t, respectively)\t5,461\t7,075\tAccounts and notes receivable related parties\t13\t13\tInventories\t1,398\t1,219\tPrepaid expenses and other current assets\t852\t1,199\tTotal Current Assets\t14,330\t18,749\tInvestments and long-term receivables\t9,130\t8,225\tNet properties, plants and equipment (net of accumulated DD&A of $\t74,361\tand $\t66,630\t, respectively)\t70,044\t64,866\tOther assets\t2,420\t1,989\tTotal Assets\t$\t95,924\t93,829\tLiabilities\tAccounts payable\t$\t5,083\t6,113\tAccounts payable related parties\t34\t50\tShort-term debt\t1,074\t417\tAccrued income and other taxes\t1,811\t3,193\tEmployee benefit obligations\t774\t728\tOther accruals\t1,229\t2,346\tTotal Current Liabilities\t10,005\t12,847\tLong-term debt\t17,863\t16,226\tAsset retirement obligations and accrued environmental costs\t7,220\t6,401\tDeferred income taxes\t8,813\t7,726\tEmployee benefit obligations\t1,009\t1,074\tOther liabilities and deferred credits\t1,735\t1,552\tTotal Liabilities\t46,645\t45,826\tEquity\tCommon stock (\t2,500,000,000\tshares authorized at $\t0.01\tpar value) Issued\t(2023 \t2,103,772,516\tshares; 2022 \t2,100,885,134\tshares)\tPar value\t21\t21\tCapital in excess of par\t61,303\t61,142\tTreasury stock (at cost: 2023 \t925,670,961\tshares; 2022 \t877,029,062\tshares)\t(\t65,640\t)\t(\t60,189\t)\tAccumulated other comprehensive income (loss)\t(\t5,673\t)\t(\t6,000\t)\tRetained earnings\t59,268\t53,029\tTotal Equity\t49,279\t48,003\tTotal Liabilities and Equity\t$\t95,924\t93,829",
+        "timestamp": "2025-03-11_12-20-55"
+    },
+    "table_json_created": {
+        "data": true,
+        "model": {
+            "gpt-4o-mini-2024-07-18": {
+                "trials": {
+                    "0": "{\"Assets\": {\"Cash and cash equivalents\": [5635, 6458], \"Short-term investments\": [971, 2785], \"Accounts and notes receivable (net of allowance of $ 3 and $ 2 , respectively)\": [5461, 7075], \"Accounts and notes receivable related parties\": [13, 13], \"Inventories\": [1398, 1219], \"Prepaid expenses and other current assets\": [852, 1199], \"Total Current Assets\": [14330, 18749], \"Investments and long-term receivables\": [9130, 8225], \"Net properties, plants and equipment (net of accumulated DD&A of $ 74,361 and $ 66,630 , respectively)\": [70044, 64866], \"Other assets\": [2420, 1989], \"Total Assets\": [95924, 93829]}, \"Liabilities\": {\"Accounts payable\": [5083, 6113], \"Accounts payable related parties\": [34, 50], \"Short-term debt\": [1074, 417], \"Accrued income and other taxes\": [1811, 3193], \"Employee benefit obligations\": [774, 728], \"Other accruals\": [1229, 2346], \"Total Current Liabilities\": [10005, 12847], \"Long-term debt\": [17863, 16226], \"Asset retirement obligations and accrued environmental costs\": [7220, 6401], \"Deferred income taxes\": [8813, 7726], \"Employee benefit obligations\": [1009, 1074], \"Other liabilities and deferred credits\": [1735, 1552], \"Total Liabilities\": [46645, 45826]}, \"Equity\": {\"Common stock ( 2,500,000,000 shares authorized at $ 0.01 par value) Issued (2023  2,103,772,516 shares; 2022  2,100,885,134 shares)\": [21, 21], \"Capital in excess of par\": [61303, 61142], \"Treasury stock (at cost: 2023  925,670,961 shares; 2022  877,029,062 shares)\": [-65640, -60189], \"Accumulated other comprehensive income (loss)\": [-5673, -6000], \"Retained earnings\": [59268, 53029], \"Total Equity\": [49279, 48003]}, \"Total Liabilities and Equity\": [95924, 93829]}"
+                },
+                "decision": "{\"Assets\": {\"Cash and cash equivalents\": [5635, 6458], \"Short-term investments\": [971, 2785], \"Accounts and notes receivable (net of allowance of $ 3 and $ 2 , respectively)\": [5461, 7075], \"Accounts and notes receivable related parties\": [13, 13], \"Inventories\": [1398, 1219], \"Prepaid expenses and other current assets\": [852, 1199], \"Total Current Assets\": [14330, 18749], \"Investments and long-term receivables\": [9130, 8225], \"Net properties, plants and equipment (net of accumulated DD&A of $ 74,361 and $ 66,630 , respectively)\": [70044, 64866], \"Other assets\": [2420, 1989], \"Total Assets\": [95924, 93829]}, \"Liabilities\": {\"Accounts payable\": [5083, 6113], \"Accounts payable related parties\": [34, 50], \"Short-term debt\": [1074, 417], \"Accrued income and other taxes\": [1811, 3193], \"Employee benefit obligations\": [774, 728], \"Other accruals\": [1229, 2346], \"Total Current Liabilities\": [10005, 12847], \"Long-term debt\": [17863, 16226], \"Asset retirement obligations and accrued environmental costs\": [7220, 6401], \"Deferred income taxes\": [8813, 7726], \"Employee benefit obligations\": [1009, 1074], \"Other liabilities and deferred credits\": [1735, 1552], \"Total Liabilities\": [46645, 45826]}, \"Equity\": {\"Common stock ( 2,500,000,000 shares authorized at $ 0.01 par value) Issued (2023  2,103,772,516 shares; 2022  2,100,885,134 shares)\": [21, 21], \"Capital in excess of par\": [61303, 61142], \"Treasury stock (at cost: 2023  925,670,961 shares; 2022  877,029,062 shares)\": [-65640, -60189], \"Accumulated other comprehensive income (loss)\": [-5673, -6000], \"Retained earnings\": [59268, 53029], \"Total Equity\": [49279, 48003]}, \"Total Liabilities and Equity\": [95924, 93829]}"
+            },
+            "gpt-4o-2024-08-06": {
+                "trials": {},
+                "decision": null
+            }
+        },
+        "timestamp": "2025-03-12_11-25-28"
+    },
+    "problems": {
+        "data": [],
+        "timestamp": "2025-03-12_11-25-28"
+    }
+}

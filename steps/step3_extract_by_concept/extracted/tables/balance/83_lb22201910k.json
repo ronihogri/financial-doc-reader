@@ -1,0 +1,128 @@
+{
+    "ASSETS": {
+        "Current Assets": {
+            "Cash and Cash Equivalents": [
+                1413,
+                1515
+            ],
+            "Accounts Receivable, Net": [
+                367,
+                310
+            ],
+            "Inventories": [
+                1248,
+                1240
+            ],
+            "Other": [
+                232,
+                228
+            ],
+            "Total Current Assets": [
+                3260,
+                3293
+            ]
+        },
+        "Property and Equipment, Net": [
+            2818,
+            2893
+        ],
+        "Goodwill": [
+            1348,
+            1348
+        ],
+        "Trade Names": [
+            411,
+            411
+        ],
+        "Deferred Income Taxes": [
+            62,
+            14
+        ],
+        "Other Assets": [
+            191,
+            190
+        ],
+        "Total Assets": [
+            8090,
+            8149
+        ]
+    },
+    "LIABILITIES AND EQUITY (DEFICIT)": {
+        "Current Liabilities": {
+            "Accounts Payable": [
+                711,
+                717
+            ],
+            "Accrued Expenses and Other": [
+                1082,
+                1029
+            ],
+            "Current Debt": [
+                72,
+                87
+            ],
+            "Income Taxes": [
+                121,
+                198
+            ],
+            "Total Current Liabilities": [
+                1986,
+                2031
+            ]
+        },
+        "Deferred Income Taxes": [
+            226,
+            238
+        ],
+        "Long-term Debt": [
+            5739,
+            5707
+        ],
+        "Other Long-term Liabilities": [
+            1004,
+            924
+        ],
+        "Shareholders  Equity (Deficit)": {
+            "Preferred Stock $1.00 par value; 10 shares authorized; none issued": [
+                0,
+                0
+            ],
+            "Common Stock $0.50 par value; 1,000 shares authorized; 283 and 283 shares issued; 275 and 280 shares outstanding, respectively": [
+                141,
+                141
+            ],
+            "Paid-in Capital": [
+                771,
+                678
+            ],
+            "Accumulated Other Comprehensive Income": [
+                59,
+                24
+            ],
+            "Retained Earnings (Deficit)": [
+                -1482,
+                -1434
+            ],
+            "Less: Treasury Stock, at Average Cost; 8 and 3 shares, respectively": [
+                -358,
+                -162
+            ],
+            "Total L Brands, Inc. Shareholders  Equity (Deficit)": [
+                -869,
+                -753
+            ],
+            "Noncontrolling Interest": [
+                4,
+                2
+            ],
+            "Total Equity (Deficit)": [
+                -865,
+                -751
+            ]
+        },
+        "Total Liabilities and Equity (Deficit)": [
+            8090,
+            8149
+        ]
+    }
+}

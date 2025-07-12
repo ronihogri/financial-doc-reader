@@ -1,0 +1,111 @@
+{
+    "ASSETS": {
+        "Current assets": {
+            "Cash and cash equivalents": [
+                36220,
+                37478
+            ],
+            "Marketable securities": [
+                59829,
+                23232
+            ],
+            "Inventories": [
+                32640,
+                38153
+            ],
+            "Accounts receivable, net and other": [
+                32891,
+                34804
+            ],
+            "Total current assets": [
+                161580,
+                133667
+            ]
+        },
+        "Property and equipment, net": [
+            160281,
+            173706
+        ],
+        "Operating leases": [
+            56082,
+            58430
+        ],
+        "Goodwill": [
+            15371,
+            20195
+        ],
+        "Other assets": [
+            27235,
+            33730
+        ],
+        "Total assets": [
+            420549,
+            419728
+        ]
+    },
+    "LIABILITIES AND STOCKHOLDERS EQUITY": {
+        "Current liabilities": {
+            "Accounts payable": [
+                78664,
+                71219
+            ],
+            "Accrued expenses and other": [
+                51775,
+                56254
+            ],
+            "Unearned revenue": [
+                11827,
+                12818
+            ],
+            "Total current liabilities": [
+                142266,
+                140291
+            ]
+        },
+        "Long-term lease liabilities": [
+            67651,
+            66524
+        ],
+        "Long-term debt": [
+            48744,
+            58053
+        ],
+        "Other long-term liabilities": [
+            23643,
+            23458
+        ],
+        "Commitments and contingencies": null,
+        "Stockholders equity": {
+            "Preferred stock ($ 0.01 par value; 500 shares authorized; no shares issued or outstanding)": null,
+            "Common stock ($ 0.01 par value; 100,000 shares authorized; 10,644 and 10,699 shares issued; 10,175 and 10,183 shares outstanding)": [
+                106,
+                107
+            ],
+            "Treasury stock, at cost": [
+                -1837,
+                -7837
+            ],
+            "Additional paid-in capital": [
+                55437,
+                63871
+            ],
+            "Accumulated other comprehensive income (loss)": [
+                -1376,
+                -4782
+            ],
+            "Retained earnings": [
+                85915,
+                80043
+            ],
+            "Total stockholders equity": [
+                138245,
+                131402
+            ]
+        },
+        "Total liabilities and stockholders equity": [
+            420549,
+            419728
+        ]
+    },
+    "See accompanying notes to consolidated financial statements.": null
+}

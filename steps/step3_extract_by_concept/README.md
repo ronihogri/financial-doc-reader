@@ -41,9 +41,9 @@ $ python3 SEC_filing_reader_step3.py
 
 The program processes the structured Balance Sheet tables (JSON files) produced in Step 2. For each of the 252 documents, the program identifies entries referring to a company's current cash position (CCP; total liquid assets immediately available) and long-term debt (LTD; financial obligations not due within the next year). 
 
-To reduce the risk of errors, the program uses a layered "Swiss Cheese" approach: no single mechanism is perfect, but together they form a robust filter that prevents errors from reaching the final output (<a href="#figure-3-1" style="white-space: nowrap; font-weight: bold;">Fig. 3.1</a>). An illustration of the workflow applied for each document is shown in <a href="#figure-3-2" style="white-space: nowrap; font-weight: bold;">Fig. 3.2</a>.
+To reduce the risk of errors, the program uses a layered "Swiss Cheese" approach: no single mechanism is perfect, but together they form a robust filter that prevents errors from reaching the final output (<a href="#figure-3-1" style="white-space: nowrap; font-weight: bold;">Fig. 3.1</a>). An illustration of the workflow applied for each document is shown in <a href="#figure-3-2" style="white-space: nowrap; font-weight: bold;">Fig. 3.2</a>. An additional layer can be added by running the program multiple times on the same dataset - with discrepancies triggering a final ("tie-breaker") run, followed by human inspection. 
 
-As the program runs, it stores detailed results for each concept in designated JSON files within the <code>./extracted/logs/balance</code> folder. Values related to the same concept (CCP or LTD) are summed up, and the main results — one value per concept per report — are saved to the "Tasks" table of the SQL database (<code>./filings_demo_step3.sqlite</code>). Example outputs are provided in the <code>./results_step3.zip</code> archive.
+As the program runs, it stores detailed results for each concept in designated JSON files within the <code>./extracted/logs/balance</code> folder. Values related to the same concept (CCP or LTD) are summed up, and the main results — one value per concept per report — are saved to the "Tasks" table of the SQL database (<code>./filings_demo_step3.sqlite</code>). Example outputs are provided in the <code>./results.zip</code> archive.
 
 <br><br>
 
@@ -57,15 +57,14 @@ As the program runs, it stores detailed results for each concept in designated J
 ### <a id="figure-3-2"></a>
 ![](https://github.com/ronihogri/financial-doc-reader/blob/main/steps/step3_extract_by_concept/images/SEC_step3_flowchart.png)
 
-**Figure 3.2: Workflow overview.** For each document, the "mini" model (gpt-4o-mini-2024-07-18) is used to identify Balance Sheet entries related to current cash position (CCP) and long-term debt (LTD). Voting is applied to reduce noise, similarly to [Step 1](https://github.com/ronihogri/financial-doc-reader/tree/main/steps/step1_find_BS_table). If a majority vote is reached, the selected entries are checked for suspicious terms — signs that a row may have been wrongly included. If suspicious terms are found, the "large" model (gpt-4o-2024-08-06) acts as a supervisor: it reviews the mini model's output and removes any entries that don't belong. If doubts remain after the supervisor's revision (or if no majority was reached by the mini model), the large model is asked to repeat the task independently — this time with no voting. If the result still contains suspicious items, the case is flagged for manual inspection.
-
+**Figure 3.2: Workflow overview.** For each document, the "mini" model (gpt-4o-mini-2024-07-18) is used to identify Balance Sheet entries related to current cash position (CCP) and long-term debt (LTD). Voting is applied to reduce noise, similarly to [Step 1](https://github.com/ronihogri/financial-doc-reader/tree/main/steps/step1_find_BS_table). If a majority vote is reached, the selected entries are checked for suspicious terms — signs that a row may have been wrongly included. If suspicious terms are found, the "large" model (gpt-4o-2024-08-06) acts as a supervisor: it reviews the mini model's output and removes any entries that don't belong. If doubts remain after the supervisor's revision (or if no majority was reached by the mini model), the large model is asked to repeat the task independently — this time with no voting. If the result still contains suspicious items, the case is flagged for manual inspection. An additional layer (not shown in the figure) involves comparing the results of multiple runs, and flagging discrepancies for human inspection.
 
 <br>
 
 ## Results
 
 ### Effectiveness of the Layered "Swiss Cheese" Approach
-The program extracted CCP and LTD values for all 252 documents. The average API usage cost per document was approximately $0.0023. <a href="#table-3-1" style="white-space: nowrap; font-weight: bold;">Table 3.1</a> shows the percentage of documents for which each process event occurred. <a href="#figure-3-3" style="white-space: nowrap; font-weight: bold;">Fig. 3.3</a> shows an example in which irrelevant items extracted by the mini model were removed by the supervisor process. <a href="#figure-3-4" style="white-space: nowrap; font-weight: bold;">Fig. 3.4</a> shows an example in which the supervisor failed to remove an irrelevant item extracted by mini; this issue was detected by the program, and consequently corrected by the large model. No issues were identified in the subset of documents flagged for manual review, suggesting that the layered safeguards were effective in preventing faulty entries. To further validate the results, the program was run a second time, and the results of the two runs were compared. Discrepancies were found in four document pairs (1.6% of documents); the program was then re-run on these four documents, and the results of this run were manually reviewed and validated. The dataset provided here in the `results.zip` archive contains the validated results.   
+The program extracted CCP and LTD values for all 252 documents. The average API usage cost per document per run was approximately $0.0023. <a href="#table-3-1" style="white-space: nowrap; font-weight: bold;">Table 3.1</a> shows the percentage of documents for which each process event occurred. <a href="#figure-3-3" style="white-space: nowrap; font-weight: bold;">Fig. 3.3</a> shows an example in which irrelevant items extracted by the mini model were removed by the supervisor process. <a href="#figure-3-4" style="white-space: nowrap; font-weight: bold;">Fig. 3.4</a> shows an example in which the supervisor failed to remove an irrelevant item extracted by mini; this issue was detected by the program, and consequently corrected by the large model. The dataset provided here in the `results.zip` archive contains the validated results.   
 <br> 
 
 ### <a id="table-3-1"></a> 
@@ -77,8 +76,11 @@ The program extracted CCP and LTD values for all 252 documents. The average API 
 | Large model re-performed extraction |   8.3 |   1.2 |
 | Supervisor checked large output     |   8.3 |   0   |
 | Supervisor revised large output     |   0   |   0   |
-| Human inspection suggested          |   8.3 |   0   |
-| Issues revealed by human inspection |   0   |   0   |
+| Human inspection triggered by suspicious terms not removed by supervisor         |   8.3 |   0   |
+| Human inspection revealed issues related to suspicious terms |   0   |   0   |
+| Discrepancy between two program runs triggers tie-breaker run          |   0 |   3.6   |
+| Human inspection revealed issues after tie-breaker run         |   0 |   0   |
+
 
 **Table 3.1: Events triggered in the Swiss Cheese workflow.** Values indicate the percentage of documents (out of 252) in which each event occurred, separately for CCP and LTD. 
 <br>  

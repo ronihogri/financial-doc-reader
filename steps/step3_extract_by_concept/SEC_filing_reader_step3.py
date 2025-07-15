@@ -168,7 +168,7 @@ def get_forms_info():
 
         #get form info based on ids_to_get
         cur.execute("CREATE TEMPORARY TABLE temp_ids (id INTEGER PRIMARY KEY)")
-        cur.executemany("INSERT INTO temp_ids VALUES (?)", [(id, ) for id in ids_to_get])
+        cur.executemany("INSERT INTO temp_ids VALUES (?)", [(id_, ) for id_ in ids_to_get])
         cur.execute("SELECT f.id, f.FormName FROM Forms f JOIN temp_ids t ON f.id = t.id ORDER BY f.id")
         return cur.fetchall()
     
@@ -1184,9 +1184,12 @@ Your objective is to extract and return the paths in these JSON dictionaries tha
 A company's **long-term debt** consists of financial obligations that are due beyond one year. 
 This includes instruments such as **Convertible Senior Notes, Term Loans, Bonds Payable, Debentures, Mortgage Payable, Capital Lease Obligations, Finance Lease Obligations, Notes Payable, Subordinated Debt**.  
 These items are typically listed under **Non-Current Liabilities** in the Balance Sheet. However, some aspects of long-term debt may appear in the **Current Liabilities** section (e.g., "Term Debt" or "Current portion of long-term debt").
-Use your judgment and knowledge of balance sheets and 10-Q/10-K forms to determine if an item is relevant for the long-term debt.   
-Nevertheless, **do NOT include** non-specific entries like "Other non-current liabilities/obligations" or "Other long-term liabilities/obligations", or any instruments that do not **explicitly** represent borrowings, loans, or debt financing (e.g., "Operating Lease Liabilities").  
-Also, **do NOT include** any entries that MAY OR MAY NOT relate to long-term debt (i.e., entries where additional parts of the document would be required for you to reach a conclusion, e.g., "Long-term lease liabilities").  
+Use your judgment and knowledge of balance sheets and 10-Q/10-K forms to determine if an item is relevant for the long-term debt. 
+
+## Do **NOT** include any of the following:
+- Non-specific entries like "Other non-current liabilities/obligations" or "Other long-term liabilities/obligations"
+- Any instruments that do not **explicitly** represent borrowings, loans, or debt financing (e.g., "Operating Lease Liabilities").  
+- Entries that MAY OR MAY NOT relate to long-term debt (i.e., entries where additional parts of the document would be required for you to reach a conclusion, e.g., "Long-term lease liabilities").  
 
 ## Requirements  
 
@@ -1277,6 +1280,8 @@ The expected output is a JSON object structured as follows:
   "1": ["Current liabilities", "Current portion of long-term debt and other obligations, net"], 
   "2": ["Long-term debt, net"]
 }
+
+
 
 
 ### **Important Note**  

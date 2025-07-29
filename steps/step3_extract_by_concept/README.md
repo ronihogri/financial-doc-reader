@@ -35,7 +35,7 @@ Using a combination of LLM-based and algorithmic approaches, the Step 3 program:
 4. Run the Python script:
 
 ```console
-$ python3 SEC_filing_reader_step3.py
+$ python SEC_filing_reader_step3.py
 ```
 <br>
 

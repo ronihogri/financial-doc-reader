@@ -25,7 +25,7 @@ Large language models (LLMs) like ChatGPT have been trained on **very** large da
 3. Navigate to `financial-doc-reader/steps/step1_find_BS_table/`, and run the Python script:
 
 ```console
-$ python3 SEC_filing_reader_step1.py
+$ python SEC_filing_reader_step1.py
 ```
 <br>
 The program processes 252 financial documents, filed by 12 selected companies (see the "Forms" and "Stocks" tables of the SQL database in <code>./filings_demo_step1.sqlite</code>). The workflow for each document is illustrated in <a href="#figure-1-1" style="white-space: nowrap; font-weight: bold;">Fig. 1.1</a>. As the program runs, it stores detailed data for each document in designated JSON files within the <code>./extracted/</code> folder. These JSON files enable tracing of the program's steps, and are particularly useful for offline evaluation of LLM performance (see example in <a href="#figure-1-2" style="white-space: nowrap; font-weight: bold;">Fig. 1.2</a>). In addition, the main results are saved to the "Tasks" table of the SQL database (<a href="#figure-1-3" style="white-space: nowrap; font-weight: bold;">Fig. 1.3</a>). Example results are provided in the <code>./results.zip</code> archive. 

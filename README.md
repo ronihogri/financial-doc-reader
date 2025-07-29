@@ -40,7 +40,7 @@ $ git clone https://github.com/ronihogri/financial-doc-reader.git
 $ cd financial-doc-reader
 
 # Install requirements
-$ python3 -m pip install -r requirements.txt
+$ python -m pip install -r requirements.txt
 ```
 
 **Note:** If you would like to run the Python scripts yourself, you must possess a valid [**OpenAI API key**](https://platform.openai.com/docs/quickstart?desktop-os=windows).
